@@ -18,10 +18,26 @@
     "buybackState": "평가중",
     "fxReaccel": "부분",
     "thresholds": {
-      "155": {"intraday": 2, "close": 1, "comment": "155 하향 이탈 이력 있음"},
-      "153": {"intraday": 1, "close": 0, "comment": "153대 테스트 중"},
-      "152": {"intraday": 1, "close": 0, "comment": "152.89 장중 이탈 후 회복 이력"},
-      "150": {"intraday": 0, "close": 0, "comment": "미도달"}
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달"
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "152.89 장중 이탈 후 회복 이력"
+      },
+      "153": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "153대 테스트 중"
+      },
+      "155": {
+        "intraday": 2,
+        "close": 1,
+        "comment": "155 하향 이탈 이력 있음"
+      }
     }
   },
   "2026-09-10": {
@@ -50,10 +66,26 @@
       "policy": "9/10 예정된 10~20Y Treasury buyback 최대 $6B는 오전 10시 KST 기준 아직 실행 전이므로 효과 평가는 보류."
     },
     "thresholds": {
-      "155": {"intraday": 2, "close": 1, "comment": "기존 155 하향 이탈 이력 유지. 9/10 신규 crossing은 없음."},
-      "153": {"intraday": 2, "close": 0, "comment": "9/10 장중 저가 152.95로 153 재이탈 후 오전 중 153대 회복."},
-      "152": {"intraday": 1, "close": 0, "comment": "기존 152.89 장중 이탈 이력 유지. 9/10 저가 152.95로 152 신규 이탈 없음."},
-      "150": {"intraday": 0, "close": 0, "comment": "미도달."}
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/10 저가 152.95로 152 신규 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "9/10 장중 저가 152.95로 153 재이탈 후 오전 중 153대 회복."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 1,
+        "comment": "기존 155 하향 이탈 이력 유지. 9/10 신규 crossing은 없음."
+      }
     }
   },
   "2026-09-11": {
@@ -82,10 +114,26 @@
       "policy": "9/10 장기채 buyback은 최대 $6B 계획 대비 시장 완충 효과가 미흡했고, 이후 장기금리가 재상승. 24~48시간 내 채권 변동성 재가속 규칙에 따라 정책 실패 1회 추가. BOJ는 다음 주 25bp 인상 전망이 우세."
     },
     "thresholds": {
-      "155": {"intraday": 2, "close": 2, "comment": "기존 155 하향 이탈 이력 유지. 9/10 뉴욕 종가권 154.32로 종가 이탈 누적 +1. 9/11 오전에는 신규 crossing 없음."},
-      "153": {"intraday": 2, "close": 0, "comment": "기존 이탈 이력 유지. 9/11 10시 부근 154.615로 신규 이탈 없음."},
-      "152": {"intraday": 1, "close": 0, "comment": "기존 152.89 장중 이탈 이력 유지. 9/11 신규 152 이탈 확인 없음."},
-      "150": {"intraday": 0, "close": 0, "comment": "미도달."}
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/11 신규 152 이탈 확인 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 이탈 이력 유지. 9/11 10시 부근 154.615로 신규 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 2,
+        "comment": "기존 155 하향 이탈 이력 유지. 9/10 뉴욕 종가권 154.32로 종가 이탈 누적 +1. 9/11 오전에는 신규 crossing 없음."
+      }
     }
   },
   "2026-09-12": {
@@ -114,10 +162,88 @@
       "policy": "정책 관련 정성 판단은 변경 없음. 9/10 장기채 buyback 이후에도 장기금리 고점권이 지속되어 기존 정책 완충 실패 누적 1회를 유지."
     },
     "thresholds": {
-      "155": {"intraday": 2, "close": 3, "comment": "기존 155 하향 이탈 이력 유지. 최신 USD/JPY 153.54로 155 아래 상태 지속."},
-      "153": {"intraday": 2, "close": 0, "comment": "최신 화면 153.54. 신규 153 하향 이탈은 이번 화면만으로 확인되지 않음."},
-      "152": {"intraday": 1, "close": 0, "comment": "기존 152.89 장중 이탈 이력 유지. 신규 152 이탈 확인 없음."},
-      "150": {"intraday": 0, "close": 0, "comment": "미도달."}
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 신규 152 이탈 확인 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "최신 화면 153.54. 신규 153 하향 이탈은 이번 화면만으로 확인되지 않음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 3,
+        "comment": "기존 155 하향 이탈 이력 유지. 최신 USD/JPY 153.54로 155 아래 상태 지속."
+      }
+    }
+  },
+  "2026-09-13": {
+    "asof": "2026-09-13",
+    "fxNow": 153.54,
+    "fx3d": -0.29,
+    "fxrv3": 0.86,
+    "fxAccel": 38.6,
+    "jgbNow": 2.988,
+    "jgb3d": 3.36,
+    "jgbrv3": 2.56,
+    "jgbAccel": 16.9,
+    "coAccel": 2,
+    "ust10": 4.971,
+    "ust3d": 14.1,
+    "ust30": 5.358,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "부분",
+    "dataStatus": "주말·최신거래일 9/11 기준",
+    "ust5Intraday": 0,
+    "ust5Close": 0,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": false,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "9/11 기준 10Y 장중 고점 4.9915%. 5% 미돌파. 고유가·CPI와 장기물 공급·term premium 부담이 혼재.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "9/13 일요일. 최신 거래일 9/11 USD/JPY 153.54. 주말 신규 임계 이탈 카운트 없음.",
+      "jgb": "9/13 휴장. 최신 거래일 9/11 JGB10Y 2.988% 유지. Investing 역사값 2.980%와 소스/시점 차이.",
+      "ust": "9/13 휴장. 최신 거래일 9/11 UST10Y 4.971%, UST30Y 5.358%. Reuters 장중 고점 4.9915%로 T1 미충족. 3D +14.1bp.",
+      "policy": "9/10 buyback 이후 장기금리 고점권 지속. 정책 완충 실패 누적 1회 유지. BOJ 다음 회의 25bp 인상 전망 우세.",
+      "equity": "9/11 S&P500 7,656.98(+0.86%), Nasdaq Composite 26,333.04(+0.96%). Bond Reversal D0 미충족으로 Lag OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 주말 신규 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 주말 신규 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 주말 신규 세션 카운트 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 3,
+        "comment": "기존 누적 유지. 주말 신규 세션 카운트 없음."
+      }
     }
   }
 }
