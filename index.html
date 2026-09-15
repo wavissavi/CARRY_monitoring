@@ -89,6 +89,28 @@ button,input{background:#151b25;color:var(--tx);border:1px solid var(--line);bor
   </div>
 
   <div class="section">
+    <h2>⚡ Cross-Asset Confirmation <span class="tiny">RISK와 분리된 조기경보</span></h2>
+    <div class="split">
+      <div class="card">
+        <h3>FX·JGB 동시가속 조기경보</h3>
+        <div class="m"><span>최근 5거래일</span><span id="coAccelSignal" class="big"></span></div>
+        <div class="m"><span>상태</span><span id="coAccelBadge" class="badge"></span></div>
+        <div class="note" id="coAccelNote"></div>
+        <div class="note">1회 = 초기 관찰 · 2회 = PRE-EXIT 3회 조건 한 단계 전 · 3회+ = 기존 PRE-EXIT 승격 조건 충족. 이 표시는 종합 RISK와 별도로 운영.</div>
+      </div>
+      <div class="card">
+        <h3>UST 5% 돌파 품질 <span class="tiny">운영 복합지표</span></h3>
+        <div class="m"><span>Quality</span><span id="breakoutQuality" class="big"></span></div>
+        <div class="m"><span>① 5% 종가/현재 유지</span><span id="qualityClose" class="v"></span></div>
+        <div class="m"><span>② 30Y 동반가속</span><span id="quality30" class="v"></span></div>
+        <div class="m"><span>③ FX·JGB 당일 동시가속</span><span id="qualityCross" class="v"></span></div>
+        <div class="note" id="qualityNote"></div>
+        <div class="note">0~3점 운영지표. 5% 자체보다 돌파 유지·30Y 확인·cross-asset 확산을 함께 본다. 자동 EXIT 신호가 아님.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
     <h2>🪜 Bond→Equity Lag · 추매 관찰창</h2>
     <div class="grid3">
       <div class="card">
@@ -120,7 +142,7 @@ button,input{background:#151b25;color:var(--tx);border:1px solid var(--line);bor
   <div class="section"><h2>데이터 메모</h2><div id="notes" class="note"></div></div>
 
   <div class="section"><h2>날짜별 누적 기록</h2>
-    <table><thead><tr><th>날짜</th><th>RISK</th><th>ADD</th><th class="r">USD/JPY</th><th class="r">FX가속</th><th class="r">JGB10Y</th><th class="r">JGB가속</th><th class="r">UST10Y</th><th>UST Trigger</th><th>Lag</th></tr></thead><tbody id="history"></tbody></table>
+    <table><thead><tr><th>날짜</th><th>RISK</th><th>ADD</th><th class="r">USD/JPY</th><th class="r">FX가속</th><th class="r">JGB10Y</th><th class="r">JGB가속</th><th>CoAccel</th><th class="r">UST10Y</th><th>UST Trigger</th><th>5% Quality</th><th>Lag</th></tr></thead><tbody id="history"></tbody></table>
   </div>
 </div>
 <script>
@@ -168,6 +190,30 @@ function levels(d){
   return {fx,jgb,ust,policy,overall}
 }
 function riskName(x){return badge(x)[0]}
+function coAccelSignal(d){
+  const c=d.coAccel;
+  if(c==null)return {text:"미확정",cls:"violet",note:"최근 5거래일 동시가속 횟수가 확정되지 않음."};
+  if(c>=4)return {text:`${c}/5 · EXTREME`,cls:"crimson",note:"동시가속 4회 이상. JGB 엔진의 최고위험 조건과 겹칠 수 있어 cross-asset 비선형 확산을 우선 점검."};
+  if(c>=3)return {text:`${c}/5 · PRE-EXIT`,cls:"red",note:"기존 PRE-EXIT 승격 조건인 최근 5거래일 동시가속 3회 이상 충족."};
+  if(c===2)return {text:"2/5 · ONE STEP",cls:"orange",note:"다음 거래일에 FX·JGB가 다시 동시에 가속하면 3회 조건에 도달. 종합 RISK와 별도로 선행 경보."};
+  if(c===1)return {text:"1/5 · EARLY",cls:"yellow",note:"동시가속이 1회 포착된 초기 관찰 단계. 연속성 여부를 우선 확인."};
+  return {text:"0/5 · QUIET",cls:"green",note:"최근 5거래일 FX·JGB 동시가속 없음."};
+}
+function breakoutQuality(d,date){
+  const i=dates.indexOf(date),p=i>0?records[dates[i-1]]:null;
+  const breach=(d.ust10??0)>=5||(d.ust5Intraday||0)>0||(d.ust5Close||0)>0;
+  if(!breach)return {score:null,label:"OFF",cls:"violet",closeHold:null,longConfirm:null,crossConfirm:null,note:"5% 장중/종가 돌파 이력이 없어 품질 평가 OFF."};
+  const prevClose=p?.ust5Close??0;
+  const newClose=d.ust5Close!=null&&Number(d.ust5Close)>Number(prevClose);
+  const closeHold=(d.ust10??-99)>=5||newClose;
+  const longConfirm=d.ust30AccelConfirm===true;
+  const crossConfirm=d.fxAccel!=null&&d.jgbAccel!=null&&Number(d.fxAccel)>0&&Number(d.jgbAccel)>0;
+  const score=[closeHold,longConfirm,crossConfirm].filter(Boolean).length;
+  const label=score===3?"3/3 · DISORDER CONFIRM":score===2?"2/3 · STRONG":score===1?"1/3 · PARTIAL":"0/3 · LOW QUALITY";
+  const cls=score===3?"crimson":score===2?"red":score===1?"orange":"yellow";
+  const note=score===3?"5% 유지, 30Y 동반가속, FX·JGB 동시가속이 모두 겹침. 단일 5% 돌파보다 훨씬 강한 disorder 후보.":score===2?"세 확인축 중 2개가 동반. 5% 돌파가 단순 장중 노이즈를 넘어설 가능성이 높아지는 구간.":score===1?"확인축 1개만 동반. 추가 확산 여부를 확인할 단계.":"5% 돌파 이력은 있으나 현재 유지·30Y·cross-asset 확인이 붙지 않음. T1은 유지하되 돌파 품질은 낮음.";
+  return {score,label,cls,closeHold,longConfirm,crossConfirm,note};
+}
 function addDecision(d,L){
   const veto=L.fx>=3||L.jgb>=3;
   const rev=d.bondReversal===true||d.bondReversalState==="CONFIRMED"||d.bondReversalState==="확인";
@@ -184,7 +230,7 @@ function addDecision(d,L){
 function blank(date){return {asof:date,thresholds:{"155":{},"153":{},"152":{},"150":{}},dataStatus:"미확정"}}
 function distTo(d,target){if(d.ust10==null)return "미확정";const x=(target-d.ust10)*100;return x>0?`${x.toFixed(1)}bp 아래`:`${Math.abs(x).toFixed(1)}bp 위`}
 function render(date){
-  selected=date;const d=records[date]||blank(date),L=levels(d),B=badge(L.overall),A=addDecision(d,L);
+  selected=date;const d=records[date]||blank(date),L=levels(d),B=badge(L.overall),A=addDecision(d,L),C=coAccelSignal(d),Q=breakoutQuality(d,date);
   $("date").value=date;$("asof").textContent=date;$("overall").textContent=B[0];$("badge").className="badge "+B[1];$("badge").textContent=B[2]+" "+B[0];
   $("addText").textContent=A.text;$("addBadge").className="badge "+A.cls;$("addBadge").textContent=A.text;
   $("fxNow").textContent=n(d.fxNow);$("fx3d").textContent=pct(d.fx3d);$("fxrv3").textContent=pct(d.fxrv3);$("fxAccel").textContent=pct(d.fxAccel);
@@ -195,6 +241,8 @@ function render(date){
   $("accel3d").textContent=bp(d.ust3d);$("accel15").textContent=d.ust3d==null?"미확정":d.ust3d>=15?"ON":"OFF";$("accel20").textContent=d.ust3d==null?"미확정":d.ust3d>=20?"ON":"OFF";
   $("longConfirm").textContent=d.ust30AccelConfirm!=null?yn(d.ust30AccelConfirm):((d.curveStress??0)>=2?"대체확인: 경계":"미확정");$("ust5Intraday").textContent=d.ust5Intraday==null?"미확정":d.ust5Intraday+"회";
   $("ustDriver").textContent=d.ustDriver||"미확정";$("driverNote").textContent=d.ustDriverNote||"원인 분류 데이터는 신규 스키마 적용일부터 누적.";$("policyBuffer").textContent=d.buybackState||"미확정";
+  $("coAccelSignal").textContent=C.text;$("coAccelBadge").className="badge "+C.cls;$("coAccelBadge").textContent=C.text;$("coAccelNote").textContent=C.note;
+  $("breakoutQuality").textContent=Q.label;$("breakoutQuality").className="big "+Q.cls;$("qualityClose").textContent=Q.closeHold==null?"-":yn(Q.closeHold);$("quality30").textContent=Q.longConfirm==null?"-":yn(Q.longConfirm);$("qualityCross").textContent=Q.crossConfirm==null?"-":yn(Q.crossConfirm);$("qualityNote").textContent=Q.note;
   const lag=d.bondLagDay??d.lagDay;$("bondReversal").textContent=d.bondReversalState||(d.bondReversal===true?"CONFIRMED":"미확정");$("bondPeakDate").textContent=d.bondPeakDate||"-";$("lagDay").textContent=lag==null?"OFF":"D"+lag;
   $("spxLow").textContent=yn(d.spxPostBondLow);$("ndxLow").textContent=yn(d.nasdaqPostBondLow);$("eqStable").textContent=yn(d.equityStabilized);$("addDetail").textContent=A.detail;
   $("fxRisk").textContent=riskName(L.fx);$("jgbRisk").textContent=riskName(L.jgb);$("addVeto").textContent=A.veto?"ON":"OFF";
@@ -202,11 +250,11 @@ function render(date){
   const i=dates.indexOf(date),p=i>0?records[dates[i-1]]:null,PB=p?badge(levels(p).overall)[0]:"없음";
   $("delta").innerHTML=`전일 RISK <b>${PB}</b> → 현재 <b>${B[0]}</b>${p&&d.fxNow!=null&&p.fxNow!=null?` · USD/JPY ${pct((d.fxNow/p.fxNow-1)*100)}`:""}${p&&d.ust10!=null&&p.ust10!=null?` · UST10Y ${bp((d.ust10-p.ust10)*100)}`:""} · ADD <b>${A.text}</b>`;
   const notes=d.dataNotes||{};$("notes").innerHTML=["fx","jgb","ust","policy","equity"].filter(k=>notes[k]).map(k=>`<div><b>${k.toUpperCase()}:</b> ${notes[k]}</div>`).join("")||"메모 없음";
-  const ts=triggerLabel(d);$("headline").textContent=`RISK ${B[0]} · UST ${ts} · ADD ${A.text}. ${A.veto?"FX/JGB 위험으로 추매 관찰신호 VETO 적용.":"위험경보와 추매 관찰창을 분리해 해석."}`;
+  const ts=triggerLabel(d);$("headline").textContent=`RISK ${B[0]} · UST ${ts} · CoAccel ${C.text} · 5% Quality ${Q.label} · ADD ${A.text}. ${A.veto?"FX/JGB 위험으로 추매 관찰신호 VETO 적용.":"위험경보와 추매 관찰창을 분리해 해석."}`;
   renderHistory();
 }
 function renderHistory(){
-  $("count").textContent=dates.length;$("history").innerHTML=dates.slice().reverse().map(dt=>{const d=records[dt],L=levels(d),B=badge(L.overall),A=addDecision(d,L);return `<tr class="click" onclick="render('${dt}')"><td><button>${dt}</button></td><td><span class="badge ${B[1]}">${B[2]} ${B[0]}</span></td><td><span class="badge ${A.cls}">${A.text}</span></td><td class="r">${n(d.fxNow)}</td><td class="r">${pct(d.fxAccel)}</td><td class="r">${d.jgbNow==null?"미확정":n(d.jgbNow,3)+"%"}</td><td class="r">${pct(d.jgbAccel)}</td><td class="r">${d.ust10==null?"미확정":n(d.ust10,3)+"%"}</td><td>${triggerLabel(d)}</td><td>${(d.bondLagDay??d.lagDay)==null?"-":"D"+(d.bondLagDay??d.lagDay)}</td></tr>`}).join("")
+  $("count").textContent=dates.length;$("history").innerHTML=dates.slice().reverse().map(dt=>{const d=records[dt],L=levels(d),B=badge(L.overall),A=addDecision(d,L),C=coAccelSignal(d),Q=breakoutQuality(d,dt);return `<tr class="click" onclick="render('${dt}')"><td><button>${dt}</button></td><td><span class="badge ${B[1]}">${B[2]} ${B[0]}</span></td><td><span class="badge ${A.cls}">${A.text}</span></td><td class="r">${n(d.fxNow)}</td><td class="r">${pct(d.fxAccel)}</td><td class="r">${d.jgbNow==null?"미확정":n(d.jgbNow,3)+"%"}</td><td class="r">${pct(d.jgbAccel)}</td><td><span class="badge ${C.cls}">${C.text}</span></td><td class="r">${d.ust10==null?"미확정":n(d.ust10,3)+"%"}</td><td>${triggerLabel(d)}</td><td><span class="badge ${Q.cls}">${Q.label}</span></td><td>${(d.bondLagDay??d.lagDay)==null?"-":"D"+(d.bondLagDay??d.lagDay)}</td></tr>`}).join("")
 }
 $("date").onchange=e=>render(e.target.value);$("prev").onclick=()=>{let i=dates.indexOf(selected);if(i>0)render(dates[i-1])};$("next").onclick=()=>{let i=dates.indexOf(selected);if(i>=0&&i<dates.length-1)render(dates[i+1])};$("latest").onclick=()=>render(dates[dates.length-1]);
 fetch("history.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(j=>{records=j;dates=Object.keys(records).sort();render(dates[dates.length-1])}).catch(e=>{$("headline").textContent="history.json 로드 실패: "+e;$("dataStatus").textContent="미확정"});
