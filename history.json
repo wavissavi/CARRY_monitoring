@@ -17,41 +17,419 @@
     "policyFails": 0,
     "buybackState": "평가중",
     "fxReaccel": "부분",
-    "thresholds": {"150":{"intraday":0,"close":0,"comment":"미도달"},"152":{"intraday":1,"close":0,"comment":"152.89 장중 이탈 후 회복 이력"},"153":{"intraday":1,"close":0,"comment":"153대 테스트 중"},"155":{"intraday":2,"close":1,"comment":"155 하향 이탈 이력 있음"}}
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달"
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "152.89 장중 이탈 후 회복 이력"
+      },
+      "153": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "153대 테스트 중"
+      },
+      "155": {
+        "intraday": 2,
+        "close": 1,
+        "comment": "155 하향 이탈 이력 있음"
+      }
+    }
   },
   "2026-09-10": {
-    "asof":"2026-09-10","fxNow":153.49,"fx3d":-0.57,"fxrv3":0.6,"fxAccel":-54.9,"jgbNow":2.91,"jgb3d":-0.85,"jgbrv3":1.53,"jgbAccel":-1.1,"coAccel":1,"ust10":4.83,"ust3d":5,"ust30":5.28,"curveStress":1,"policyFails":0,"buybackState":"평가중","fxReaccel":"아니오","dataStatus":"부분 확정",
-    "dataNotes":{"fx":"9/10 오전 도쿄장: USD/JPY 153.49, 당일 저가 152.95. 실시간 시점별 호가 차이는 있을 수 있음.","jgb":"9/10 도쿄장 초반 JGB 10Y 2.910%, 전일 대비 +3bp.","ust":"미 재무부 9/9 공식 par yield: 10Y 4.83%, 30Y 5.28%. 10Y는 9/4 4.78% → 9/8 4.80% → 9/9 4.83%.","policy":"9/10 예정된 10~20Y Treasury buyback 최대 $6B는 오전 10시 KST 기준 아직 실행 전이므로 효과 평가는 보류."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 9/10 저가 152.95로 152 신규 이탈 없음."},"153":{"intraday":2,"close":0,"comment":"9/10 장중 저가 152.95로 153 재이탈 후 오전 중 153대 회복."},"155":{"intraday":2,"close":1,"comment":"기존 155 하향 이탈 이력 유지. 9/10 신규 crossing은 없음."}}
+    "asof": "2026-09-10",
+    "fxNow": 153.49,
+    "fx3d": -0.57,
+    "fxrv3": 0.6,
+    "fxAccel": -54.9,
+    "jgbNow": 2.91,
+    "jgb3d": -0.85,
+    "jgbrv3": 1.53,
+    "jgbAccel": -1.1,
+    "coAccel": 1,
+    "ust10": 4.83,
+    "ust3d": 5,
+    "ust30": 5.28,
+    "curveStress": 1,
+    "policyFails": 0,
+    "buybackState": "평가중",
+    "fxReaccel": "아니오",
+    "dataStatus": "부분 확정",
+    "dataNotes": {
+      "fx": "9/10 오전 도쿄장: USD/JPY 153.49, 당일 저가 152.95. 실시간 시점별 호가 차이는 있을 수 있음.",
+      "jgb": "9/10 도쿄장 초반 JGB 10Y 2.910%, 전일 대비 +3bp.",
+      "ust": "미 재무부 9/9 공식 par yield: 10Y 4.83%, 30Y 5.28%. 10Y는 9/4 4.78% → 9/8 4.80% → 9/9 4.83%.",
+      "policy": "9/10 예정된 10~20Y Treasury buyback 최대 $6B는 오전 10시 KST 기준 아직 실행 전이므로 효과 평가는 보류."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/10 저가 152.95로 152 신규 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "9/10 장중 저가 152.95로 153 재이탈 후 오전 중 153대 회복."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 1,
+        "comment": "기존 155 하향 이탈 이력 유지. 9/10 신규 crossing은 없음."
+      }
+    }
   },
   "2026-09-11": {
-    "asof":"2026-09-11","fxNow":154.615,"fx3d":0.41,"fxrv3":0.62,"fxAccel":3.3,"jgbNow":2.97,"jgb3d":2.77,"jgbrv3":2.19,"jgbAccel":43.3,"coAccel":2,"ust10":4.95,"ust3d":15,"ust30":5.37,"curveStress":2,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"아니오","dataStatus":"부분 확정",
-    "dataNotes":{"fx":"9/11 10:08 KST Reuters: USD/JPY 154.615. 3일/RV3 계산은 9/8 153.99, 9/9 153.54, 9/10 Reuters 154.32와 9/11 154.615를 사용. 9/11 오전 장중 저가는 고신뢰 소스에서 별도 확정하지 못함.","jgb":"9/11 09:56 KST Reuters: JGB 10Y 2.97%(전일 대비 약 +6bp). RV3 계산의 이전 일별 값은 9/8 2.890, 9/9 2.881, 9/10 2.923을 사용.","ust":"미 재무부 9/10 공식 par yield: 10Y 4.95%, 30Y 5.37%. 10Y는 9/8 4.80% → 9/9 4.83% → 9/10 4.95%, 3거래일 +15bp.","policy":"9/10 장기채 buyback은 최대 $6B 계획 대비 시장 완충 효과가 미흡했고, 이후 장기금리가 재상승. 24~48시간 내 채권 변동성 재가속 규칙에 따라 정책 실패 1회 추가. BOJ는 다음 주 25bp 인상 전망이 우세."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 9/11 신규 152 이탈 확인 없음."},"153":{"intraday":2,"close":0,"comment":"기존 이탈 이력 유지. 9/11 10시 부근 154.615로 신규 이탈 없음."},"155":{"intraday":2,"close":2,"comment":"기존 155 하향 이탈 이력 유지. 9/10 뉴욕 종가권 154.32로 종가 이탈 누적 +1. 9/11 오전에는 신규 crossing 없음."}}
+    "asof": "2026-09-11",
+    "fxNow": 154.615,
+    "fx3d": 0.41,
+    "fxrv3": 0.62,
+    "fxAccel": 3.3,
+    "jgbNow": 2.97,
+    "jgb3d": 2.77,
+    "jgbrv3": 2.19,
+    "jgbAccel": 43.3,
+    "coAccel": 2,
+    "ust10": 4.95,
+    "ust3d": 15,
+    "ust30": 5.37,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "부분 확정",
+    "dataNotes": {
+      "fx": "9/11 10:08 KST Reuters: USD/JPY 154.615. 3일/RV3 계산은 9/8 153.99, 9/9 153.54, 9/10 Reuters 154.32와 9/11 154.615를 사용. 9/11 오전 장중 저가는 고신뢰 소스에서 별도 확정하지 못함.",
+      "jgb": "9/11 09:56 KST Reuters: JGB 10Y 2.97%(전일 대비 약 +6bp). RV3 계산의 이전 일별 값은 9/8 2.890, 9/9 2.881, 9/10 2.923을 사용.",
+      "ust": "미 재무부 9/10 공식 par yield: 10Y 4.95%, 30Y 5.37%. 10Y는 9/8 4.80% → 9/9 4.83% → 9/10 4.95%, 3거래일 +15bp.",
+      "policy": "9/10 장기채 buyback은 최대 $6B 계획 대비 시장 완충 효과가 미흡했고, 이후 장기금리가 재상승. 24~48시간 내 채권 변동성 재가속 규칙에 따라 정책 실패 1회 추가. BOJ는 다음 주 25bp 인상 전망이 우세."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/11 신규 152 이탈 확인 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 이탈 이력 유지. 9/11 10시 부근 154.615로 신규 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 2,
+        "comment": "기존 155 하향 이탈 이력 유지. 9/10 뉴욕 종가권 154.32로 종가 이탈 누적 +1. 9/11 오전에는 신규 crossing 없음."
+      }
+    }
   },
   "2026-09-12": {
-    "asof":"2026-09-12","fxNow":153.54,"fx3d":-0.29,"fxrv3":0.86,"fxAccel":38.6,"jgbNow":2.988,"jgb3d":3.36,"jgbrv3":2.56,"jgbAccel":16.9,"coAccel":2,"ust10":4.971,"ust3d":14.1,"ust30":5.358,"curveStress":2,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"부분","dataStatus":"사용자 최신 화면 반영·주말",
-    "dataNotes":{"fx":"사용자 제공 최신 화면을 우선 반영: USD/JPY 153.54, 일간 -0.88(-0.573%). 9/12은 토요일이므로 최신 거래일 값으로 취급. 3일/RV3는 9/8 153.99 → 9/9 153.54 → 9/10 154.42(화면의 일간 변동으로 역산) → 9/11 153.54 기준으로 재계산. 장중 저가는 이번 화면에서 별도 확인되지 않아 기존 이탈 횟수는 추가하지 않음.","jgb":"사용자 제공 최신 화면 우선: JGB 10Y 2.988%(+0.003), 15Y 4.365%(+0.002), 20Y 3.812%(+0.060), 30Y 4.053%(+0.046). 대시보드 핵심값은 10Y 2.988%로 수정.","ust":"사용자 제공 최신 화면 우선: UST 10Y 4.971%(+0.027), 20Y 5.389%(+0.009), 30Y 5.358%(-0.003). 기존 공식 일일 Treasury 값이 현재 시장 화면보다 지연된 것으로 판단해 최신 화면을 우선 사용. 10Y 3거래일 변화는 9/9 4.83% → 최신 4.971% 기준 +14.1bp로 재계산, 5%까지 거리는 2.9bp.","policy":"정책 관련 정성 판단은 변경 없음. 9/10 장기채 buyback 이후에도 장기금리 고점권이 지속되어 기존 정책 완충 실패 누적 1회를 유지."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 신규 152 이탈 확인 없음."},"153":{"intraday":2,"close":0,"comment":"최신 화면 153.54. 신규 153 하향 이탈은 이번 화면만으로 확인되지 않음."},"155":{"intraday":2,"close":3,"comment":"기존 155 하향 이탈 이력 유지. 최신 USD/JPY 153.54로 155 아래 상태 지속."}}
+    "asof": "2026-09-12",
+    "fxNow": 153.54,
+    "fx3d": -0.29,
+    "fxrv3": 0.86,
+    "fxAccel": 38.6,
+    "jgbNow": 2.988,
+    "jgb3d": 3.36,
+    "jgbrv3": 2.56,
+    "jgbAccel": 16.9,
+    "coAccel": 2,
+    "ust10": 4.971,
+    "ust3d": 14.1,
+    "ust30": 5.358,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "부분",
+    "dataStatus": "사용자 최신 화면 반영·주말",
+    "dataNotes": {
+      "fx": "사용자 제공 최신 화면을 우선 반영: USD/JPY 153.54, 일간 -0.88(-0.573%). 9/12은 토요일이므로 최신 거래일 값으로 취급. 3일/RV3는 9/8 153.99 → 9/9 153.54 → 9/10 154.42(화면의 일간 변동으로 역산) → 9/11 153.54 기준으로 재계산. 장중 저가는 이번 화면에서 별도 확인되지 않아 기존 이탈 횟수는 추가하지 않음.",
+      "jgb": "사용자 제공 최신 화면 우선: JGB 10Y 2.988%(+0.003), 15Y 4.365%(+0.002), 20Y 3.812%(+0.060), 30Y 4.053%(+0.046). 대시보드 핵심값은 10Y 2.988%로 수정.",
+      "ust": "사용자 제공 최신 화면 우선: UST 10Y 4.971%(+0.027), 20Y 5.389%(+0.009), 30Y 5.358%(-0.003). 기존 공식 일일 Treasury 값이 현재 시장 화면보다 지연된 것으로 판단해 최신 화면을 우선 사용. 10Y 3거래일 변화는 9/9 4.83% → 최신 4.971% 기준 +14.1bp로 재계산, 5%까지 거리는 2.9bp.",
+      "policy": "정책 관련 정성 판단은 변경 없음. 9/10 장기채 buyback 이후에도 장기금리 고점권이 지속되어 기존 정책 완충 실패 누적 1회를 유지."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 신규 152 이탈 확인 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "최신 화면 153.54. 신규 153 하향 이탈은 이번 화면만으로 확인되지 않음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 3,
+        "comment": "기존 155 하향 이탈 이력 유지. 최신 USD/JPY 153.54로 155 아래 상태 지속."
+      }
+    }
   },
   "2026-09-13": {
-    "asof":"2026-09-13","fxNow":153.54,"fx3d":-0.29,"fxrv3":0.86,"fxAccel":38.6,"jgbNow":2.988,"jgb3d":3.36,"jgbrv3":2.56,"jgbAccel":16.9,"coAccel":2,"ust10":4.971,"ust3d":14.1,"ust30":5.358,"curveStress":2,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"부분","dataStatus":"주말·최신거래일 9/11 기준","ust5Intraday":0,"ust5Close":0,"ust53Intraday":0,"ust53Close":0,"ust30AccelConfirm":false,"ustDriver":"MIXED","ustDriverNote":"9/11 기준 10Y 장중 고점 4.9915%. 5% 미돌파. 고유가·CPI와 장기물 공급·term premium 부담이 혼재.","bondReversalState":"OFF","bondPeakDate":null,"bondLagDay":null,"spxPostBondLow":null,"nasdaqPostBondLow":null,"equityStabilized":null,
-    "dataNotes":{"fx":"9/13 일요일. 최신 거래일 9/11 USD/JPY 153.54. 주말 신규 임계 이탈 카운트 없음.","jgb":"9/13 휴장. 최신 거래일 9/11 JGB10Y 2.988% 유지. Investing 역사값 2.980%와 소스/시점 차이.","ust":"9/13 휴장. 최신 거래일 9/11 UST10Y 4.971%, UST30Y 5.358%. Reuters 장중 고점 4.9915%로 T1 미충족. 3D +14.1bp.","policy":"9/10 buyback 이후 장기금리 고점권 지속. 정책 완충 실패 누적 1회 유지. BOJ 다음 회의 25bp 인상 전망 우세.","equity":"9/11 S&P500 7,656.98(+0.86%), Nasdaq Composite 26,333.04(+0.96%). Bond Reversal D0 미충족으로 Lag OFF."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달. 주말 신규 이탈 없음."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 주말 신규 이탈 없음."},"153":{"intraday":2,"close":0,"comment":"기존 누적 유지. 주말 신규 세션 카운트 없음."},"155":{"intraday":2,"close":3,"comment":"기존 누적 유지. 주말 신규 세션 카운트 없음."}}
+    "asof": "2026-09-13",
+    "fxNow": 153.54,
+    "fx3d": -0.29,
+    "fxrv3": 0.86,
+    "fxAccel": 38.6,
+    "jgbNow": 2.988,
+    "jgb3d": 3.36,
+    "jgbrv3": 2.56,
+    "jgbAccel": 16.9,
+    "coAccel": 2,
+    "ust10": 4.971,
+    "ust3d": 14.1,
+    "ust30": 5.358,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "부분",
+    "dataStatus": "주말·최신거래일 9/11 기준",
+    "ust5Intraday": 0,
+    "ust5Close": 0,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": false,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "9/11 기준 10Y 장중 고점 4.9915%. 5% 미돌파. 고유가·CPI와 장기물 공급·term premium 부담이 혼재.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "9/13 일요일. 최신 거래일 9/11 USD/JPY 153.54. 주말 신규 임계 이탈 카운트 없음.",
+      "jgb": "9/13 휴장. 최신 거래일 9/11 JGB10Y 2.988% 유지. Investing 역사값 2.980%와 소스/시점 차이.",
+      "ust": "9/13 휴장. 최신 거래일 9/11 UST10Y 4.971%, UST30Y 5.358%. Reuters 장중 고점 4.9915%로 T1 미충족. 3D +14.1bp.",
+      "policy": "9/10 buyback 이후 장기금리 고점권 지속. 정책 완충 실패 누적 1회 유지. BOJ 다음 회의 25bp 인상 전망 우세.",
+      "equity": "9/11 S&P500 7,656.98(+0.86%), Nasdaq Composite 26,333.04(+0.96%). Bond Reversal D0 미충족으로 Lag OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 주말 신규 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 주말 신규 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 주말 신규 세션 카운트 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 3,
+        "comment": "기존 누적 유지. 주말 신규 세션 카운트 없음."
+      }
+    }
   },
   "2026-09-14": {
-    "asof":"2026-09-14","fxNow":153.49,"fx3d":-0.1,"fxrv3":1.04,"fxAccel":22.8,"jgbNow":2.98,"jgb3d":3.44,"jgbrv3":2.75,"jgbAccel":-0.4,"coAccel":1,"ust10":4.975,"ust3d":13.8,"ust30":5.384,"curveStress":2,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"아니오","dataStatus":"부분 확정·10시 기준 근접·FX RV3 백필","ust5Intraday":0,"ust5Close":0,"ust53Intraday":0,"ust53Close":0,"ust30AccelConfirm":true,"ustDriver":"MIXED","ustDriverNote":"9/11 미국장 종가 기준 10Y 4.975%, 장중 고점 4.991%로 5% 직전. 30Y 5.384%까지 상승. 고유가·Fed 인상 기대와 재정/공급·term premium 부담이 혼재.","bondReversalState":"OFF","bondPeakDate":null,"bondLagDay":null,"spxPostBondLow":null,"nasdaqPostBondLow":null,"equityStabilized":null,
-    "dataNotes":{"fx":"9/14 Reuters 10:43 KST 보도에서 USD/JPY 153.49. Bloomberg Linea 10:30 KST 부근 일중 범위 153.39~153.79. 정확히 10:00 체결값은 고신뢰 공개소스에서 확정하지 못해 '10시 기준 근접'으로 표시. FX RV3는 저장된 10시 근접 시계열 9/9 153.36→9/10 153.49→9/11 154.615→9/14 153.49의 최근 3개 일변화율로 1.04%를 계산. 직전 비교창 9/8 153.99→9/9 153.36→9/10 153.49→9/11 154.615의 RV3 약 0.844% 대비 가속률 +22.8%. 152/150 신규 이탈 없음. 최근 5거래일 coAccel은 FX와 JGB 가속률이 동시에 양수인 세션만 카운트하고 주말 중복은 제외해 1회.","jgb":"Reuters 11:46 KST 보도: JGB10Y 2.980%, 전일 대비 -0.5bp. Investing 일중 범위 2.984~3.005/종가 2.999와 시점 차이가 있어 10시 기준에는 Reuters 장중값 2.980%를 우선하되 기준시각 차이를 메모.","ust":"9/14 10:00 KST 시점 미국 현물시장은 아직 9/14 정규장이 열리기 전이므로 9/11 미국장 최신 종가를 사용. Investing 9/11 10Y 4.975%(고가 4.991%), Barron's/Tradeweb 30Y 5.384%. 9/9 4.837%→9/11 4.975%로 3거래일 +13.8bp. 5%까지 2.5bp. 이후 9/14 미국장에서 5%를 돌파했다는 보도는 10시 스냅샷 이후 사건이라 오늘 10시 레코드에는 미반영.","policy":"9/10 최대 $6B 장기채 buyback 이후에도 10Y/30Y가 고점권을 유지해 정책 완충 실패 누적 1회 유지. Fed/BOJ 회의를 앞두고 양국 추가 긴축 기대가 높음.","equity":"Bond Reversal D0 조건(최근 shock 고점 대비 약 -10bp 및 가속 중단)이 충족되지 않아 Lag OFF/ADD OFF."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달. 9/14 오전 신규 이탈 없음."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 9/14 오전 153.39 이상으로 신규 152 이탈 없음."},"153":{"intraday":2,"close":0,"comment":"기존 누적 유지. 9/14 오전 저가 약 153.39로 신규 153 이탈 없음."},"155":{"intraday":2,"close":3,"comment":"155 아래 상태 지속. 9/14 오전 신규 crossing 세션은 추가하지 않음."}}
+    "asof": "2026-09-14",
+    "fxNow": 153.49,
+    "fx3d": -0.1,
+    "fxrv3": 1.04,
+    "fxAccel": 22.8,
+    "jgbNow": 2.98,
+    "jgb3d": 3.44,
+    "jgbrv3": 2.75,
+    "jgbAccel": -0.4,
+    "coAccel": 1,
+    "ust10": 4.975,
+    "ust3d": 13.8,
+    "ust30": 5.384,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "부분 확정·10시 기준 근접·FX RV3 백필",
+    "ust5Intraday": 0,
+    "ust5Close": 0,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "9/11 미국장 종가 기준 10Y 4.975%, 장중 고점 4.991%로 5% 직전. 30Y 5.384%까지 상승. 고유가·Fed 인상 기대와 재정/공급·term premium 부담이 혼재.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "9/14 Reuters 10:43 KST 보도에서 USD/JPY 153.49. Bloomberg Linea 10:30 KST 부근 일중 범위 153.39~153.79. 정확히 10:00 체결값은 고신뢰 공개소스에서 확정하지 못해 '10시 기준 근접'으로 표시. FX RV3는 저장된 10시 근접 시계열 9/9 153.36→9/10 153.49→9/11 154.615→9/14 153.49의 최근 3개 일변화율로 1.04%를 계산. 직전 비교창 9/8 153.99→9/9 153.36→9/10 153.49→9/11 154.615의 RV3 약 0.844% 대비 가속률 +22.8%. 152/150 신규 이탈 없음. 최근 5거래일 coAccel은 FX와 JGB 가속률이 동시에 양수인 세션만 카운트하고 주말 중복은 제외해 1회.",
+      "jgb": "Reuters 11:46 KST 보도: JGB10Y 2.980%, 전일 대비 -0.5bp. Investing 일중 범위 2.984~3.005/종가 2.999와 시점 차이가 있어 10시 기준에는 Reuters 장중값 2.980%를 우선하되 기준시각 차이를 메모.",
+      "ust": "9/14 10:00 KST 시점 미국 현물시장은 아직 9/14 정규장이 열리기 전이므로 9/11 미국장 최신 종가를 사용. Investing 9/11 10Y 4.975%(고가 4.991%), Barron's/Tradeweb 30Y 5.384%. 9/9 4.837%→9/11 4.975%로 3거래일 +13.8bp. 5%까지 2.5bp. 이후 9/14 미국장에서 5%를 돌파했다는 보도는 10시 스냅샷 이후 사건이라 오늘 10시 레코드에는 미반영.",
+      "policy": "9/10 최대 $6B 장기채 buyback 이후에도 10Y/30Y가 고점권을 유지해 정책 완충 실패 누적 1회 유지. Fed/BOJ 회의를 앞두고 양국 추가 긴축 기대가 높음.",
+      "equity": "Bond Reversal D0 조건(최근 shock 고점 대비 약 -10bp 및 가속 중단)이 충족되지 않아 Lag OFF/ADD OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 9/14 오전 신규 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/14 오전 153.39 이상으로 신규 152 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 9/14 오전 저가 약 153.39로 신규 153 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 3,
+        "comment": "155 아래 상태 지속. 9/14 오전 신규 crossing 세션은 추가하지 않음."
+      }
+    }
   },
   "2026-09-15": {
-    "asof":"2026-09-15","fxNow":154.48,"fx3d":0.64,"fxrv3":1.22,"fxAccel":17.5,"jgbNow":3.002,"jgb3d":2.70,"jgbrv3":1.80,"jgbAccel":-18.0,"coAccel":1,"ust10":4.988,"ust3d":5.4,"ust30":5.331,"curveStress":2,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"미확정","dataStatus":"부분 확정·CNBC 10:11 최신값 반영·RV3/UST3D 재계산","ust5Intraday":1,"ust5Close":0,"ust53Intraday":0,"ust53Close":0,"ust30AccelConfirm":false,"ustDriver":"MIXED","ustDriverNote":"9/14 미국장에서 10Y가 장중 5.012%까지 올라 5.00% T1을 처음 충족. 9/15 10:11 KST CNBC 화면에서는 4.988%로 5% 아래로 되밀림. 유가·인플레이션/Fed 긴축 기대와 국채·회사채 공급, 재정·term premium 부담이 혼재.","bondReversalState":"OFF","bondPeakDate":null,"bondLagDay":null,"spxPostBondLow":null,"nasdaqPostBondLow":null,"equityStabilized":null,
-    "dataNotes":{"fx":"9/15 오전 WSJ early trading USD/JPY 154.48, 직전 시장 종가 154.22. 정확한 10:00 체결값은 공개 고신뢰 소스에서 확정하지 못함. FX 3D/RV3는 저장된 10시 근접 스냅샷(9/10 153.49→9/11 154.615→9/14 153.49→9/15 154.48)으로 계산. 이전 RV3는 9/9 153.36→9/10 153.49→9/11 154.615→9/14 153.49 기준 약 1.04%, 현재 RV3 약 1.22%로 가속률 +17.5%. 최근 5거래일 coAccel은 FX와 JGB 가속률이 동시에 양수인 세션만 카운트하고 주말 중복은 제외해 1회. 153/152/150 신규 하향 이탈 확인 없음.","jgb":"사용자 제공 CNBC 9/15 10:11 KST 화면의 JPN 10-YR 3.002%(+0.014)를 최신 본값으로 반영. 기존 계산에 사용한 연속 시계열 9/9 2.881→9/10 2.923→9/11 2.970→9/14 2.980→9/15 3.002를 이어 계산하면 3D +2.70%, JGB RV3 1.80%, 이전 RV3 2.20% 대비 가속률 -18.0%. 앞선 WSJ 3.000%와는 기준시각 차이.","ust":"현재값은 사용자 제공 CNBC 9/15 10:11 KST 화면의 US 10-YR 4.988%(+0.027)를 유지. UST 3D는 장중 4.988%를 섞지 않고 Investing 일별 종가 계열 9/10 4.944% → 9/11 4.975% → 9/14 4.998%를 사용해 +5.4bp로 계산. 9/14 장중 고점 5.012%로 T1 장중 돌파는 확정 유지. 따라서 현재 수준은 5% 아래지만 직전 3거래일 종가 기준 금리 상승폭은 +5.4bp이며 T2의 +15bp 가속 조건에는 미달.","policy":"9/10 최대 $6B 장기채 buyback 이후 10Y가 장중 5%를 돌파했으나 동일 정책 이벤트의 실패 카운트는 기존 1회를 유지. Reuters poll 기준 Fed 9/15~16 회의에서 25bp 인상 전망이 85%, BOJ 9/18 25bp 인상 전망이 우세. 신규 정책 이벤트 후 24~48시간 실패는 아직 추가하지 않음.","equity":"9/14 S&P500 7,619.94(-0.48%), Nasdaq Composite 26,186.41(-0.56%). 그러나 UST10Y가 shock 고점 대비 약 -10bp 반전하지 않아 Bond Reversal D0 미충족, Lag OFF/ADD OFF."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달. 신규 이탈 없음."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 9/15 오전 신규 152 이탈 없음."},"153":{"intraday":2,"close":0,"comment":"기존 누적 유지. 9/14~9/15 확인 범위에서 신규 153 하향 이탈 없음."},"155":{"intraday":2,"close":4,"comment":"155 아래 상태 지속. 9/14 종가 이탈 1회 추가. 9/14~9/15 확인 범위의 고가도 155 미만으로 신규 하향 crossing은 없어 장중 crossing 누적은 유지."}}
+    "asof": "2026-09-15",
+    "fxNow": 154.48,
+    "fx3d": 0.64,
+    "fxrv3": 1.22,
+    "fxAccel": 17.5,
+    "jgbNow": 3.002,
+    "jgb3d": 2.7,
+    "jgbrv3": 1.8,
+    "jgbAccel": -18,
+    "coAccel": 1,
+    "ust10": 4.988,
+    "ust3d": 5.4,
+    "ust30": 5.331,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "미확정",
+    "dataStatus": "부분 확정·CNBC 10:11 최신값 반영·RV3/UST3D 재계산",
+    "ust5Intraday": 1,
+    "ust5Close": 0,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": false,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "9/14 미국장에서 10Y가 장중 5.012%까지 올라 5.00% T1을 처음 충족. 9/15 10:11 KST CNBC 화면에서는 4.988%로 5% 아래로 되밀림. 유가·인플레이션/Fed 긴축 기대와 국채·회사채 공급, 재정·term premium 부담이 혼재.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "9/15 오전 WSJ early trading USD/JPY 154.48, 직전 시장 종가 154.22. 정확한 10:00 체결값은 공개 고신뢰 소스에서 확정하지 못함. FX 3D/RV3는 저장된 10시 근접 스냅샷(9/10 153.49→9/11 154.615→9/14 153.49→9/15 154.48)으로 계산. 이전 RV3는 9/9 153.36→9/10 153.49→9/11 154.615→9/14 153.49 기준 약 1.04%, 현재 RV3 약 1.22%로 가속률 +17.5%. 최근 5거래일 coAccel은 FX와 JGB 가속률이 동시에 양수인 세션만 카운트하고 주말 중복은 제외해 1회. 153/152/150 신규 하향 이탈 확인 없음.",
+      "jgb": "사용자 제공 CNBC 9/15 10:11 KST 화면의 JPN 10-YR 3.002%(+0.014)를 최신 본값으로 반영. 기존 계산에 사용한 연속 시계열 9/9 2.881→9/10 2.923→9/11 2.970→9/14 2.980→9/15 3.002를 이어 계산하면 3D +2.70%, JGB RV3 1.80%, 이전 RV3 2.20% 대비 가속률 -18.0%. 앞선 WSJ 3.000%와는 기준시각 차이.",
+      "ust": "현재값은 사용자 제공 CNBC 9/15 10:11 KST 화면의 US 10-YR 4.988%(+0.027)를 유지. UST 3D는 장중 4.988%를 섞지 않고 Investing 일별 종가 계열 9/10 4.944% → 9/11 4.975% → 9/14 4.998%를 사용해 +5.4bp로 계산. 9/14 장중 고점 5.012%로 T1 장중 돌파는 확정 유지. 따라서 현재 수준은 5% 아래지만 직전 3거래일 종가 기준 금리 상승폭은 +5.4bp이며 T2의 +15bp 가속 조건에는 미달.",
+      "policy": "9/10 최대 $6B 장기채 buyback 이후 10Y가 장중 5%를 돌파했으나 동일 정책 이벤트의 실패 카운트는 기존 1회를 유지. Reuters poll 기준 Fed 9/15~16 회의에서 25bp 인상 전망이 85%, BOJ 9/18 25bp 인상 전망이 우세. 신규 정책 이벤트 후 24~48시간 실패는 아직 추가하지 않음.",
+      "equity": "9/14 S&P500 7,619.94(-0.48%), Nasdaq Composite 26,186.41(-0.56%). 그러나 UST10Y가 shock 고점 대비 약 -10bp 반전하지 않아 Bond Reversal D0 미충족, Lag OFF/ADD OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 신규 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/15 오전 신규 152 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 9/14~9/15 확인 범위에서 신규 153 하향 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "155 아래 상태 지속. 9/14 종가 이탈 1회 추가. 9/14~9/15 확인 범위의 고가도 155 미만으로 신규 하향 crossing은 없어 장중 crossing 누적은 유지."
+      }
+    }
   },
   "2026-09-16": {
-    "asof":"2026-09-16","fxNow":155.19,"fx3d":null,"fxrv3":null,"fxAccel":null,"jgbNow":3.036,"jgb3d":null,"jgbrv3":null,"jgbAccel":null,"coAccel":1,"ust10":5.032,"ust3d":5.7,"ust30":5.401,"curveStress":2,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"미확정","dataStatus":"부분 확정·9/16 오전 최신 공개값/직전 완료세션 혼합 금지","ust5Intraday":2,"ust5Close":1,"ust53Intraday":0,"ust53Close":0,"ust30AccelConfirm":true,"ustDriver":"MIXED","ustDriverNote":"9/15 미국장에서 UST10Y는 5.041%까지 상승 후 5.004% 부근으로 마감했다는 Reuters 보도와 Investing 일별 종가 5.032%가 존재해 종가 소스 차이가 있음. 공통적으로 5% 상단 유지와 30Y 5.401% 장중 고점은 확인된다. 유가 급등·Fed 인상 기대가 주동력이지만 20Y 입찰 수요 부진 및 재정/공급 부담도 겹쳐 MIXED로 분류.","bondReversalState":"OFF","bondPeakDate":null,"bondLagDay":null,"spxPostBondLow":7585.73,"nasdaqPostBondLow":25981.57,"equityStabilized":false,
-    "dataNotes":{"fx":"9/16 Investing 기술 페이지 08:04 KST 환산 시점 USD/JPY 155.19. 정확한 10:00 KST 체결값과 당일 장중 저가는 고신뢰 공개소스에서 확정하지 못함. 전일 저장값과 오늘 공개값의 기준시각/소스가 달라 FX 3D·RV3·가속률은 임의 계산하지 않고 null 처리. 152/150 신규 하향 이탈 증거 없음.","jgb":"9/15 글로벌 채권 매도 국면에서 JGB10Y는 Reuters/FT 계열 보도 기준 장중 3.025~3.036%로 30년 고점. 9/16 10:00 KST의 동시점 신뢰 가능한 현물값을 확보하지 못해 최신 확인값 3.036%를 표시하되 JGB 3D/RV3/가속률은 null 처리.","ust":"Investing 일별 종가 계열은 9/11 4.975%→9/14 4.961%→9/15 5.032%로 3거래일 변화 +5.7bp. 9/15 고가 5.047%. Reuters는 10Y가 5.041% 고점 후 5.004% 부근이라고 보도해 종가 수치에는 소스 차이가 있으나 5% 종가 상단은 공통 확인. T1 유지, +15bp T2는 미충족. 30Y는 5.401% 장중 고점으로 같은 방향 가속 확인.","policy":"9/15 Bessent는 최근 Treasury auction이 매우 성공적이었다고 평가했으나, 10Y가 5%를 넘고 20Y 입찰 bid-to-cover가 최근 평균보다 낮아 시장 완충 효과는 제한적. 기존 정책 실패 누적 1회 유지. Fed 결정은 9/16 미국시간 예정이라 오전 10시 KST에는 미발표.","equity":"9/15 S&P500 7,585.73(-0.45%), Nasdaq Composite 25,981.57(-0.78%). 금리는 최근 shock 고점 대비 -10bp 반전하지 않았으므로 Bond Reversal D0 미충족, Lag OFF/ADD OFF. 주가지수 신저가는 참고 기록만 하고 ADD 조건에는 사용하지 않음."},
-    "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달. 9/16 오전 신규 하향 이탈 확인 없음."},"152":{"intraday":1,"close":0,"comment":"기존 152.89 장중 이탈 이력 유지. 9/16 오전 신규 152 하향 이탈 확인 없음."},"153":{"intraday":2,"close":0,"comment":"기존 누적 유지. 9/16 오전 신규 153 하향 이탈 확인 없음."},"155":{"intraday":2,"close":4,"comment":"9/16 오전 USD/JPY가 155.19로 155 위. 신규 하향 crossing은 확인되지 않아 기존 누적 유지."}}
+    "asof": "2026-09-16",
+    "fxNow": 155.19,
+    "fx3d": 0.37,
+    "fxrv3": 1.08,
+    "fxAccel": -11.8,
+    "jgbNow": 3.03,
+    "jgb3d": 2.02,
+    "jgbrv3": 1.24,
+    "jgbAccel": -31.3,
+    "coAccel": 1,
+    "ust10": 5.032,
+    "ust3d": 5.7,
+    "ust30": 5.401,
+    "curveStress": 2,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "최신 동질계열 재구성·FX/JGB 파생값 확정",
+    "ust5Intraday": 2,
+    "ust5Close": 1,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "9/15 미국장에서 UST10Y는 5.041%까지 상승 후 5.004% 부근으로 마감했다는 Reuters 보도와 Investing 일별 종가 5.032%가 존재해 종가 소스 차이가 있음. 공통적으로 5% 상단 유지와 30Y 5.401% 장중 고점은 확인된다. 유가 급등·Fed 인상 기대가 주동력이지만 20Y 입찰 수요 부진 및 재정/공급 부담도 겹쳐 MIXED로 분류.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": 7585.73,
+    "nasdaqPostBondLow": 25981.57,
+    "equityStabilized": false,
+    "dataNotes": {
+      "fx": "9/16 오전 최신 확인 USD/JPY 155.19를 본값으로 유지. 저장된 동일 10시 근접 계열 9/11 154.615→9/14 153.49→9/15 154.48→9/16 155.19로 재구성: 3D +0.37%, 최근 3개 일변화율 -0.728%, +0.645%, +0.460%, FX RV3 1.08%. 전일 RV3 1.22% 대비 가속률 -11.8%로 재가속 아님. Wise는 9/16 주간 고가 155.44를 확인하므로 155 위 회복은 교차확인되나 이는 현재값으로 사용하지 않음. 152/150 신규 하향 이탈 없음.",
+      "jgb": "Trading Economics 9/16 최신 JGB10Y 3.03%를 본값으로 사용(9/15 대비 약 -1bp). 기존 연속 시계열 9/11 2.970→9/14 2.980→9/15 3.002→9/16 3.030으로 재구성: 3D +2.02%, 최근 3개 일변화율 +0.337%, +0.738%, +0.933%, JGB RV3 1.24%. 전일 RV3 1.80% 대비 가속률 -31.3%. 따라서 오늘 FX와 JGB 모두 RV3 가속은 음(-)이며 신규 동시가속은 없음.",
+      "ust": "Investing 일별 종가 계열은 9/11 4.975%→9/14 4.961%→9/15 5.032%로 3거래일 변화 +5.7bp. 9/15 고가 5.047%. Reuters는 10Y가 5.041% 고점 후 5.004% 부근이라고 보도해 종가 수치에는 소스 차이가 있으나 5% 종가 상단은 공통 확인. T1 유지, +15bp T2는 미충족. 30Y는 5.401% 장중 고점으로 같은 방향 가속 확인.",
+      "policy": "9/15 Bessent는 최근 Treasury auction이 매우 성공적이었다고 평가했으나, 10Y가 5%를 넘고 20Y 입찰 bid-to-cover가 최근 평균보다 낮아 시장 완충 효과는 제한적. 기존 정책 실패 누적 1회 유지. Fed 결정은 9/16 미국시간 예정이라 오전 10시 KST에는 미발표.",
+      "equity": "9/15 S&P500 7,585.73(-0.45%), Nasdaq Composite 25,981.57(-0.78%). 금리는 최근 shock 고점 대비 -10bp 반전하지 않았으므로 Bond Reversal D0 미충족, Lag OFF/ADD OFF. 주가지수 신저가는 참고 기록만 하고 ADD 조건에는 사용하지 않음."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 9/16 오전 신규 하향 이탈 확인 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 152.89 장중 이탈 이력 유지. 9/16 오전 신규 152 하향 이탈 확인 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 9/16 오전 신규 153 하향 이탈 확인 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "9/16 오전 USD/JPY가 155.19로 155 위. 신규 하향 crossing은 확인되지 않아 기존 누적 유지."
+      }
+    }
   }
 }
