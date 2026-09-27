@@ -93,5 +93,67 @@
     "asof":"2026-09-26","fxNow":157.22,"fx3d":-0.08,"fxrv3":0.53,"fxAccel":-38.4,"jgbNow":3.121,"jgb3d":4.59,"jgbrv3":3.40,"jgbAccel":-4.0,"coAccel":2,"ust10":5.158,"ust3d":19.6,"ust30":5.4883,"curveStress":3,"policyFails":1,"buybackState":"효과 미흡","fxReaccel":"아니오","dataStatus":"9/26 토요일·9/25 뉴욕/도쿄 최신 마감 및 Reuters 확인값 기반","ust5Intraday":5,"ust5Close":3,"ust53Intraday":0,"ust53Close":0,"ust30AccelConfirm":true,"ustDriver":"MIXED","ustDriverNote":"9/25 장중 UST10Y 5.2297%, 30Y 5.5319%까지 급등한 뒤 유가 하락과 미·이란 휴전 기대에 10Y 5.158%로 일부 되돌림. 그러나 추가 Fed 인상 기대와 인플레이션·재정/공급 부담이 남아 MIXED.","bondReversalState":"OFF","bondPeakDate":null,"bondLagDay":null,"spxPostBondLow":null,"nasdaqPostBondLow":null,"equityStabilized":null,
     "dataNotes":{"fx":"9/25 뉴욕 마감 Reuters USD/JPY 157.22(-1.01%). 9/22 157.35→9/23 157.47→9/24 157.92→9/25 157.22의 연속계열로 3D -0.08%, RV3 약 0.53%. 152/150 신규 하향 이탈 없음.","jgb":"Reuters 9/25 JGB10Y 장중 3.121%로 1996년 이후 최고. 9/22 2.984→9/23 2.984→9/24 Reuters 3.075→9/25 3.121의 연속계열 기준 3D +4.59%, RV3 약 3.40%.","ust":"Reuters 9/25 뉴욕 마감 UST10Y 5.158%, 장중 5.2297%; UST30Y 5.4883%, 장중 5.5319%. 9/22 저장 4.962% 대비 3D +19.6bp로 T2. 장중에는 5.3% 미도달, 30Y는 5.5% extreme band를 장중 돌파했으나 10Y 5.3% stress band는 미도달.","policy":"BOJ 인상 이후에도 JGB 장기금리 스트레스가 지속되고 엔화는 9/24 약세 후 9/25 반등. 일본 재무상은 미·일 공조 원칙이 유지된다고 언급. 정책완충 실패 누적은 1회 유지.","equity":"9/25 S&P500 +0.51%, Nasdaq +0.48%. UST10Y가 장중 고점 대비 약 -7.2bp 되돌렸지만 Bond Reversal D0 기본조건인 약 -10bp에 미달해 OFF/ADD OFF."},
     "thresholds":{"150":{"intraday":0,"close":0,"comment":"미도달. 신규 하향 이탈 없음."},"152":{"intraday":1,"close":0,"comment":"기존 누적 유지. 9/25 신규 하향 이탈 없음."},"153":{"intraday":2,"close":0,"comment":"기존 누적 유지. 신규 하향 이탈 없음."},"155":{"intraday":2,"close":4,"comment":"USD/JPY 157.22로 155 위. 신규 하향 crossing 없음."}}
+  },
+  "2026-09-27": {
+    "asof": "2026-09-27",
+    "fxNow": 157.22,
+    "fx3d": -0.08,
+    "fxrv3": 0.53,
+    "fxAccel": -38.4,
+    "jgbNow": 3.121,
+    "jgb3d": 4.59,
+    "jgbrv3": 3.4,
+    "jgbAccel": -4,
+    "coAccel": 2,
+    "ust10": 5.158,
+    "ust3d": 19.6,
+    "ust30": 5.4883,
+    "curveStress": 3,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "9/27 일요일·9/25 뉴욕/도쿄 최신 거래값 유지·신규 세션 없음",
+    "ust5Intraday": 5,
+    "ust5Close": 3,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "9/25 장중 UST10Y 5.2297%, 30Y 5.5319%까지 급등한 뒤 유가 하락과 미·이란 휴전 기대에 10Y 5.158%로 일부 되돌림. 그러나 추가 Fed 인상 기대와 인플레이션·재정/공급 부담이 남아 MIXED.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "9/27 일요일로 신규 FX 세션 없음. 9/25 뉴욕 마감 Reuters USD/JPY 157.22(-1.01%)와 9/22 157.35→9/23 157.47→9/24 157.92→9/25 157.22 연속계열의 3D -0.08%, RV3 약 0.53%를 유지. 휴장일을 새 관측치로 복제하지 않으며 152/150 신규 하향 이탈 없음.",
+      "jgb": "9/27 일요일로 일본 채권시장 휴장. Reuters 9/25 장중 JGB10Y 3.121% 스트레스 스냅샷과 기존 동질계열 파생값(3D +4.59%, RV3 약 3.40%)을 유지. 공개 종가계열은 약 3.07%로 시점 차이가 있어 장중값과 종가값을 혼합 재계산하지 않음.",
+      "ust": "9/27 일요일로 미국 채권시장 휴장. Reuters 9/25 뉴욕 마감 UST10Y 5.158%(장중 5.2297%), UST30Y 5.4883%(장중 5.5319%)를 유지. 9/22 저장값 대비 3D +19.6bp로 T2, 5% 상단 15.8bp. 장중 되돌림은 고점 대비 -7.2bp로 Bond Reversal 약 -10bp 기준 미달.",
+      "policy": "주말 신규 정책 이벤트를 핵심엔진에 추가하지 않음. BOJ 인상 뒤 JGB 장기금리 스트레스와 일본 당국의 FX 개입 경계를 유지하며 정책완충 실패 누적 1회 유지.",
+      "equity": "9/25 S&P500 +0.51%, Nasdaq +0.48%. UST10Y가 장중 고점 대비 약 -7.2bp만 되돌려 Bond Reversal OFF. 주식이 아직 본격 가격조정을 반영하지 않은 divergence 관찰 구간이며 ADD OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 주말 신규 세션 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 주말 신규 세션 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 주말 신규 세션 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "USD/JPY 최신값 157.22로 155 위. 주말 신규 crossing 없음."
+      }
+    }
   }
 }
