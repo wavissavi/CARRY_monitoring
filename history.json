@@ -218,5 +218,67 @@
       }
     }
   }
-
+,
+  "2026-09-29": {
+    "asof": "2026-09-29",
+    "fxNow": 157.35,
+    "fx3d": -0.95,
+    "fxrv3": 1,
+    "fxAccel": -6.9,
+    "jgbNow": 3.092,
+    "jgb3d": 0.36,
+    "jgbrv3": 0.84,
+    "jgbAccel": -74.9,
+    "coAccel": 1,
+    "ust10": 5.235,
+    "ust3d": 4.2,
+    "ust30": 5.549,
+    "curveStress": 3,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "9/29 10:00 KST 전후 최신 공개시장값·UST10Y 소스 시점차 5.235~5.241%",
+    "ust5Intraday": 7,
+    "ust5Close": 4,
+    "ust53Intraday": 0,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "FED/INFLATION",
+    "ustDriverNote": "9/28 미국장에서 유가·인플레이션 우려와 추가 Fed 인상 기대가 장기금리를 재차 밀어 올려 UST10Y가 5.23%대, 30Y가 5.55% 부근으로 상승. Reuters는 유가와 Fed 경로 재평가를 핵심 원인으로 지목.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "Investing 동질계열 9/24 158.86→9/25 157.28→9/28 157.36→9/29 10시 전후 157.35. 3D -0.95%, RV3 약 1.00%, 전일 저장 RV3 1.07 대비 가속률 -6.9%. 9/29 확인 범위 157.30~157.50으로 152/150 신규 하향 이탈 없음. 9/28 미무라 발언 직후 156.75까지 하락했으나 9/29에는 157.35로 복귀.",
+      "jgb": "Investing 동질계열 9/24 3.081→9/25 3.073→9/28 3.097→9/29 3.092. 3D +0.36%, RV3 약 0.84%, 전일 저장 RV3 3.34 대비 가속률 -74.9%. 20Y/30Y는 각각 약 3.92%/4.18%로 long-end 절대수준은 높지만 당일 JGB10Y는 소폭 하락.",
+      "ust": "Investing 역사표 9/24 5.193→9/25 5.167→9/28 5.235→9/29 5.235 기준 3D +4.2bp. 같은 페이지 실시간 표시는 5.241%로 0.6bp 시점차가 있어 파생계산은 연속 역사표 5.235%를 사용. 30Y는 5.549%. 9/28 장중 10Y 고점 5.279% 대비 약 -4.4bp로 Bond Reversal -10bp 기준 미달.",
+      "policy": "9/28 일본 환율당국 미무라의 강한 구두경고 뒤 USD/JPY가 156.75까지 하락했으나 9/29 157.35로 복귀. 실제 추가 개입은 확인되지 않았고 24~48시간 재가속 판정 전이므로 정책완충 실패 누적은 1회 유지.",
+      "equity": "9/28 S&P500 7,683.69(-0.77%), Nasdaq Composite 26,820.38(-0.92%). 주식 하락은 시작됐지만 UST10Y가 5.23%대에서 새 고점을 형성해 Bond Reversal OFF, ADD OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 9/29 신규 하향 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 9/29 신규 하향 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 9/29 신규 하향 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "USD/JPY 157.35, 당일 저가 157.30. 9/29 신규 하향 crossing 없음."
+      }
+    }
+  }
 }
