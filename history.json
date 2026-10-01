@@ -342,5 +342,67 @@
         "comment": "USD/JPY 157.40, 당일 저가 157.25. 9/30 신규 하향 crossing 없음."
       }
     }
+  },
+  "2026-10-01": {
+    "asof": "2026-10-01",
+    "fxNow": 157.68,
+    "fx3d": 0.18,
+    "fxrv3": 0.22,
+    "fxAccel": 27.2,
+    "jgbNow": 3.085,
+    "jgb3d": null,
+    "jgbrv3": null,
+    "jgbAccel": null,
+    "coAccel": null,
+    "ust10": 5.29,
+    "ust3d": 10.9,
+    "ust30": 5.638,
+    "curveStress": 3,
+    "policyFails": 1,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "부분",
+    "dataStatus": "10/1 10:00 KST 전후 최신 공개시장값·FX 시점차 및 JGB 파생값 미확정",
+    "ust5Intraday": 8,
+    "ust5Close": 6,
+    "ust53Intraday": 1,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "TERM PREMIUM / FISCAL / SUPPLY",
+    "ustDriverNote": "9/30 미국장에서 예상보다 완만한 PCE와 10월 Fed 인상확률 하락에도 10Y·30Y가 5.292%·5.638%로 상승하고 2Y(4.885%)보다 장기물 상승압력이 두드러졌다. 재정·공급 및 term premium 부담을 주된 driver로 분류.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": null,
+    "nasdaqPostBondLow": null,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "LSEG 인용 공개시각 계열 9/28 157.39→9/29 157.30→9/30 157.34→10/1 09:25 KST 157.68로 3D +0.18%, RV3 약 0.22%, 직전 비교창 RV3 약 0.18% 대비 가속률 +27.2%. 10/1 공개 확인 범위 157.39~157.68로 152/150 신규 하향 이탈 없음. 08:36 KST 157.39와 09:25 KST 157.68은 시점 차이이며 최신값을 본값으로 사용.",
+      "jgb": "10/1 09:50 KST JGB10Y 3.085%(전일 대비 +2.5bp). 일본상호증권 교차검증값은 20Y 3.915%, 30Y 4.170%. 오늘 장중 본값과 과거 일별 종가가 동일 제공계열로 연속 확인되지 않아 JGB 3D·RV3·가속률·5일 동시가속은 null로 두고 혼합 계산하지 않음.",
+      "ust": "9/30 미국장 UST10Y 5.290%(고가 5.308%), 30Y 5.638%. 동일 Investing 일별계열 9/25 5.181→9/28 5.242→9/29 5.250→9/30 5.290으로 3D +10.9bp. 10Y는 장중 5.30% stress band를 처음 넘었으나 종가는 5.30% 아래라 T1 유지. 30Y는 같은 방향 상승 확인.",
+      "policy": "10/1 미국시간 10~20Y 최대 $6B Treasury buyback이 예정됐으나 10:00 KST에는 미실행이므로 오늘 효과는 미평가. 기존 buyback 뒤에도 장기금리가 신고점을 경신해 완충 효과 미흡과 정책실패 누적 1회를 유지. BOJ Tankan 호조로 추가 인상 기대가 강화됐으나 신규 FX 개입은 확인되지 않음.",
+      "equity": "9/30 S&P500 7,651.54(-0.25%), Nasdaq Composite 26,861.06(+0.24%). UST10Y가 5.308% 새 shock 고점을 만든 뒤 종가 되돌림이 약 -1.8bp에 그쳐 Bond Reversal -10bp 기준 미달, Lag/ADD OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 10/1 오전 신규 하향 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/1 오전 신규 152 하향 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/1 오전 신규 153 하향 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "USD/JPY 157.68, 확인 저가 157.39로 155 위. 신규 하향 crossing 없음."
+      }
+    }
   }
 }
