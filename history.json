@@ -466,5 +466,67 @@
         "comment": "USD/JPY 157.94, 확인 저가 157.79로 155 위. 신규 하향 crossing 없음."
       }
     }
+  },
+  "2026-10-03": {
+    "asof": "2026-10-03",
+    "fxNow": 157.86,
+    "fx3d": 0.36,
+    "fxrv3": 0.44,
+    "fxAccel": 4.1,
+    "jgbNow": 3.087,
+    "jgb3d": -0.03,
+    "jgbrv3": 2.54,
+    "jgbAccel": 14.8,
+    "coAccel": 1,
+    "ust10": 5.27,
+    "ust3d": 1.5,
+    "ust30": 5.624,
+    "curveStress": 3,
+    "policyFails": 2,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "부분",
+    "dataStatus": "주말·최신거래일 10/2 종가 기준·동질 일별계열",
+    "ust5Intraday": 10,
+    "ust5Close": 8,
+    "ust53Intraday": 2,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "10/2 미국장에서 약한 고용지표 직후 10Y가 5.154%까지 급락했으나 유가 반등, 글로벌 국채 매도와 재정·공급/term-premium 우려로 5.270%까지 되돌렸다. 성장둔화·Fed 동결 기대와 인플레이션·재정 요인이 충돌해 MIXED로 분류.",
+    "bondReversalState": "CONFIRMED",
+    "bondPeakDate": "2026-10-01",
+    "bondLagDay": 1,
+    "spxPostBondLow": false,
+    "nasdaqPostBondLow": false,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "Investing 동일 일별계열 9/29 157.30→9/30 157.42→10/1 158.07→10/2 157.86. 3D +0.36%, RV3 0.44%, 직전 비교창 0.42% 대비 가속률 +4.1%. 10/2 저가 156.95로 155/153/152/150 신규 하향 이탈 없음. WSJ 16:59 ET 157.84, Yahoo 157.794와는 종가 집계시각 차이.",
+      "jgb": "Investing 한국어 동일 일별계열 9/29 3.088→9/30 3.063→10/1 3.126→10/2 3.087. 3D -0.03%, RV3 2.54%, 직전 RV3 2.21% 대비 가속률 +14.8%. Investing 영문/일문 종가는 3.099/3.088로 집계 차이가 있어 한국어 연속계열을 본값으로 사용. 장중 저가 3.050%; 장기물 절대수준은 높아 long-end 경계 유지.",
+      "ust": "Investing 동일 종가계열 9/29 5.255→9/30 5.293→10/1 5.234→10/2 5.270으로 3D +1.5bp. 10/2 범위 5.154~5.272%, 종가 5% 상단 유지로 5% 장중·종가 누적 각각 +1. 30Y는 한국어 Investing 5.624%(영문 5.616%, Barron's 약 5.63%)로 소스 집계 차이를 메모하며 같은 방향 3D +3.0bp 확인. 10/1 고점 5.345%를 다음 세션에 재돌파하지 않았고 가속이 멈춰 Bond Reversal을 CONFIRMED/D1로 전환.",
+      "policy": "10/1 Treasury 10~20Y buyback 최대 $6B 뒤 10/2 고용지표 직후 금리 하락이 반전되고 10Y가 장중 저점 대비 약 11.6bp 재상승했다. 이벤트 24~48시간 내 채권 변동성 재가속 규칙에 따라 정책 완충 실패 +1(누적 2), buyback 효과 미흡. Fed의 10월 인상 확률은 약 23%로 낮아졌고, 일본은 추가 완화 불필요 발언·미일 FX 공조 원칙을 유지했으나 10/2 신규 실개입은 확인되지 않음.",
+      "equity": "10/2 S&P500 7,722.72(+0.73%), Nasdaq Composite 27,190.86(+1.19%). 10/1 bond peak 이후 두 지수 모두 신규 종가 저점을 만들지 않아 spxPostBondLow/nasdaqPostBondLow=false. Bond Reversal CONFIRMED D1이므로 ADD는 LAG WINDOW지만, 2회 연속 higher close 자료가 없어 equityStabilized는 미확정."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 주말 및 10/2 최신 세션에 신규 하향 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/2 저가 156.95로 신규 152 하향 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/2 저가 156.95로 신규 153 하향 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "기존 누적 유지. 10/2 저가 156.95·종가 157.86으로 신규 하향 crossing 없음."
+      }
+    }
   }
 }
