@@ -528,5 +528,67 @@
         "comment": "기존 누적 유지. 10/2 저가 156.95·종가 157.86으로 신규 하향 crossing 없음."
       }
     }
+  },
+  "2026-10-04": {
+    "asof": "2026-10-04",
+    "fxNow": 157.86,
+    "fx3d": 0.36,
+    "fxrv3": 0.44,
+    "fxAccel": 4.1,
+    "jgbNow": 3.087,
+    "jgb3d": -0.03,
+    "jgbrv3": 2.54,
+    "jgbAccel": 14.8,
+    "coAccel": 1,
+    "ust10": 5.27,
+    "ust3d": 1.5,
+    "ust30": 5.624,
+    "curveStress": 3,
+    "policyFails": 2,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "부분",
+    "dataStatus": "일요일·신규 거래세션 없음·최신거래일 10/2 종가 기준",
+    "ust5Intraday": 10,
+    "ust5Close": 8,
+    "ust53Intraday": 2,
+    "ust53Close": 0,
+    "ust30AccelConfirm": true,
+    "ustDriver": "TERM PREMIUM / FISCAL / SUPPLY",
+    "ustDriverNote": "신규 거래세션은 없으나 주말 보도와 공급일정을 재검증했다. 약한 고용으로 10월 Fed 인상확률이 20% 아래로 낮아졌는데도 10Y가 5.28% 부근으로 복귀했고, 다음 주 10Y $39B·30Y $22B 재개방 및 기업·AI 관련 duration 공급 부담이 대기한다. 금리반등의 주동력을 Fed보다 term premium·재정/공급으로 분류.",
+    "bondReversalState": "CONFIRMED",
+    "bondPeakDate": "2026-10-01",
+    "bondLagDay": 1,
+    "spxPostBondLow": false,
+    "nasdaqPostBondLow": false,
+    "equityStabilized": null,
+    "dataNotes": {
+      "fx": "일요일로 신규 FX 거래세션 없음. 최신 확정값은 10/2 Investing 종가 157.86, 장중 저가 156.95. 3D +0.36%, RV3 0.44%, 가속률 +4.1%를 유지하며 임계 이탈 카운트는 중복 가산하지 않음.",
+      "jgb": "일요일 휴장. 최신 확정값은 10/2 Investing 한국어 연속계열 JGB10Y 3.087%(영문/일문 3.099/3.088% 집계 차이). 3D -0.03%, RV3 2.54%, 가속률 +14.8% 및 long-end 경계는 유지하되 신규 카운트 없음.",
+      "ust": "일요일 휴장. 최신 10/2 종가계열 UST10Y 5.270%(3D +1.5bp), UST30Y 5.624%를 유지. 10/1 고점 5.345%를 재돌파하지 않아 Bond Reversal CONFIRMED를 유지하지만, 10/2 장중 5.154%에서 5.270%로 반등해 고점 대비 종가 하락폭은 약 7.5bp로 축소되어 반전 신뢰도는 낮아짐. 5.34 재돌파 시 OFF 재검토.",
+      "policy": "10/1 장기채 buyback 이후 24~48시간 내 금리 변동성 재가속으로 정책 실패 누적 2회·효과 미흡 유지. 주말 확인 기준 Treasury의 long-end buyback 목적·효과 논쟁이 지속되고, 다음 주 10Y $39B·30Y $22B 공급이 예정됨. G7의 1억 배럴 비축유 방출은 단기 유가 완충재이나 지정학적 공급위험 해소로 보지 않음. 신규 미·일 FX 실개입은 확인되지 않음.",
+      "equity": "일요일로 신규 주식 거래세션 없음. 10/2 S&P500 7,722.72(+0.73%), Nasdaq 27,190.86(+1.19%)를 유지. post-bond 종가 신저가가 없어 ADD WATCH는 아니며, CONFIRMED D1의 LAG WINDOW만 활성. 금리반전 지속성이 훼손된 상태라 ADD 신뢰도는 낮게 유지."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 일요일 신규 거래세션·신규 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 일요일 신규 거래세션·신규 152 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 일요일 신규 거래세션·신규 153 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "기존 누적 유지. 최신 10/2 저가 156.95·종가 157.86, 일요일 신규 crossing 없음."
+      }
+    }
   }
 }
