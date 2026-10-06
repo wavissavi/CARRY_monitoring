@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "asof": "2026-10-06",
+  "observationOnly": true,
+  "riskWeight": 0,
+  "affectsADD": false,
+  "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
+  "yield": {
+    "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+    "retrievedAt": "2026-10-06T08:01:15.570Z",
+    "series": "Investing.com UST 10Y yield daily weekday closes",
+    "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
+    "sessionCount": 152,
+    "excludedDates": [
+      "2026-10-04"
+    ],
+    "latest": {
+      "date": "2026-10-05",
+      "close": 5.311,
+      "high": 5.349,
+      "low": 5.249,
+      "rsi14": 75.75469298379576
+    },
+    "comparison": {
+      "date": "2026-09-30",
+      "close": 5.293,
+      "high": 5.306,
+      "low": 5.201,
+      "rsi14": 80.30400463251522
+    },
+    "chart": [
+      {
+        "date": "2026-09-08",
+        "close": 4.804,
+        "high": 4.812,
+        "low": 4.76,
+        "rsi14": 61.94979216022363
+      },
+      {
+        "date": "2026-09-09",
+        "close": 4.837,
+        "high": 4.857,
+        "low": 4.786,
+        "rsi14": 64.76610949145332
+      },
+      {
+        "date": "2026-09-10",
+        "close": 4.944,
+        "high": 4.965,
+        "low": 4.826,
+        "rsi14": 72.00218665590609
+      },
+      {
+        "date": "2026-09-11",
+        "close": 4.975,
+        "high": 4.991,
+        "low": 4.904,
+        "rsi14": 73.68818081081125
+      },
+      {
+        "date": "2026-09-14",
+        "close": 4.961,
+        "high": 5.014,
+        "low": 4.934,
+        "rsi14": 71.59144316316488
+      },
+      {
+        "date": "2026-09-15",
+        "close": 4.996,
+        "high": 5.041,
+        "low": 4.981,
+        "rsi14": 73.61289196161599
+      },
+      {
+        "date": "2026-09-16",
+        "close": 5.004,
+        "high": 5.027,
+        "low": 4.938,
+        "rsi14": 74.06711692794426
+      },
+      {
+        "date": "2026-09-17",
+        "close": 4.947,
+        "high": 5.008,
+        "low": 4.93,
+        "rsi14": 65.42548597621445
+      },
+      {
+        "date": "2026-09-18",
+        "close": 4.996,
+        "high": 5.008,
+        "low": 4.92,
+        "rsi14": 68.79593215632795
+      },
+      {
+        "date": "2026-09-21",
+        "close": 4.963,
+        "high": 4.976,
+        "low": 4.943,
+        "rsi14": 64.25308778849578
+      },
+      {
+        "date": "2026-09-22",
+        "close": 4.955,
+        "high": 4.984,
+        "low": 4.92,
+        "rsi14": 63.164166226621525
+      },
+      {
+        "date": "2026-09-23",
+        "close": 5.114,
+        "high": 5.135,
+        "low": 4.935,
+        "rsi14": 72.96926991683776
+      },
+      {
+        "date": "2026-09-24",
+        "close": 5.162,
+        "high": 5.225,
+        "low": 5.087,
+        "rsi14": 75.12216591180237
+      },
+      {
+        "date": "2026-09-25",
+        "close": 5.181,
+        "high": 5.23,
+        "low": 5.154,
+        "rsi14": 75.93907666028352
+      },
+      {
+        "date": "2026-09-28",
+        "close": 5.242,
+        "high": 5.274,
+        "low": 5.192,
+        "rsi14": 78.39227166452784
+      },
+      {
+        "date": "2026-09-29",
+        "close": 5.255,
+        "high": 5.293,
+        "low": 5.205,
+        "rsi14": 78.8863338699292
+      },
+      {
+        "date": "2026-09-30",
+        "close": 5.293,
+        "high": 5.306,
+        "low": 5.201,
+        "rsi14": 80.30400463251522
+      },
+      {
+        "date": "2026-10-01",
+        "close": 5.234,
+        "high": 5.345,
+        "low": 5.205,
+        "rsi14": 72.19828273641218
+      },
+      {
+        "date": "2026-10-02",
+        "close": 5.277,
+        "high": 5.298,
+        "low": 5.157,
+        "rsi14": 74.23915458281773
+      },
+      {
+        "date": "2026-10-05",
+        "close": 5.311,
+        "high": 5.349,
+        "low": 5.249,
+        "rsi14": 75.75469298379576
+      }
+    ]
+  },
+  "patterns": {
+    "momentumSlowdownCandidate": true,
+    "rsiEasingSessions": 0,
+    "yieldEasingSessions": 0,
+    "rsiDifference": -4.549311648719453,
+    "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold."
+  },
+  "futures": {
+    "url": "https://www.investing.com/rates-bonds/us-10-yr-t-note-historical-data",
+    "sourceLabel": "US 10 Year T-Note Futures - Dec 26 (TYU26)",
+    "contractVerified": false,
+    "rsi14": null,
+    "dailyOpenInterest": null,
+    "reason": "Source title Dec 26 conflicts with TYU26. Contract/roll series and daily OI unverified."
+  },
+  "cftc": {
+    "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+    "asof": "2026-09-29",
+    "previousAsOf": "2026-09-22",
+    "marketCode": "043602",
+    "scope": "UST 10Y NOTE · futures only · all expiries",
+    "positions": {
+      "openInterest": {
+        "previous": 5407726,
+        "current": 5676556,
+        "change": 268830
+      },
+      "assetManagerNet": {
+        "previous": 2531384,
+        "current": 2776531,
+        "change": 245147
+      },
+      "leveragedGrossShort": {
+        "previous": 2395516,
+        "current": 2547011,
+        "change": 151495
+      },
+      "leveragedNet": {
+        "previous": -1926947,
+        "current": -2036432,
+        "change": -109485
+      }
+    },
+    "previousMethod": "Current positions minus officially reported weekly changes; prior report not independently fetched.",
+    "coversCandidateDate": false
+  },
+  "rawFile": "data/bond-flow-raw-20261006.json"
+}

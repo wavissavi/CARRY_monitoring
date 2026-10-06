@@ -16,6 +16,7 @@ button,input{background:#151b25;color:var(--tx);border:1px solid var(--line);bor
 .section{padding:15px;margin-top:12px}.section h2{font-size:17px;margin:0 0 10px}table{width:100%;border-collapse:collapse;font-size:12px}th,td{padding:9px 7px;border-bottom:1px solid #222938;text-align:left}th{color:#c9d0dc;background:#121720}td.r,th.r{text-align:right}.click{cursor:pointer}
 .note{font-size:12px;line-height:1.6;color:var(--mut)}.status{font-size:25px;font-weight:900}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}.signalbox{background:var(--p2);border:1px solid var(--line);border-radius:12px;padding:10px}
 .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.step{background:#121720;border:1px solid var(--line);border-radius:10px;padding:10px}.step b{display:block;font-size:15px;margin-bottom:4px}.active{outline:2px solid var(--o)}
+.flow-chart svg{display:block;width:100%;height:auto}.flow-chart{min-width:0}.flow-chart h3{font-size:13px;margin:12px 0 0}.flow-table{overflow-x:auto}.flow-table table{min-width:540px}details{margin-top:12px}summary{cursor:pointer;color:var(--b)}.note a{color:var(--b)}
 @media(max-width:1050px){.grid{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}.ladder{grid-template-columns:1fr 1fr 1fr}}
 @media(max-width:680px){.wrap{padding:12px}.top{flex-direction:column}.controls{width:100%;min-width:0}.grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.ladder{grid-template-columns:1fr}.status{font-size:22px}table{font-size:11px;display:block;overflow-x:auto}}
 </style>
@@ -134,6 +135,13 @@ button,input{background:#151b25;color:var(--tx);border:1px solid var(--line);bor
   </div>
 
   <div class="section">
+    <h2>UST Exhaustion / Flow Turn <span class="tiny">패턴 관찰 · 가설 검증 중</span></h2>
+    <div id="flowSummary" class="big">관찰자료 불러오는 중</div>
+    <div class="note">매도 압력이 약해지는가 → 며칠 이어지는가 → 포지션 변화가 동반되는가. 기존 RISK·Reversal·ADD 판정에는 가중치 0.</div>
+    <div id="flowBody"></div>
+  </div>
+
+  <div class="section">
     <h2>🪜 Bond→Equity Lag · 추매 관찰창</h2>
     <div class="grid3">
       <div class="card">
@@ -170,6 +178,7 @@ button,input{background:#151b25;color:var(--tx);border:1px solid var(--line);bor
 </div>
 <script>
 let records={},dates=[],selected=null;
+let flowSnapshots={},flowLoadStatus="loading";
 const $=id=>document.getElementById(id);
 const n=(v,d=2)=>v==null||v===""?"미확정":Number(v).toFixed(d);
 const pct=(v,d=2)=>v==null||v===""?"미확정":(Number(v)>0?"+":"")+Number(v).toFixed(d)+"%";
@@ -269,6 +278,40 @@ function addDecision(d,L){
 }
 function blank(date){return {asof:date,thresholds:{"155":{},"153":{},"152":{},"150":{}},dataStatus:"미확정"}}
 function distTo(d,target){if(d.ust10==null)return "미확정";const x=(target-d.ust10)*100;return x>0?`${x.toFixed(1)}bp 아래`:`${Math.abs(x).toFixed(1)}bp 위`}
+function flowForDate(date){return flowSnapshots[date]||null}
+function flowChart(rows,key,title){
+  const W=580,H=155,l=47,r=14,t=17,b=28,vs=rows.map(d=>d[key]);
+  const lo=key==="rsi14"?0:Math.floor((Math.min(...vs)-0.03)*10)/10,hi=key==="rsi14"?100:Math.ceil((Math.max(...vs)+0.03)*10)/10;
+  const x=i=>l+i*(W-l-r)/(rows.length-1),y=v=>H-b-(v-lo)*(H-t-b)/(hi-lo);
+  const points=vs.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const ticks=key==="rsi14"?[0,50,100]:[lo,(lo+hi)/2,hi];
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title} · ${rows[0].date}부터 ${rows.at(-1).date}"><title>${title}</title>${ticks.map(v=>`<line x1="${l}" y1="${y(v)}" x2="${W-r}" y2="${y(v)}" stroke="#283041"/><text x="${l-7}" y="${y(v)+4}" text-anchor="end" fill="#9fa8b8" font-size="11">${key==="rsi14"?v:v.toFixed(2)+"%"}</text>`).join("")}<polyline points="${points}" fill="none" stroke="${key==="rsi14"?"#bd8cff":"#69a7ff"}" stroke-width="2.5"/>${rows.map((d,i)=>`<circle cx="${x(i)}" cy="${y(d[key])}" r="3" fill="#f4f7fb"><title>${d.date}: ${d[key].toFixed(key==="rsi14"?2:3)}${key==="rsi14"?"":"%"}</title></circle>`).join("")}<text x="${l}" y="${H-5}" fill="#9fa8b8" font-size="11">${rows[0].date.slice(5)}</text><text x="${W-r}" y="${H-5}" text-anchor="end" fill="#9fa8b8" font-size="11">${rows.at(-1).date.slice(5)}</text></svg>`;
+}
+function renderFlow(date){
+  const f=flowForDate(date);
+  if(!f){$("flowSummary").textContent=flowLoadStatus==="loading"?"관찰자료 불러오는 중":flowLoadStatus==="error"?"관찰자료 확인대기":"해당 날짜의 관찰 기록 없음";$("flowBody").innerHTML="<div class='note'>자료 누락은 중립 또는 수급 반전으로 해석하지 않는다. 다른 날짜의 관측값을 소급 적용하지 않는다.</div>";return}
+  const u=f.yield,p=f.patterns,c=f.cftc,last=u.latest,prior=u.comparison;
+  const signed=v=>(v>0?"+":"")+v.toLocaleString("en-US");
+  $("flowSummary").textContent=p.momentumSlowdownCandidate?"금리 모멘텀 둔화 후보 · 수급 확인대기":"뚜렷한 둔화 패턴 미관측 · 수급 확인대기";
+  $("flowBody").innerHTML=`
+    <div class="note" style="margin:7px 0 12px">기록 ${f.asof} · 일별 ${last.date} 완료 세션 · CFTC ${c.asof} 주간 포지션 · 실시간 스트리밍 아님</div>
+    <div class="grid3">
+      <div class="card"><h3>① 매도 압력 완화 조짐</h3><div class="big">${p.momentumSlowdownCandidate?"둔화 후보 [P]":"미관측 [P]"}</div><div class="m"><span>금리 RSI(14) [C]</span><span class="v">${last.rsi14.toFixed(1)}</span></div><div class="note">${prior.date.slice(5)} → ${last.date.slice(5)} 종가 ${prior.close.toFixed(3)}% → ${last.close.toFixed(3)}%, RSI ${prior.rsi14.toFixed(1)} → ${last.rsi14.toFixed(1)}. 금리는 고점을 높였지만 상승 모멘텀은 약해진 비교쌍. 고점 확정 근거는 아님.</div></div>
+      <div class="card"><h3>② 조짐의 지속 여부</h3><div class="big">연속 완화 ${p.rsiEasingSessions}세션</div><div class="m"><span>금리 종가 연속 하락</span><span class="v">${p.yieldEasingSessions}세션</span></div><div class="note">최근 두 완료 세션의 RSI는 다시 상승. 지속적인 압력 완화는 아직 확인되지 않음. 다음 완료 세션에서 금리와 RSI가 함께 낮아지는지 관찰.</div></div>
+      <div class="card"><h3>③ 포지션 동반 여부</h3><div class="big">수급 확인대기 [U]</div><div class="m"><span>레버리지 펀드 총숏 · 주간</span><span class="v">${signed(c.positions.leveragedGrossShort.change)}계약</span></div><div class="note">${c.asof.slice(5)} 기준 총숏 증가. 해당 주간 자료는 10/5 이후 움직임을 설명하지 못함. 선물 RSI·일별 OI는 검증 자료 확보 전까지 비워 둔다.</div></div>
+    </div>
+    <div class="split"><div class="flow-chart"><h3>10Y 금리 종가 · 최근 20 완료 세션 [C]</h3>${flowChart(u.chart,"close","UST 10Y daily closes")}</div><div class="flow-chart"><h3>금리 RSI(14) · Wilder 계산 [C]</h3>${flowChart(u.chart,"rsi14","Yield Wilder RSI(14)")}</div></div>
+    <details><summary>주간 포지션 · 출처 · 관찰 기준 보기</summary>
+      <div class="flow-table"><table><thead><tr><th>CFTC UST 10Y NOTE · 계약</th><th class="r">${c.previousAsOf}*</th><th class="r">${c.asof}</th><th class="r">주간 변화</th></tr></thead><tbody>${[["Open Interest · 주간", "openInterest"],["자산운용사 순포지션", "assetManagerNet"],["레버리지 펀드 총숏", "leveragedGrossShort"],["레버리지 펀드 순포지션", "leveragedNet"]].map(([label,key])=>{const v=c.positions[key];return `<tr><td>${label}</td><td class="r">${v.previous.toLocaleString("en-US")}</td><td class="r">${v.current.toLocaleString("en-US")}</td><td class="r">${signed(v.change)}</td></tr>`}).join("")}</tbody></table></div>
+      <div class="note">* 전주값은 이번 공식 보고서의 현재값−주간 변화로 역산. 순포지션=롱−숏. ${c.scope}; 코드 ${c.marketCode}. 위 OI는 주간 총량이며 일별 OI를 대체하지 않는다.</div>
+      <div class="note" style="margin-top:8px">[C] 출처에서 확인하거나 재현한 수치 · [P] 해석·가설 · [U] 미확인. 둔화 후보는 최신 완료 종가가 직전 20세션 최고 종가보다 높고 RSI가 낮은 비교쌍. 연속 완화는 최신 세션부터 RSI가 연속 하락한 횟수. 두 관찰 규칙 모두 예측 성능·매매 임계값은 미검증.</div>
+      <div class="note">다음 검토: 금리·RSI 완화가 이어지는지, 검증한 동일 선물 계열에서도 가격 회복이 나타나는지, 해당 기간을 포함하는 CFTC에서 총숏 감소·순숏 완화가 동반되는지 확인한다. 동반해도 exhaustion high나 실수요 매수 확정으로 승격하지 않는다.</div>
+      <div class="note">가격↑+OI↓는 포지션 축소와 양립하는 패턴, 가격↑+OI↑는 참여 증가와 양립하는 패턴. OI만으로 매수 주체나 숏커버를 식별할 수 없다. 레버리지 펀드 숏에는 현물 롱의 베이시스 헤지가 포함될 수 있다.</div>
+      <div class="note">계산: ${u.sessionCount}개 평일 종가, ${u.chart.at(-1).date}까지. 첫 14개 변화의 평균 상승·하락폭으로 초기화 후 Wilder 평활. 주말·진행 중 세션 제외. 금리 RSI와 선물 가격 RSI는 다른 지표이며 상호 대체하지 않는다. 기존 오전 UST 스냅샷과 분리한 일별 종가 계열.</div>
+      <div class="note">선물 확인대기: 출처의 “Dec 26 (TYU26)” 표기가 만기 코드와 불일치. 계약·롤 처리 확인 전 선물 RSI 미산출, 일별 OI 미확보.</div>
+      <div class="note"><a href="${u.url}" target="_blank" rel="noopener">금리 종가</a> · <a href="${f.futures.url}" target="_blank" rel="noopener">선물 원문</a> · <a href="${c.url}" target="_blank" rel="noopener">CFTC 공식 보고서</a> · <a href="https://www.cmegroup.com/education/courses/introduction-to-futures/open-interest.html" target="_blank" rel="noopener">CME OI 정의</a> · <a href="https://www.federalreserve.gov/econres/notes/feds-notes/quantifying-treasury-cash-futures-basis-trades-20240308.html" target="_blank" rel="noopener">연준 베이시스 거래 설명</a> · <a href="${f.rawFile}" target="_blank" rel="noopener">계산 원자료</a></div>
+    </details>`;
+}
 function render(date){
   selected=date;const d=records[date]||blank(date),L=levels(d),B=badge(L.overall),A=addDecision(d,L),C=coAccelSignal(d),Q=breakoutQuality(d,date);
   $("date").value=date;$("asof").textContent=date;$("overall").textContent=B[0];$("badge").className="badge "+B[1];$("badge").textContent=B[2]+" "+B[0];
@@ -302,12 +345,13 @@ function render(date){
   $("delta").innerHTML=`전일 RISK <b>${PB}</b> → 현재 <b>${B[0]}</b>${p&&d.fxNow!=null&&p.fxNow!=null?` · USD/JPY ${pct((d.fxNow/p.fxNow-1)*100)}`:""}${p&&d.ust10!=null&&p.ust10!=null?` · UST10Y ${bp((d.ust10-p.ust10)*100)}`:""} · ADD <b>${A.text}</b>`;
   const notes=d.dataNotes||{};$("notes").innerHTML=["fx","jgb","ust","policy","equity"].filter(k=>notes[k]).map(k=>`<div><b>${k.toUpperCase()}:</b> ${notes[k]}</div>`).join("")||"메모 없음";
   const ts=triggerLabel(d);$("headline").textContent=`RISK ${B[0]} · UST ${ts} · CoAccel ${C.text} · 5% Quality ${Q.label} · ADD ${A.text}. ${d.bondReversalInvalidated===true?"신 shock 고점으로 기존 Reversal 무효. ":""}${A.veto?"FX/JGB 위험으로 추매 관찰신호 VETO 적용.":"위험경보와 추매 관찰창을 분리해 해석."}`;
-  renderHistory();
+  renderFlow(date);renderHistory();
 }
 function renderHistory(){
   $("count").textContent=dates.length;$("history").innerHTML=dates.slice().reverse().map(dt=>{const d=records[dt],L=levels(d),B=badge(L.overall),A=addDecision(d,L),C=coAccelSignal(d),Q=breakoutQuality(d,dt);return `<tr class="click" onclick="render('${dt}')"><td><button>${dt}</button></td><td><span class="badge ${B[1]}">${B[2]} ${B[0]}</span></td><td><span class="badge ${A.cls}">${A.text}</span></td><td class="r">${n(d.fxNow)}</td><td class="r">${pct(d.fxAccel)}</td><td class="r">${d.jgbNow==null?"미확정":n(d.jgbNow,3)+"%"}</td><td class="r">${pct(d.jgbAccel)}</td><td><span class="badge ${C.cls}">${C.text}</span></td><td class="r">${d.ust10==null?"미확정":n(d.ust10,3)+"%"}</td><td>${triggerLabel(d)}</td><td><span class="badge ${Q.cls}">${Q.label}</span></td><td>${(d.bondLagDay??d.lagDay)==null?"-":"D"+(d.bondLagDay??d.lagDay)}</td></tr>`}).join("")
 }
 $("date").onchange=e=>render(e.target.value);$("prev").onclick=()=>{let i=dates.indexOf(selected);if(i>0)render(dates[i-1])};$("next").onclick=()=>{let i=dates.indexOf(selected);if(i>=0&&i<dates.length-1)render(dates[i+1])};$("latest").onclick=()=>render(dates[dates.length-1]);
 fetch("history.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(j=>{records=j;dates=Object.keys(records).sort();render(dates[dates.length-1])}).catch(e=>{$("headline").textContent="history.json 로드 실패: "+e;$("dataStatus").textContent="미확정"});
+fetch("bond-flow-history.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(j=>{for(const [date,f] of Object.entries(j)){if(date!==f.asof||f.schemaVersion!==1||f.observationOnly!==true||f.affectsADD!==false||f.riskWeight!==0)throw Error("Invalid observation schema")}flowSnapshots=j;flowLoadStatus="loaded";if(selected)renderFlow(selected)}).catch(()=>{flowLoadStatus="error";if(selected)renderFlow(selected)});
 </script>
 </body></html>
