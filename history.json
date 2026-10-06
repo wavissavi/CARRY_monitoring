@@ -671,14 +671,14 @@
     "policyFails": 2,
     "buybackState": "효과 미흡",
     "fxReaccel": "아니오",
-    "dataStatus": "10/6 10:00 KST 근접·FX/JGB 실시간·UST 10/5 미국장 종가 및 10/6 아시아 호가 교차확인",
+    "dataStatus": "10/6 오전 스냅샷 유지·16:50 KST UST 재검토·신 shock 고점/무효화 사유 정정",
     "ust5Intraday": 11,
     "ust5Close": 9,
     "ust53Intraday": 3,
     "ust53Close": 1,
     "ust30AccelConfirm": true,
     "ustDriver": "TERM PREMIUM / FISCAL / SUPPLY",
-    "ustDriverNote": "10/5 미국장에서 10Y가 5.310%, 30Y가 5.664%로 각각 약 +3.4bp·+3.5bp 상승했다. 10월 Fed 인상확률이 약 24%로 낮아졌는데도 장기금리가 오르고, Reuters가 악화된 공공재정·대규모 채권공급·높은 에너지 가격을 공통 압력으로 지목해 term premium·재정/공급을 주된 driver로 유지.",
+    "ustDriverNote": "10/5 UST10Y 5.3493%·30Y 5.7029%의 새 장중 고점 형성 뒤 동반 반락. Reuters는 재정·국채공급·에너지 가격을 장기금리 압력으로 지목. Fed 인상 기대 약화와 유가 하락은 완충 배경이며, 개별 장중 반락의 단일 촉매와 기관매수/숏커버는 미확정.",
     "bondReversalState": "OFF",
     "bondPeakDate": null,
     "bondLagDay": null,
@@ -688,9 +688,9 @@
     "dataNotes": {
       "fx": "Investing 동일 일별계열 10/1 158.07→10/2 157.86→10/5 157.96→10/6 09:27 KST 157.91. 3D -0.10%, 최근 3개 일변화율 -0.133%·+0.063%·-0.032%로 RV3 0.15%, 직전 비교창 RV3 0.44% 대비 가속률 -65.7%. 실시간 페이지 내 시점별 값은 157.87~157.98, 당일 저가는 157.82~157.89로 차이가 있어 157.91을 최신 본값, 157.82를 보수적 저가로 기록. 155/153/152/150 신규 하향 이탈 없음.",
       "jgb": "Investing 동일계열 10/1 3.100→10/2 3.102→10/5 3.092→10/6 3.109. 3D +0.29%, RV3 0.64%, 직전 비교창 RV3 1.25% 대비 가속률 -48.8%. 표의 10/6 값 3.113%와 실시간 3.109%는 약 0.4bp 시점차. 최근 5거래일 FX·JGB RV3 동시가속은 10/1·10/2의 2회. 30Y JGB는 10/5 장중 4.235% 사상 최고로 long-end 경계는 강화.",
-      "ust": "10/5 미국장 종가 및 10/6 아시아 호가를 교차확인: UST10Y 5.310% 종가·아시아 5.309%, 30Y 5.664% 종가·아시아 5.663%. Investing 동일 10Y 계열 10/1 5.234→10/2 5.270→10/5 5.310으로 3거래일 +7.6bp(아시아 5.309 적용 시 +7.5bp). 10/5 장중 5.34%로 5%·5.3% intraday 각 +1, 5.310% 종가로 5%·5.3% close 각 +1. +15bp T2에는 미달하지만 30Y 동반상승은 확인.",
+      "ust": "정정: 10/5 UST10Y 장중 고점은 5.34%가 아니라 Reuters/LSEG 5.3493%(Investing 반올림 5.349%)이다. 기존 10/1 shock peak 5.345%를 약 +0.43bp 상향 돌파하여 기존 Bond Reversal CONFIRMED를 무효화. 새 shock peak=10/5 5.3493%, 새 D0 낙폭 조건=5.2493% 이하(-10bp); 이 수준 도달만으로 최종 CONFIRMED가 되지는 않으며 가속 중단 및 다음 세션 고점 미재돌파 확인이 필요. Reuters 아시아 5.3089%는 고점 대비 -4.04bp, 수정 시 Investing 5.284%는 -6.53bp로 아직 미달. 페이지 시각 03:27:02의 시간대는 미확정이라 수집시각 16:50 KST를 별도 표시. 기존 오전 본값 5.309%, 30Y 5.663% 및 3D +7.5bp를 유지해 오후 호가를 오전 파생계산에 섞지 않음. 기존 종가 스냅샷 5.310%까지 되돌림은 -3.93bp. CNBC 5.37% 사용자 장중 관측은 [U]로 별도 보존.",
       "policy": "Treasury 장기채 buyback은 시장 유동성 목적이라는 Bessent 설명과 달리 금리 수준 완충은 여전히 미흡해 정책실패 누적 2회 유지. 일본 총리는 10/5 국채 발행 억제·시장불안 대응을 약속했지만 30Y JGB가 4.235% 사상 최고를 기록했다. 10/6 10:00 KST까지 신규 Fed·BOJ 결정이나 미·일 FX 실개입은 확인되지 않음.",
-      "equity": "10/5 S&P500 7,773.95(+0.7%), Nasdaq 27,477.31(+1.05%, 사상 최고)로 10/1 이후 두 지수 모두 두 차례 연속 higher close를 만들어 equityStabilized=true. 그러나 UST10Y가 10/5 장중 5.34%로 10/1 shock 고점 5.345%에 재접근하고 종가도 5.310%로 올라 -10bp 반전 조건이 사라져 Bond Reversal을 OFF로 전환. post-bond 신저가는 없었고 ADD는 OFF."
+      "equity": "10/5 S&P500 7,773.95(+0.66%), Nasdaq 27,477.31(+1.05%, 사상 최고). 기존 두 차례 higher close에 따른 equityStabilized=true와 post-bond 신저가 false는 유지. 기존 Reversal은 10/5 신 shock 고점 재돌파로 무효화되어 Bond Reversal/Lag/ADD OFF. -10bp 최초 발생 조건을 매일 유지 조건으로 사용하지 않는다. 이후 새 Reversal 확인 전에는 10/1 D1/D2 관찰창을 되살리지 않음."
     },
     "thresholds": {
       "150": {
@@ -713,6 +713,61 @@
         "close": 4,
         "comment": "기존 누적 유지. 10/6 오전 보수적 저가 157.82로 신규 155 하향 crossing 없음."
       }
+    },
+    "correctedAt": "2026-10-06T16:50:57+09:00",
+    "ust10High": 5.3493,
+    "ust10HighDate": "2026-10-05",
+    "ust10HighSource": "Reuters/LSEG",
+    "ust10Close": 5.31,
+    "ust10CloseDate": "2026-10-05",
+    "ust10CloseSource": "기존 Investing 종가 스냅샷",
+    "ust30High": 5.7029,
+    "ust30HighDate": "2026-10-05",
+    "ust30HighSource": "Reuters/LSEG",
+    "shockPeakDate": "2026-10-05",
+    "shockPeakYield": 5.3493,
+    "previousBondPeakDate": "2026-10-01",
+    "previousBondPeakYield": 5.345,
+    "bondReversal": false,
+    "bondReversalInvalidated": true,
+    "bondReversalInvalidatedDate": "2026-10-05",
+    "bondReversalInvalidatedReason": "10/5 UST10Y 고점 5.3493%가 기존 10/1 shock peak 5.345%를 0.43bp 상향 돌파. -10bp 하락폭의 매일 유지 여부가 아닌 고점 재돌파를 근거로 기존 CONFIRMED를 무효화.",
+    "bondReversalTriggerYield": 5.2493,
+    "ust10Latest": {
+      "value": 5.284,
+      "source": "Investing.com",
+      "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+      "retrievedAt": "2026-10-06T16:50:57+09:00",
+      "sourceTimeLabel": "03:27:02",
+      "sourceTimezone": "미확정",
+      "session": "10/6 진행 중·확정 종가 아님",
+      "status": "C",
+      "drawdownFromShockPeakBp": -6.53
+    },
+    "observations": [
+      {
+        "metric": "UST10Y",
+        "value": 5.37,
+        "source": "CNBC 화면·사용자 관측",
+        "sessionDate": "2026-10-05",
+        "observedAt": null,
+        "status": "U",
+        "note": "사용자가 장중 직접 관측. 화면 및 원피드 미확보로 benchmark 고점에 덮어쓰지 않으며 별도 보존."
+      },
+      {
+        "metric": "UST10Y",
+        "value": 5.28,
+        "source": "CNBC·사용자 관측",
+        "observedAt": "2026-10-06T16:49:35+09:00",
+        "status": "U",
+        "note": "5.28%대라는 범위 관측。5.280%의 정확값을 의미하지 않음."
+      }
+    ],
+    "sources": {
+      "shockHigh": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-06/",
+      "shockHighSyndication": "https://whbl.com/2026/10/05/asian-shares-track-wall-street-higher-treasury-yields-near-multi-decade-highs/",
+      "latest": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+      "marketContext": "https://www.investing.com/news/economy-news/stocks-upbeat-dollar-wobbles-as-fed-hike-bets-recede-4930982"
     }
   }
 }
