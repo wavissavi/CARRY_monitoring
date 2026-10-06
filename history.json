@@ -652,5 +652,67 @@
         "comment": "기존 누적 유지. 10/5 오전 저가 157.60으로 신규 155 하향 crossing 없음."
       }
     }
+  },
+  "2026-10-06": {
+    "asof": "2026-10-06",
+    "fxNow": 157.91,
+    "fx3d": -0.1,
+    "fxrv3": 0.15,
+    "fxAccel": -65.7,
+    "jgbNow": 3.109,
+    "jgb3d": 0.29,
+    "jgbrv3": 0.64,
+    "jgbAccel": -48.8,
+    "coAccel": 2,
+    "ust10": 5.309,
+    "ust3d": 7.5,
+    "ust30": 5.663,
+    "curveStress": 3,
+    "policyFails": 2,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "10/6 10:00 KST 근접·FX/JGB 실시간·UST 10/5 미국장 종가 및 10/6 아시아 호가 교차확인",
+    "ust5Intraday": 11,
+    "ust5Close": 9,
+    "ust53Intraday": 3,
+    "ust53Close": 1,
+    "ust30AccelConfirm": true,
+    "ustDriver": "TERM PREMIUM / FISCAL / SUPPLY",
+    "ustDriverNote": "10/5 미국장에서 10Y가 5.310%, 30Y가 5.664%로 각각 약 +3.4bp·+3.5bp 상승했다. 10월 Fed 인상확률이 약 24%로 낮아졌는데도 장기금리가 오르고, Reuters가 악화된 공공재정·대규모 채권공급·높은 에너지 가격을 공통 압력으로 지목해 term premium·재정/공급을 주된 driver로 유지.",
+    "bondReversalState": "OFF",
+    "bondPeakDate": null,
+    "bondLagDay": null,
+    "spxPostBondLow": false,
+    "nasdaqPostBondLow": false,
+    "equityStabilized": true,
+    "dataNotes": {
+      "fx": "Investing 동일 일별계열 10/1 158.07→10/2 157.86→10/5 157.96→10/6 09:27 KST 157.91. 3D -0.10%, 최근 3개 일변화율 -0.133%·+0.063%·-0.032%로 RV3 0.15%, 직전 비교창 RV3 0.44% 대비 가속률 -65.7%. 실시간 페이지 내 시점별 값은 157.87~157.98, 당일 저가는 157.82~157.89로 차이가 있어 157.91을 최신 본값, 157.82를 보수적 저가로 기록. 155/153/152/150 신규 하향 이탈 없음.",
+      "jgb": "Investing 동일계열 10/1 3.100→10/2 3.102→10/5 3.092→10/6 3.109. 3D +0.29%, RV3 0.64%, 직전 비교창 RV3 1.25% 대비 가속률 -48.8%. 표의 10/6 값 3.113%와 실시간 3.109%는 약 0.4bp 시점차. 최근 5거래일 FX·JGB RV3 동시가속은 10/1·10/2의 2회. 30Y JGB는 10/5 장중 4.235% 사상 최고로 long-end 경계는 강화.",
+      "ust": "10/5 미국장 종가 및 10/6 아시아 호가를 교차확인: UST10Y 5.310% 종가·아시아 5.309%, 30Y 5.664% 종가·아시아 5.663%. Investing 동일 10Y 계열 10/1 5.234→10/2 5.270→10/5 5.310으로 3거래일 +7.6bp(아시아 5.309 적용 시 +7.5bp). 10/5 장중 5.34%로 5%·5.3% intraday 각 +1, 5.310% 종가로 5%·5.3% close 각 +1. +15bp T2에는 미달하지만 30Y 동반상승은 확인.",
+      "policy": "Treasury 장기채 buyback은 시장 유동성 목적이라는 Bessent 설명과 달리 금리 수준 완충은 여전히 미흡해 정책실패 누적 2회 유지. 일본 총리는 10/5 국채 발행 억제·시장불안 대응을 약속했지만 30Y JGB가 4.235% 사상 최고를 기록했다. 10/6 10:00 KST까지 신규 Fed·BOJ 결정이나 미·일 FX 실개입은 확인되지 않음.",
+      "equity": "10/5 S&P500 7,773.95(+0.7%), Nasdaq 27,477.31(+1.05%, 사상 최고)로 10/1 이후 두 지수 모두 두 차례 연속 higher close를 만들어 equityStabilized=true. 그러나 UST10Y가 10/5 장중 5.34%로 10/1 shock 고점 5.345%에 재접근하고 종가도 5.310%로 올라 -10bp 반전 조건이 사라져 Bond Reversal을 OFF로 전환. post-bond 신저가는 없었고 ADD는 OFF."
+    },
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "미도달. 10/6 오전 보수적 저가 157.82로 신규 150 이탈 없음."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/6 오전 보수적 저가 157.82로 신규 152 이탈 없음."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/6 오전 보수적 저가 157.82로 신규 153 이탈 없음."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "기존 누적 유지. 10/6 오전 보수적 저가 157.82로 신규 155 하향 crossing 없음."
+      }
+    }
   }
 }
