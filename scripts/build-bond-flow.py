@@ -50,6 +50,44 @@ for previous, current in reversed(list(zip(rows, rows[1:]))):
         break
 
 c = raw['cftc']
+def trend_signals(series, key, threshold, scale, unit):
+    """Causal annotation: first threshold crossing in each monotonic run.
+    Confirmation date is when >=2 consecutive changes and magnitude are known.
+    These display filters have no validated predictive or statistical meaning.
+    """
+    signals = []
+    direction, count, emitted, baseline = 0, 0, False, None
+    for previous, current in zip(series, series[1:]):
+        a, b = previous[key], current[key]
+        if a is None or b is None:
+            direction, count, emitted, baseline = 0, 0, False, None
+            continue
+        delta = b-a
+        sign = 1 if delta > 1e-10 else -1 if delta < -1e-10 else 0
+        if not sign:
+            direction, count, emitted, baseline = 0, 0, False, None
+            continue
+        if sign != direction:
+            direction, count, emitted, baseline = sign, 1, False, previous
+        else:
+            count += 1
+        movement = (b-baseline[key])*scale
+        if count >= 2 and abs(movement)+1e-8 >= threshold and not emitted:
+            signals.append({'date':current['date'], 'direction':'up' if sign>0 else 'down',
+                            'value':b, 'fromDate':baseline['date'], 'fromValue':baseline[key],
+                            'change':movement, 'unit':unit, 'sessions':count})
+            emitted = True
+    return signals
+
+chart_dates = {r['date'] for r in rows[-20:]}
+signal_rules = {'minConsecutiveSessions':2, 'yieldChangeBp':5, 'rsiChangePoints':5,
+                'repeat':'Once per uninterrupted monotonic run; zeros, missing values and opposite direction reset.',
+                'timing':'First date satisfying both filters; never backdated to the pivot.',
+                'validation':'Display convention only; not statistically significant or backtested.'}
+signals = {
+    key: [s for s in trend_signals(rows,key,5,scale,unit) if s['date'] in chart_dates]
+    for key,scale,unit in [('close',100,'bp'),('rsi14',1,'pt')]
+}
 def position(current, change):
     return {'previous': current-change, 'current': current, 'change': change}
 positions = {
@@ -66,7 +104,7 @@ snapshot = {
               'series': 'Investing.com UST 10Y yield daily weekday closes',
               'method': 'Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.',
               'sessionCount': len(rows), 'excludedDates': excluded, 'latest': latest,
-              'comparison': prior, 'chart': rows[-20:]},
+              'comparison': prior, 'chart': rows[-20:], 'signals':signals, 'signalRules':signal_rules},
     'patterns': {'momentumSlowdownCandidate': candidate, 'rsiEasingSessions': rsi_easing,
                  'yieldEasingSessions': yield_easing,
                  'rsiDifference': latest['rsi14']-prior['rsi14'],

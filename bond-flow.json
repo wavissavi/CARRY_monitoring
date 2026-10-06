@@ -169,7 +169,81 @@
         "low": 5.249,
         "rsi14": 75.75469298379576
       }
-    ]
+    ],
+    "signals": {
+      "close": [
+        {
+          "date": "2026-09-09",
+          "direction": "up",
+          "value": 4.837,
+          "fromDate": "2026-09-03",
+          "fromValue": 4.762,
+          "change": 7.500000000000018,
+          "unit": "bp",
+          "sessions": 3
+        },
+        {
+          "date": "2026-09-24",
+          "direction": "up",
+          "value": 5.162,
+          "fromDate": "2026-09-22",
+          "fromValue": 4.955,
+          "change": 20.699999999999985,
+          "unit": "bp",
+          "sessions": 2
+        },
+        {
+          "date": "2026-10-05",
+          "direction": "up",
+          "value": 5.311,
+          "fromDate": "2026-10-01",
+          "fromValue": 5.234,
+          "change": 7.699999999999996,
+          "unit": "bp",
+          "sessions": 2
+        }
+      ],
+      "rsi14": [
+        {
+          "date": "2026-09-09",
+          "direction": "up",
+          "value": 64.76610949145332,
+          "fromDate": "2026-09-03",
+          "fromValue": 58.143774282341525,
+          "change": 6.622335209111796,
+          "unit": "pt",
+          "sessions": 3
+        },
+        {
+          "date": "2026-09-22",
+          "direction": "down",
+          "value": 63.164166226621525,
+          "fromDate": "2026-09-18",
+          "fromValue": 68.79593215632795,
+          "change": -5.631765929706425,
+          "unit": "pt",
+          "sessions": 2
+        },
+        {
+          "date": "2026-09-24",
+          "direction": "up",
+          "value": 75.12216591180237,
+          "fromDate": "2026-09-22",
+          "fromValue": 63.164166226621525,
+          "change": 11.957999685180845,
+          "unit": "pt",
+          "sessions": 2
+        }
+      ]
+    },
+    "signalRules": {
+      "minConsecutiveSessions": 2,
+      "yieldChangeBp": 5,
+      "rsiChangePoints": 5,
+      "repeat": "Once per uninterrupted monotonic run; zeros, missing values and opposite direction reset.",
+      "timing": "First date satisfying both filters; never backdated to the pivot.",
+      "validation": "Display convention only; not statistically significant or backtested."
+    }
   },
   "patterns": {
     "momentumSlowdownCandidate": true,

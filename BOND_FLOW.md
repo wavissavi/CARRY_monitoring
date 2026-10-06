@@ -24,7 +24,15 @@ For subsequent daily monitoring, capture completed sessions from the same verifi
 
 Before CFTC data is updated, verify report date, market code, futures-only scope and all-expiries coverage. Previous-week positions here are reconstructed from this report's published weekly change; they are not independently fetched prior reports.
 
-## Pilot review
+## Direction arrows (October 6 display update)
+
+Arrows annotate the first completed session meeting both filters: at least two consecutive same-direction changes and cumulative magnitude at least 5bp for yield or 5 points for yield RSI. These fixed thresholds are provisional display conventions, not calibrated trading thresholds or statistical significance tests. Red up arrows indicate that plotted series increased; blue down arrows indicate it decreased. Yield direction is opposite bond-price direction.
+
+Only one arrow is emitted per uninterrupted monotonic run. A flat, missing value or opposite-direction move resets the run. The full captured series is evaluated before restricting marks to the displayed 20-session window. Marks are anchored on the confirmation session and value, never backdated to an earlier pivot. Hover details and the visible date/change list give the exact comparison start and cumulative move. Previously saved observations do not use future data. Unverified futures RSI and flow data do not receive arrows.
+
+The current reviewed window has yield up arrows on September 9, September 24 and October 5; yield-RSI up arrows on September 9 and September 24 and a down arrow on September 22. This display update does not alter the existing slowdown candidate interpretation, RISK, Bond Reversal or ADD logic.
+
+## Pilot review procedure
 
 Record candidate dates before later outcomes are known. At each subsequent completed session, retain whether momentum and yield easing persisted, whether the candidate high was exceeded, when independent positioning became available, and the existing Bond Reversal/ADD result. Review examples of both continuation and false turns before proposing an engine change. Overlapping candidates from one shock are not independent tests. Numerical thresholds and promotion rules require a separate decision after evidence accumulates; there is no automatic promotion.
 
