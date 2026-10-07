@@ -769,5 +769,150 @@
       "latest": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
       "marketContext": "https://www.investing.com/news/economy-news/stocks-upbeat-dollar-wobbles-as-fed-hike-bets-recede-4930982"
     }
+  },
+  "2026-10-07": {
+    "asof": "2026-10-07",
+    "collectedAt": "2026-10-07T10:07:27+09:00",
+    "fxNow": 158.43,
+    "fxDayLow": 158.08,
+    "fx3d": 0.15,
+    "fxrv3": 0.28,
+    "fxAccel": -35,
+    "jgbNow": 3.076,
+    "jgb3d": -0.23,
+    "jgbrv3": 0.48,
+    "jgbAccel": -62.5,
+    "coAccel": 2,
+    "ust10": 5.296,
+    "ust3d": 5.4,
+    "ust30": 5.668,
+    "ust30_3d": 6.5,
+    "curveStress": 3,
+    "policyFails": 2,
+    "buybackState": "효과 미흡",
+    "fxReaccel": "아니오",
+    "dataStatus": "10/7 오전 최신 호가·파생값은 10/6 완료 일별계열·소스 종가/시각 차이 있음",
+    "ust5Intraday": 12,
+    "ust5Close": 10,
+    "ust53Intraday": 4,
+    "ust53Close": 1,
+    "ust30AccelConfirm": true,
+    "ustDriver": "MIXED",
+    "ustDriverNote": "10/6 미국장에서는 유가 하락·Fed 동결 기대와 글로벌 매도 완화로 10Y·2Y가 각각 약 4bp 하락(WSJ 15:47 ET). 한편 재정·공급/term premium 부담과 10/7 $39B 10Y·10/8 $22B 30Y 입찰이 남아 있음. 당일 금리 하락은 인플레 완충과 매도 둔화가 혼재해 MIXED [P]로 분류하며 공급 충격 해소를 확정하지 않음.",
+    "bondReversalState": "CANDIDATE",
+    "bondPeakDate": "2026-10-06",
+    "bondLagDay": null,
+    "bondReversal": false,
+    "spxPostBondLow": false,
+    "nasdaqPostBondLow": false,
+    "equityStabilized": null,
+    "shockPeakDate": "2026-10-05",
+    "shockPeakYield": 5.3493,
+    "bondPeakYield": 5.3493,
+    "previousBondPeakDate": "2026-10-01",
+    "previousBondPeakYield": 5.345,
+    "bondReversalInvalidated": true,
+    "bondReversalInvalidatedDate": "2026-10-05",
+    "bondReversalInvalidatedReason": "10/5 새 shock 고점 5.3493%가 10/1 5.345%를 재돌파하여 기존 CONFIRMED는 무효. 10/6 장중 저가 5.248%는 새 -10bp 조건을 처음 충족했으나 종가 5.288%로 반등. 새 후보만 기록하고 기존 10/1 관찰창은 복원하지 않음.",
+    "bondReversalTriggerYield": 5.2493,
+    "bondReversalCandidateDate": "2026-10-06",
+    "bondReversalCandidateNote": "장중 저가 기준 약 -10.13bp. 장중 발생시각과 반전 지속성이 미확정이며 다음 완료 세션의 동일 고점 미재돌파 확인 전까지 CONFIRMED·Lag·ADD로 승격하지 않음.",
+    "ust10High": 5.329,
+    "ust10HighDate": "2026-10-06",
+    "ust10HighSource": "Investing 일별계열",
+    "ust10Close": 5.288,
+    "ust10CloseDate": "2026-10-06",
+    "ust10CloseSource": "Investing 일별계열·WSJ 5.270%와 집계차이",
+    "ust10Low": 5.248,
+    "ust10LowDate": "2026-10-06",
+    "ust30High": 5.681,
+    "ust30HighDate": "2026-10-06",
+    "ust30HighSource": "Investing 일별계열",
+    "metricsAsOf": {
+      "fx": "2026-10-06",
+      "jgb": "2026-10-06",
+      "ust": "2026-10-06",
+      "coAccel": "2026-10-06"
+    },
+    "ustCountThrough": "2026-10-06",
+    "fxCountThrough": "2026-10-06",
+    "ust10Latest": {
+      "value": 5.296,
+      "source": "Investing.com 한국어",
+      "url": "https://kr.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+      "retrievedAt": "2026-10-07 오전 수집",
+      "sourceTimeLabel": "09:37:48",
+      "sourceTimezone": "페이지 표기 시간대 별도 미확정",
+      "session": "10/7 오전 수집·확정 종가 아님",
+      "status": "C",
+      "drawdownFromShockPeakBp": -5.33
+    },
+    "observations": [
+      {
+        "metric": "UST10Y",
+        "value": 5.27,
+        "source": "WSJ/Tradeweb",
+        "sessionDate": "2026-10-06",
+        "sourceTimeLabel": "15:47 ET",
+        "status": "C",
+        "note": "Investing 일별표 5.288%와 1.8bp 집계/시점 차이. 3D 계산에 혼합하지 않음."
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.33,
+        "source": "Investing 당일 일별표",
+        "sessionDate": "2026-10-07",
+        "status": "C",
+        "note": "진행 중 행. 실시간 158.43과 시각 차이; 당일 표 저가158.31, 실시간 범위 저가158.08."
+      }
+    ],
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/6 저가157.76·종가158.31 및 10/7 오전 확인 저가158.08 모두 150 위로 신규 하향 이탈 없음. 10/7 종가는 아직 미확정."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/6 저가157.76·종가158.31 및 10/7 오전 확인 저가158.08 모두 152 위로 신규 하향 이탈 없음. 10/7 종가는 아직 미확정."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "기존 누적 유지. 10/6 저가157.76·종가158.31 및 10/7 오전 확인 저가158.08 모두 153 위로 신규 하향 이탈 없음. 10/7 종가는 아직 미확정."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "기존 누적 유지. 10/6 저가157.76·종가158.31 및 10/7 오전 확인 저가158.08 모두 155 위로 신규 하향 이탈 없음. 10/7 종가는 아직 미확정."
+      }
+    },
+    "dataNotes": {
+      "fx": "본값=Investing 한국어 실시간 158.43(페이지 09:13:15, 시간대 별도 미확정), 범위 저가158.08. 당일 일별행은158.33·저가158.31로 시점차가 있어 별도 보존. 파생값은 완료 일별계열 10/1 158.07→10/2 157.86→10/5 157.92→10/6 158.31: 3D +0.15%, RV3 0.283%, 직전 RV3 0.435% 대비 -35.0%. 실시간 값을 파생계열에 섞지 않음. 10/5 일별값은 전일 수집157.96에서157.92로 수정되어 오늘 계산근거에만 반영하고 과거기록은 보존.",
+      "jgb": "본값=Investing 한국어 10:02:12 3.076%(진행 중), 당일 일별표3.081%와 시점차. 파생값은 완료 동일계열 10/1 3.100→10/2 3.102→10/5 3.088→10/6 3.093: 3D -0.23%, RV3 0.484%, 직전1.291% 대비 -62.5%. 10/5 종가3.092→3.088의 소급수정은 오늘 계산근거만 갱신. 최근5개 완료 세션(9/30,10/1,10/2,10/5,10/6) 동시가속은10/1·10/2의2회. 20Y·30Y 신규 최신값은 이번 수집에서 독립확인하지 못해 미확정; JGB10Y 핵심엔진에는 혼합하지 않음.",
+      "ust": "본값=Investing 한국어 UST10Y5.296%(09:37:48), UST30Y5.668%(08:57:05); 호가 시점 차이 및 시간대 미확정. 3D는 완료 일별표 10/1→10/6 10Y5.234→5.288=+5.4bp,30Y5.603→5.668=+6.5bp로 동반 방향이지만 +15/+20bp 가속에는 미달(T1). WSJ 10/6 15:47 ET 10Y5.270%, 실시간 페이지 전일종가5.268%, 일별표5.288% 사이 집계차를 추정으로 해소하지 않음.10/6 고가5.329·저가5.248·일별종가5.288 확인으로5% 장중/종가 누적각+1,5.3% 장중+1/종가+0.카운트는10/6 완료세션까지만,10/7 신규 확정세션 미가산.20Y 최신값은 미확정.",
+      "policy": "정책실패 누적2회 유지·오늘 신규 실패 가산 없음.10/6 BOJ 우에다는2% 기조물가 정착과 추가 금리인상 방침을 재확인(Reuters); 신규 결정으로 보지 않음.10/7 10:00까지 Fed/BOJ 신규 정책결정·미일 FX 실개입은 확인하지 못함.10/6 2~3Y buyback은 제3자 집계상 한도$4B·매입$1.3B이나 공식 결과 페이지 조회가403으로 막혀 실제 매입액은[U]로 유지하고 장기금리 반락 원인으로 확정하지 않음. Bessent는10/5 Axios 관련 보도에서 금리 급등을 유가와 연결했으나 시장 통제력은 확정할 수 없음.",
+      "equity": "10/6 S&P500 7,819.04·Nasdaq Composite27,599.79(Investing), 별도 기사S&P7,818.93과0.11포인트차이.10/5 대비 두 지수 상승으로 post-bond 신저가 없음. 새10/6 장중 반전 후보 이후 안정성 확인에 필요한2개 완료세션은 아직 없어 equityStabilized=null. 기존10/1 CONFIRMED 무효상태는 보존하며 새 후보만 CANDIDATE; Lag·ADD OFF,FX/JGB VETO 비활성.",
+      "flow": "관찰용 금리 RSI14는 기존3/2 시작계열에10/6 완료 종가5.288을 추가한153개 세션으로 계산:10/5 75.75→10/6 72.64(-3.11p),금리·RSI 둔화1세션.2세션/5bp·5포인트 화살표 기준에는 미달.선물 RSI·일별OI·10/5이후 CFTC 수급 반전은 미확정.오늘은history.json만 갱신하므로 별도 그래프 스냅샷은 미갱신이며10/7 패널은 확인대기로 표시. 기존 보조신호 가중치0 유지."
+    },
+    "yieldRsi14": 72.64136804537335,
+    "yieldRsiSessionDate": "2026-10-06",
+    "yieldRsiEasingSessions": 1,
+    "flowTurnState": "미확정",
+    "flowRiskWeight": 0,
+    "sources": {
+      "fx": "https://kr.investing.com/currencies/usd-jpy-historical-data",
+      "fxLive": "https://www.investing.com/currencies/usd-jpy",
+      "jgb": "https://kr.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
+      "ust10": "https://kr.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+      "ust30": "https://kr.investing.com/rates-bonds/u.s.-30-year-bond-yield-historical-data",
+      "wsj": "https://www.wsj.com/finance/long-term-jgb-yield-higher-following-gains-in-u-s-treasury-yields-1e5941a3",
+      "boj": "https://www.reuters.com/world/asia-pacific/boj-chief-calls-more-focus-anchoring-inflation-around-target-2026-10-06/",
+      "supply": "https://www.reuters.com/commentary/reuters-open-interest/trumps-treasury-sting-is-auction-tail-mcgeever-2026-10-06/",
+      "buybackUnverified": "https://thevaultreport.com/treasury-buybacks",
+      "bessent": "https://www.marketwatch.com/story/what-bessent-is-now-saying-after-bond-yields-didnt-stop-rising-on-i-am-the-house-remark-0ab359f8",
+      "equity": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-tech-rally-lifts-sp-500-nasdaq-to-records-4935463"
+    }
   }
 }
