@@ -1,41 +1,34 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-10-06",
+  "asof": "2026-10-07",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-10-06T08:01:15.570Z",
+    "retrievedAt": "2026-10-07T04:56:32.803163+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
-    "sessionCount": 152,
+    "sessionCount": 153,
     "excludedDates": [
       "2026-10-04"
     ],
     "latest": {
+      "date": "2026-10-06",
+      "close": 5.271,
+      "high": 5.326,
+      "low": 5.252,
+      "rsi14": 70.49983828450233
+    },
+    "comparison": {
       "date": "2026-10-05",
       "close": 5.311,
       "high": 5.349,
       "low": 5.249,
       "rsi14": 75.75469298379576
     },
-    "comparison": {
-      "date": "2026-09-30",
-      "close": 5.293,
-      "high": 5.306,
-      "low": 5.201,
-      "rsi14": 80.30400463251522
-    },
     "chart": [
-      {
-        "date": "2026-09-08",
-        "close": 4.804,
-        "high": 4.812,
-        "low": 4.76,
-        "rsi14": 61.94979216022363
-      },
       {
         "date": "2026-09-09",
         "close": 4.837,
@@ -168,6 +161,13 @@
         "high": 5.349,
         "low": 5.249,
         "rsi14": 75.75469298379576
+      },
+      {
+        "date": "2026-10-06",
+        "close": 5.271,
+        "high": 5.326,
+        "low": 5.252,
+        "rsi14": 70.49983828450233
       }
     ],
     "signals": {
@@ -243,13 +243,21 @@
       "repeat": "Once per uninterrupted monotonic run; zeros, missing values and opposite direction reset.",
       "timing": "First date satisfying both filters; never backdated to the pivot.",
       "validation": "Display convention only; not statistically significant or backtested."
+    },
+    "updateNote": "10/7 재조회 Investing 일별표는 10/6 종가 5.271%·고가 5.326%·저가 5.252%. 오전 저장 종가 5.288%·고가 5.329%·저가 5.248%와 차이. 차이 원인은 미확정. 관찰 그래프는 재조회 종가로 계산하고 상단 오전 시장 스냅샷·장중 Reversal 후보는 당시 관측 기록으로 보존한다. 최신 표로 오전 -10bp 접촉을 재현할 수 없어 Reversal은 확인대기이며 승격하지 않는다.",
+    "previousCollection": {
+      "asof": "2026-10-07",
+      "sessionDate": "2026-10-06",
+      "close": 5.288,
+      "rsi14": 72.64136804537335,
+      "source": "history.json morning snapshot; retained observation"
     }
   },
   "patterns": {
-    "momentumSlowdownCandidate": true,
-    "rsiEasingSessions": 0,
-    "yieldEasingSessions": 0,
-    "rsiDifference": -4.549311648719453,
+    "momentumSlowdownCandidate": false,
+    "rsiEasingSessions": 1,
+    "yieldEasingSessions": 1,
+    "rsiDifference": -5.254854699293432,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold."
   },
   "futures": {
@@ -289,7 +297,10 @@
       }
     },
     "previousMethod": "Current positions minus officially reported weekly changes; prior report not independently fetched.",
-    "coversCandidateDate": false
+    "coversCandidateDate": false,
+    "frequency": "weekly",
+    "frequencyLabel": "주간지표",
+    "verifiedAt": "2026-10-07T04:56:32.803163+00:00"
   },
-  "rawFile": "data/bond-flow-raw-20261006.json"
+  "rawFile": "data/bond-flow-raw-20261007.json"
 }
