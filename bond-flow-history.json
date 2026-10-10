@@ -1907,5 +1907,681 @@
       },
       "revisionNote": "10/7 SPX7801.73→7801.77 및10/6 Nasdaq27599.79→27599.89 재조회차이.당시관측보존·원인미확정."
     }
+  },
+  "2026-10-10": {
+    "schemaVersion": 1,
+    "asof": "2026-10-10",
+    "observationOnly": true,
+    "riskWeight": 0,
+    "affectsADD": false,
+    "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
+    "yield": {
+      "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+      "retrievedAt": "2026-10-10T01:04:59.823166+00:00",
+      "series": "Investing.com UST 10Y yield daily weekday closes",
+      "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
+      "sessionCount": 156,
+      "excludedDates": [
+        "2026-10-04"
+      ],
+      "latest": {
+        "date": "2026-10-09",
+        "close": 5.242,
+        "high": 5.276,
+        "low": 5.213,
+        "rsi14": 65.73463158435368
+      },
+      "comparison": {
+        "date": "2026-10-05",
+        "close": 5.311,
+        "high": 5.349,
+        "low": 5.249,
+        "rsi14": 75.75469298379576
+      },
+      "chart": [
+        {
+          "date": "2026-09-14",
+          "close": 4.961,
+          "high": 5.014,
+          "low": 4.934,
+          "rsi14": 71.59144316316488
+        },
+        {
+          "date": "2026-09-15",
+          "close": 4.996,
+          "high": 5.041,
+          "low": 4.981,
+          "rsi14": 73.61289196161599
+        },
+        {
+          "date": "2026-09-16",
+          "close": 5.004,
+          "high": 5.027,
+          "low": 4.938,
+          "rsi14": 74.06711692794426
+        },
+        {
+          "date": "2026-09-17",
+          "close": 4.947,
+          "high": 5.008,
+          "low": 4.93,
+          "rsi14": 65.42548597621445
+        },
+        {
+          "date": "2026-09-18",
+          "close": 4.996,
+          "high": 5.008,
+          "low": 4.92,
+          "rsi14": 68.79593215632795
+        },
+        {
+          "date": "2026-09-21",
+          "close": 4.963,
+          "high": 4.976,
+          "low": 4.943,
+          "rsi14": 64.25308778849578
+        },
+        {
+          "date": "2026-09-22",
+          "close": 4.955,
+          "high": 4.984,
+          "low": 4.92,
+          "rsi14": 63.164166226621525
+        },
+        {
+          "date": "2026-09-23",
+          "close": 5.114,
+          "high": 5.135,
+          "low": 4.935,
+          "rsi14": 72.96926991683776
+        },
+        {
+          "date": "2026-09-24",
+          "close": 5.162,
+          "high": 5.225,
+          "low": 5.087,
+          "rsi14": 75.12216591180237
+        },
+        {
+          "date": "2026-09-25",
+          "close": 5.181,
+          "high": 5.23,
+          "low": 5.154,
+          "rsi14": 75.93907666028352
+        },
+        {
+          "date": "2026-09-28",
+          "close": 5.242,
+          "high": 5.274,
+          "low": 5.192,
+          "rsi14": 78.39227166452784
+        },
+        {
+          "date": "2026-09-29",
+          "close": 5.255,
+          "high": 5.293,
+          "low": 5.205,
+          "rsi14": 78.8863338699292
+        },
+        {
+          "date": "2026-09-30",
+          "close": 5.293,
+          "high": 5.306,
+          "low": 5.201,
+          "rsi14": 80.30400463251522
+        },
+        {
+          "date": "2026-10-01",
+          "close": 5.234,
+          "high": 5.345,
+          "low": 5.205,
+          "rsi14": 72.19828273641218
+        },
+        {
+          "date": "2026-10-02",
+          "close": 5.277,
+          "high": 5.298,
+          "low": 5.157,
+          "rsi14": 74.23915458281773
+        },
+        {
+          "date": "2026-10-05",
+          "close": 5.311,
+          "high": 5.349,
+          "low": 5.249,
+          "rsi14": 75.75469298379576
+        },
+        {
+          "date": "2026-10-06",
+          "close": 5.271,
+          "high": 5.326,
+          "low": 5.252,
+          "rsi14": 70.49983828450233
+        },
+        {
+          "date": "2026-10-07",
+          "close": 5.277,
+          "high": 5.365,
+          "low": 5.269,
+          "rsi14": 70.8267361849889
+        },
+        {
+          "date": "2026-10-08",
+          "close": 5.233,
+          "high": 5.354,
+          "low": 5.223,
+          "rsi14": 65.1272393899398
+        },
+        {
+          "date": "2026-10-09",
+          "close": 5.242,
+          "high": 5.276,
+          "low": 5.213,
+          "rsi14": 65.73463158435368
+        }
+      ],
+      "signals": {
+        "close": [
+          {
+            "date": "2026-09-24",
+            "direction": "up",
+            "value": 5.162,
+            "fromDate": "2026-09-22",
+            "fromValue": 4.955,
+            "change": 20.699999999999985,
+            "unit": "bp",
+            "sessions": 2
+          },
+          {
+            "date": "2026-10-05",
+            "direction": "up",
+            "value": 5.311,
+            "fromDate": "2026-10-01",
+            "fromValue": 5.234,
+            "change": 7.699999999999996,
+            "unit": "bp",
+            "sessions": 2
+          }
+        ],
+        "rsi14": [
+          {
+            "date": "2026-09-22",
+            "direction": "down",
+            "value": 63.164166226621525,
+            "fromDate": "2026-09-18",
+            "fromValue": 68.79593215632795,
+            "change": -5.631765929706425,
+            "unit": "pt",
+            "sessions": 2
+          },
+          {
+            "date": "2026-09-24",
+            "direction": "up",
+            "value": 75.12216591180237,
+            "fromDate": "2026-09-22",
+            "fromValue": 63.164166226621525,
+            "change": 11.957999685180845,
+            "unit": "pt",
+            "sessions": 2
+          }
+        ]
+      },
+      "signalRules": {
+        "minConsecutiveSessions": 2,
+        "yieldChangeBp": 5,
+        "rsiChangePoints": 5,
+        "repeat": "Once per uninterrupted monotonic run; zeros, missing values and opposite direction reset.",
+        "timing": "First date satisfying both filters; never backdated to the pivot.",
+        "validation": "Display convention only; not statistically significant or backtested."
+      },
+      "dailyMetrics": [
+        {
+          "date": "2026-09-14",
+          "close": 4.961,
+          "high": 5.014,
+          "low": 4.934,
+          "rsi14": 71.59144316316488,
+          "yieldChangeBp": null,
+          "rsiChangePoints": null,
+          "yieldChange3SessionsBp": null,
+          "yieldChange5SessionsBp": null,
+          "rsiChange3SessionsPoints": null,
+          "rsiChange5SessionsPoints": null
+        },
+        {
+          "date": "2026-09-15",
+          "close": 4.996,
+          "high": 5.041,
+          "low": 4.981,
+          "rsi14": 73.61289196161599,
+          "yieldChangeBp": 3.500000000000014,
+          "rsiChangePoints": 2.021448798451104,
+          "yieldChange3SessionsBp": null,
+          "yieldChange5SessionsBp": null,
+          "rsiChange3SessionsPoints": null,
+          "rsiChange5SessionsPoints": null
+        },
+        {
+          "date": "2026-09-16",
+          "close": 5.004,
+          "high": 5.027,
+          "low": 4.938,
+          "rsi14": 74.06711692794426,
+          "yieldChangeBp": 0.7999999999999119,
+          "rsiChangePoints": 0.4542249663282689,
+          "yieldChange3SessionsBp": null,
+          "yieldChange5SessionsBp": null,
+          "rsiChange3SessionsPoints": null,
+          "rsiChange5SessionsPoints": null
+        },
+        {
+          "date": "2026-09-17",
+          "close": 4.947,
+          "high": 5.008,
+          "low": 4.93,
+          "rsi14": 65.42548597621445,
+          "yieldChangeBp": -5.6999999999999496,
+          "rsiChangePoints": -8.641630951729809,
+          "yieldChange3SessionsBp": -1.4000000000000234,
+          "yieldChange5SessionsBp": null,
+          "rsiChange3SessionsPoints": -6.165957186950436,
+          "rsiChange5SessionsPoints": null
+        },
+        {
+          "date": "2026-09-18",
+          "close": 4.996,
+          "high": 5.008,
+          "low": 4.92,
+          "rsi14": 68.79593215632795,
+          "yieldChangeBp": 4.900000000000038,
+          "rsiChangePoints": 3.370446180113504,
+          "yieldChange3SessionsBp": 0,
+          "yieldChange5SessionsBp": null,
+          "rsiChange3SessionsPoints": -4.816959805288036,
+          "rsiChange5SessionsPoints": null
+        },
+        {
+          "date": "2026-09-21",
+          "close": 4.963,
+          "high": 4.976,
+          "low": 4.943,
+          "rsi14": 64.25308778849578,
+          "yieldChangeBp": -3.3000000000000362,
+          "rsiChangePoints": -4.542844367832174,
+          "yieldChange3SessionsBp": -4.099999999999948,
+          "yieldChange5SessionsBp": 0.19999999999997797,
+          "rsiChange3SessionsPoints": -9.814029139448479,
+          "rsiChange5SessionsPoints": -7.338355374669106
+        },
+        {
+          "date": "2026-09-22",
+          "close": 4.955,
+          "high": 4.984,
+          "low": 4.92,
+          "rsi14": 63.164166226621525,
+          "yieldChangeBp": -0.8000000000000007,
+          "rsiChangePoints": -1.0889215618742512,
+          "yieldChange3SessionsBp": 0.8000000000000007,
+          "yieldChange5SessionsBp": -4.100000000000037,
+          "rsiChange3SessionsPoints": -2.2613197495929214,
+          "rsiChange5SessionsPoints": -10.448725734994461
+        },
+        {
+          "date": "2026-09-23",
+          "close": 5.114,
+          "high": 5.135,
+          "low": 4.935,
+          "rsi14": 72.96926991683776,
+          "yieldChangeBp": 15.89999999999998,
+          "rsiChangePoints": 9.805103690216235,
+          "yieldChange3SessionsBp": 11.799999999999944,
+          "yieldChange5SessionsBp": 11.000000000000032,
+          "rsiChange3SessionsPoints": 4.17333776050981,
+          "rsiChange5SessionsPoints": -1.097847011106495
+        },
+        {
+          "date": "2026-09-24",
+          "close": 5.162,
+          "high": 5.225,
+          "low": 5.087,
+          "rsi14": 75.12216591180237,
+          "yieldChangeBp": 4.800000000000004,
+          "rsiChangePoints": 2.1528959949646094,
+          "yieldChange3SessionsBp": 19.899999999999984,
+          "yieldChange5SessionsBp": 21.499999999999986,
+          "rsiChange3SessionsPoints": 10.869078123306593,
+          "rsiChange5SessionsPoints": 9.696679935587923
+        },
+        {
+          "date": "2026-09-25",
+          "close": 5.181,
+          "high": 5.23,
+          "low": 5.154,
+          "rsi14": 75.93907666028352,
+          "yieldChangeBp": 1.9000000000000128,
+          "rsiChangePoints": 0.8169107484811491,
+          "yieldChange3SessionsBp": 22.599999999999998,
+          "yieldChange5SessionsBp": 18.49999999999996,
+          "rsiChange3SessionsPoints": 12.774910433661994,
+          "rsiChange5SessionsPoints": 7.143144503955568
+        },
+        {
+          "date": "2026-09-28",
+          "close": 5.242,
+          "high": 5.274,
+          "low": 5.192,
+          "rsi14": 78.39227166452784,
+          "yieldChangeBp": 6.099999999999994,
+          "rsiChangePoints": 2.4531950042443214,
+          "yieldChange3SessionsBp": 12.800000000000011,
+          "yieldChange5SessionsBp": 27.89999999999999,
+          "rsiChange3SessionsPoints": 5.42300174769008,
+          "rsiChange5SessionsPoints": 14.139183876032064
+        },
+        {
+          "date": "2026-09-29",
+          "close": 5.255,
+          "high": 5.293,
+          "low": 5.205,
+          "rsi14": 78.8863338699292,
+          "yieldChangeBp": 1.29999999999999,
+          "rsiChangePoints": 0.49406220540136303,
+          "yieldChange3SessionsBp": 9.299999999999997,
+          "yieldChange5SessionsBp": 29.999999999999982,
+          "rsiChange3SessionsPoints": 3.7641679581268335,
+          "rsiChange5SessionsPoints": 15.722167643307678
+        },
+        {
+          "date": "2026-09-30",
+          "close": 5.293,
+          "high": 5.306,
+          "low": 5.201,
+          "rsi14": 80.30400463251522,
+          "yieldChangeBp": 3.8000000000000256,
+          "rsiChangePoints": 1.4176707625860132,
+          "yieldChange3SessionsBp": 11.20000000000001,
+          "yieldChange5SessionsBp": 17.900000000000027,
+          "rsiChange3SessionsPoints": 4.364927972231698,
+          "rsiChange5SessionsPoints": 7.334734715677456
+        },
+        {
+          "date": "2026-10-01",
+          "close": 5.234,
+          "high": 5.345,
+          "low": 5.205,
+          "rsi14": 72.19828273641218,
+          "yieldChangeBp": -5.900000000000016,
+          "rsiChangePoints": -8.105721896103034,
+          "yieldChange3SessionsBp": -0.8000000000000007,
+          "yieldChange5SessionsBp": 7.200000000000006,
+          "rsiChange3SessionsPoints": -6.193988928115658,
+          "rsiChange5SessionsPoints": -2.9238831753901877
+        },
+        {
+          "date": "2026-10-02",
+          "close": 5.277,
+          "high": 5.298,
+          "low": 5.157,
+          "rsi14": 74.23915458281773,
+          "yieldChangeBp": 4.300000000000015,
+          "rsiChangePoints": 2.040871846405551,
+          "yieldChange3SessionsBp": 2.200000000000024,
+          "yieldChange5SessionsBp": 9.600000000000009,
+          "rsiChange3SessionsPoints": -4.64717928711147,
+          "rsiChange5SessionsPoints": -1.6999220774657857
+        },
+        {
+          "date": "2026-10-05",
+          "close": 5.311,
+          "high": 5.349,
+          "low": 5.249,
+          "rsi14": 75.75469298379576,
+          "yieldChangeBp": 3.399999999999981,
+          "rsiChangePoints": 1.5155384009780306,
+          "yieldChange3SessionsBp": 1.7999999999999794,
+          "yieldChange5SessionsBp": 6.899999999999995,
+          "rsiChange3SessionsPoints": -4.549311648719453,
+          "rsiChange5SessionsPoints": -2.6375786807320765
+        },
+        {
+          "date": "2026-10-06",
+          "close": 5.271,
+          "high": 5.326,
+          "low": 5.252,
+          "rsi14": 70.49983828450233,
+          "yieldChangeBp": -4.0000000000000036,
+          "rsiChangePoints": -5.254854699293432,
+          "yieldChange3SessionsBp": 3.699999999999992,
+          "yieldChange5SessionsBp": 1.6000000000000014,
+          "rsiChange3SessionsPoints": -1.6984444519098503,
+          "rsiChange5SessionsPoints": -8.386495585426871
+        },
+        {
+          "date": "2026-10-07",
+          "close": 5.277,
+          "high": 5.365,
+          "low": 5.269,
+          "rsi14": 70.8267361849889,
+          "yieldChangeBp": 0.6000000000000227,
+          "rsiChangePoints": 0.3268979004865713,
+          "yieldChange3SessionsBp": 0,
+          "yieldChange5SessionsBp": -1.6000000000000014,
+          "rsiChange3SessionsPoints": -3.41241839782883,
+          "rsiChange5SessionsPoints": -9.477268447526313
+        },
+        {
+          "date": "2026-10-08",
+          "close": 5.233,
+          "high": 5.354,
+          "low": 5.223,
+          "rsi14": 65.1272393899398,
+          "yieldChangeBp": -4.400000000000048,
+          "rsiChangePoints": -5.6994967950491,
+          "yieldChange3SessionsBp": -7.800000000000029,
+          "yieldChange5SessionsBp": -0.1000000000000334,
+          "rsiChange3SessionsPoints": -10.627453593855961,
+          "rsiChange5SessionsPoints": -7.071043346472379
+        },
+        {
+          "date": "2026-10-09",
+          "close": 5.242,
+          "high": 5.276,
+          "low": 5.213,
+          "rsi14": 65.73463158435368,
+          "yieldChangeBp": 0.9000000000000341,
+          "rsiChangePoints": 0.607392194413876,
+          "yieldChange3SessionsBp": -2.8999999999999915,
+          "yieldChange5SessionsBp": -3.500000000000014,
+          "rsiChange3SessionsPoints": -4.765206700148653,
+          "rsiChange5SessionsPoints": -8.504522998464054
+        }
+      ],
+      "updateNote": "10/10 재조회:UST10Y 기존 종가계열 최근행은 전일과 일치.10/9 완료종가5.242% 추가.USDJPY 10/8 종가158.05→157.89,JGB10Y 10/8 종가3.091→3.085 재조회차이;출처 Investing 일별표·수집시각 별도기록·원인 미확정.과거 당시 스냅샷 보존. 10/5 최초 조짐 이후4완료세션.10/9 금리+0.9bp·RSI+0.6074p:전일1세션 완화 중단·소폭 재악화,shock 고점재돌파 아님.금리/RSI 연속완화0세션.최초일대비금리-6.9bp·RSI-10.0201p.같은 사건·진행중,5/10세션 결과 미성숙.새 화살표 조건 미달.수급은10/6 주간지표로10/8~9 반전구간 확인대기.적중률·예측력 알수없음.",
+      "sourceRevisions": [],
+      "intradayObservations": [
+        {
+          "source": "CNBC US10Y",
+          "value": null,
+          "collectedAt": "2026-10-10T01:04:59.823166+00:00",
+          "includedInCloseRSI": false,
+          "reason": "직접조회 Failed to fetch restricted URL;토요일 진행 미국 세션 없음"
+        }
+      ]
+    },
+    "patterns": {
+      "momentumSlowdownCandidate": false,
+      "rsiEasingSessions": 0,
+      "yieldEasingSessions": 0,
+      "rsiDifference": -10.020061399442085,
+      "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
+      "state": "다시 악화",
+      "stateNote": "소폭 반등·1세션 완화 중단;shock 고점재돌파 아님",
+      "firstCandidateDate": "2026-10-05",
+      "elapsedCompletedSessions": 4,
+      "yieldChangeFromFirstBp": -6.899999999999995,
+      "rsiChangeFromFirstPoints": -10.020061399442085,
+      "yieldChangeDayBp": 0.9,
+      "rsiChangeDayPoints": 0.607392194413876,
+      "positionConfirmation": "10/6 주간지표 확인·10/8~9 반전 사건의 수급 확인대기"
+    },
+    "futures": {
+      "url": "https://www.investing.com/rates-bonds/us-10-yr-t-note-historical-data",
+      "sourceLabel": "US 10 Year T-Note Futures - Dec 26 (TYU26)",
+      "contractVerified": false,
+      "rsi14": null,
+      "dailyOpenInterest": null,
+      "reason": "정확한 계약월·결제가격·롤오버 일관성·일별 OI 검증 미완료;오늘 가격/거래량/RSI/OI null.이전 수집행은 원자료로 보존.",
+      "checkedAt": "2026-10-10T01:04:59.823166+00:00",
+      "price": null,
+      "settlement": null,
+      "volume": null
+    },
+    "cftc": {
+      "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+      "asof": "2026-10-06",
+      "previousAsOf": "2026-09-29",
+      "marketCode": "043602",
+      "scope": "UST 10Y NOTE · futures only · all expiries",
+      "positions": {
+        "openInterest": {
+          "previous": 5676556,
+          "current": 5742990,
+          "change": 66434
+        },
+        "assetManagerNet": {
+          "previous": 2776531,
+          "current": 2828139,
+          "change": 51608
+        },
+        "leveragedGrossShort": {
+          "previous": 2547011,
+          "current": 2650396,
+          "change": 103385
+        },
+        "leveragedNet": {
+          "previous": -2036432,
+          "current": -2139785,
+          "change": -103353
+        }
+      },
+      "previousMethod": "전주9/29 공식자료의 기존 수집값과 현재10/6 공식 주간변화 모두 대조·일치",
+      "coversCandidateDate": true,
+      "frequency": "weekly",
+      "frequencyLabel": "주간지표",
+      "verifiedAt": "2026-10-10T01:04:59.823166+00:00",
+      "collectedAt": "2026-10-10T01:04:59.823166+00:00",
+      "reportReleaseDate": "2026-10-09",
+      "reportReleaseNote": "공식 2026 발표일정 10/9 15:30 ET 및 현재 공식표 10/6 기준 신규자료 확인.실제 게시시각 독립미확정.",
+      "newReport": true,
+      "coversReversalDate": false,
+      "note": "AM순롱2,828,139(+51,608),LF총숏2,650,396(+103,385),LF순포지션-2,139,785(-103,353).최초조짐10/5는포함하지만10/8~9 반전미포함.신규duration매수·실제자금유입 확인아님."
+    },
+    "rawFile": "data/bond-flow-raw-20261010.json",
+    "events": [
+      {
+        "eventId": "UST10Y-MOMENTUM-20261005",
+        "criteriaVersion": "1.0",
+        "firstDate": "2026-10-05",
+        "criteria": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
+        "outcomeCriteria": "Completed sessions +1/+3/+5/+10 from first candidate; close yield change, any high above event high, independent Bond Reversal, equity close percent change. No predicted success or pooled hit rate.",
+        "elapsedCompletedSessions": 4,
+        "state": "REWORSENED",
+        "outcome": "진행 중·결과 미정",
+        "eventHigh": 5.349,
+        "peakRebreakDate": "2026-10-07",
+        "highRebreak": true,
+        "bondReversalIndependent": "CONFIRMED",
+        "latestSessionDate": "2026-10-09",
+        "yieldChangeBp": -6.9,
+        "rsiChangePoints": -10.020061399442085,
+        "spxChangePct": 0.4831520655522725,
+        "nasdaqChangePct": -0.40447918664527904,
+        "horizons": {
+          "1": {
+            "sessionDate": "2026-10-06",
+            "yieldChangeBp": -4,
+            "highRebreak": false,
+            "bondReversalIndependent": "UNCONFIRMED",
+            "spxChangePct": 0.5785990390985374,
+            "nasdaqChangePct": 0.44574960212626635
+          },
+          "3": {
+            "sessionDate": "2026-10-08",
+            "yieldChangeBp": -7.8,
+            "highRebreak": true,
+            "bondReversalIndependent": "CANDIDATE",
+            "spxChangePct": -0.11049723756906271,
+            "nasdaqChangePct": -1.033470889253718
+          },
+          "5": null,
+          "10": null
+        },
+        "note": "10/7 고점재돌파 이력 보존.10/9 소폭 재악화·동일고점 재돌파 아님.독립 Bond Reversal 10/8 D0 확인·D1.5/10세션 미성숙·동일 사건 중복집계 금지.",
+        "stateHistory": [
+          {
+            "sessionDate": "2026-10-05",
+            "state": "CANDIDATE"
+          },
+          {
+            "sessionDate": "2026-10-06",
+            "state": "EASING"
+          },
+          {
+            "sessionDate": "2026-10-07",
+            "state": "REWORSENED"
+          },
+          {
+            "sessionDate": "2026-10-08",
+            "state": "EASING_AGAIN"
+          },
+          {
+            "sessionDate": "2026-10-09",
+            "state": "REWORSENED",
+            "note": "금리+0.9bp·완화 중단;고점재돌파 아님"
+          }
+        ]
+      }
+    ],
+    "equityCloses": {
+      "source": "Investing completed daily series; SPX CFD/Nasdaq Composite",
+      "retrievedAt": "2026-10-10T01:04:59.823166+00:00",
+      "sessions": {
+        "2026-10-05": {
+          "spx": 7773.95,
+          "nasdaq": 27477.31
+        },
+        "2026-10-06": {
+          "spx": 7818.93,
+          "nasdaq": 27599.89
+        },
+        "2026-10-07": {
+          "spx": 7801.77,
+          "nasdaq": 27538.69
+        },
+        "2026-10-08": {
+          "spx": 7765.36,
+          "nasdaq": 27193.34
+        },
+        "2026-10-09": {
+          "spx": 7811.51,
+          "nasdaq": 27366.17
+        }
+      },
+      "revisionNote": "최근 이전 완료세션 종가 재조회 일치"
+    },
+    "volatilityContext": {
+      "observationOnly": true,
+      "riskWeight": 0,
+      "affectsADD": false,
+      "sessionDate": "2026-10-09",
+      "move": 98.47,
+      "moveChangePoints": -2.23,
+      "moveEasingSessions": 4,
+      "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
+      "yieldIntradayRangeBp": 6.3,
+      "priorYieldIntradayRangeBp": 13.1,
+      "retrievedAt": "2026-10-10T01:04:59.823166+00:00",
+      "note": "금리 종가/RSI 소폭상승과 MOVE 하락·장중범위축소는 다른 관측.100은 자동 경보 임계치 아님.기존 판정 가중치0."
+    }
   }
 }
