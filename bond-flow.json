@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-10-12",
+  "asof": "2026-10-13",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-10-12T01:08:00+00:00",
+    "retrievedAt": "2026-10-13T03:43:26.344Z",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
     "sessionCount": 156,
@@ -487,24 +487,25 @@
       }
     ],
     "sourceRevisions": [],
-    "updateNote": "10/12 미국 현금국채시장·일본 채권시장 휴장. Investing 표시 UST10Y 5.235와 일별표 10/12 5.240·10/11 5.240은 완료 현금국채 세션이 아니므로 종가/RSI 계열에서 제외. 최신 완료세션은 10/9(5.244), 156세션·RSI 동일. 신규 세션·이탈·lag·정책실패 가산 없음.",
+    "updateNote": "미국 현금국채10/12휴장·10/13미완료. 종가 RSI65.8667·완화0세션·경과4세션 유지. 장중금리하락은 별도 완화관측. MOVE98.47은10/9 기준. CFTC10/6[주간지표] 동일.",
     "previousCollection": {
-      "asof": "2026-10-11",
+      "asof": "2026-10-12",
       "sessionDate": "2026-10-09",
       "close": 5.244,
       "rsi14": 65.86674534804678,
-      "collectedAt": "2026-10-11T01:03:17.997543+00:00",
+      "collectedAt": "2026-10-12T01:08:00+00:00",
       "preserved": true
     },
     "intradayObservations": [
       {
-        "source": "Investing.com U.S. 10Y",
+        "source": "Investing.com UST10Y",
         "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-        "value": 5.235,
-        "displayedPageTime": "20:24:57 (페이지 표기 시간대 미확정)",
-        "collectedAt": "2026-10-12T01:08:00+00:00",
+        "value": 5.193,
+        "displayedPageTime": "23:32:23·시간대미확정",
+        "collectedAt": "2026-10-13T03:43:26.344Z",
+        "sessionDate": "2026-10-13",
         "includedInCloseRSI": false,
-        "reason": "10/12 미국 현금국채시장 휴장 중 지표성 표시; 완료 종가 아님"
+        "reason": "10/13 진행 중·완료 종가 아님"
       }
     ]
   },
@@ -515,7 +516,7 @@
     "rsiDifference": -9.887947635748986,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
     "state": "자료 확인대기",
-    "stateNote": "휴장으로 신규 완료세션 없음. 최신 완료 10/9의 소폭 재악화 상태를 유지하되 오늘 관측으로 재판정하지 않음.",
+    "stateNote": "10/13 장중 금리 완화 관측. 10/12 채권휴장으로 완료세션 RSI·완화연속일수 그대로. 종가확인 전 완화지속 확정 안 함.",
     "firstCandidateDate": "2026-10-05",
     "elapsedCompletedSessions": 4,
     "yieldChangeFromFirstBp": -6.7,
@@ -530,8 +531,8 @@
     "contractVerified": false,
     "rsi14": null,
     "dailyOpenInterest": null,
-    "reason": "정확한 계약월·결제가격·롤오버·일별 OI 검증 미완료. 휴장일 신규 검증값 없음. 가격/거래량/RSI/OI null; 기존 원자료행 보존.",
-    "checkedAt": "2026-10-12T01:08:00+00:00",
+    "reason": "CME 공개검색에서 동일 계약월 결제가격·연속계열·일별 OI 검증 미완료. null 유지.",
+    "checkedAt": "2026-10-13T03:43:26.344Z",
     "price": null,
     "volume": null,
     "settlement": null
@@ -568,16 +569,16 @@
     "coversCandidateDate": true,
     "frequency": "weekly",
     "frequencyLabel": "주간지표",
-    "verifiedAt": "2026-10-12T01:08:00+00:00",
+    "verifiedAt": "2026-10-13T03:43:26.344Z",
     "collectedAt": "2026-10-10T01:04:59.823166+00:00",
     "reportReleaseDate": "2026-10-09",
     "reportReleaseNote": "공식 2026 발표일정 10/9 15:30 ET 및 현재 공식표 10/6 기준 신규자료 확인.실제 게시시각 독립미확정.",
     "newReport": false,
     "coversReversalDate": false,
     "note": "10/6 기준·10/9 발표 주간지표 동일. 새 수급신호 아님. 10/8~9 반전 미포함·이 사건의 수급 확인대기. 거래동기/basis hedge 식별불가·실제자금유입 확정 아님.",
-    "checkedAt": "2026-10-12T01:08:00+00:00"
+    "checkedAt": "2026-10-13T03:43:26.344Z"
   },
-  "rawFile": "data/bond-flow-raw-20261012.json",
+  "rawFile": "data/bond-flow-raw-20261013.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -617,7 +618,7 @@
         "5": null,
         "10": null
       },
-      "note": "같은 사건·4완료세션 유지.10/9 공개일별표수정은오늘관측에반영·과거스냅샷보존.독립BondReversal CONFIRMED D1 유지.1/3세션당시결과보존·5/10 미성숙.",
+      "note": "채권4완료세션 유지·5/10세션 결과 미성숙. 10/12 미국 주식종가는 별도 관측.",
       "stateHistory": [
         {
           "sessionDate": "2026-10-05",
@@ -656,12 +657,19 @@
         "collectedAt": "2026-10-11T01:03:17.997543+00:00",
         "reason": "공개 일별표 재조회값 변경·원인 미확정",
         "preservedSnapshot": "bond-flow-history.json:2026-10-10"
+      },
+      "latestEquityObservation": {
+        "sessionDate": "2026-10-12",
+        "spx": 7807.24,
+        "nasdaq": 27245.9,
+        "source": "https://www.reuters.com/business/us-stock-futures-muted-oil-stays-above-100-ahead-earnings-2026-10-12/",
+        "note": "채권완료세션 기준+5일 결과에 혼입하지 않음"
       }
     }
   ],
   "equityCloses": {
     "source": "Investing completed daily series; SPX CFD/Nasdaq Composite",
-    "retrievedAt": "2026-10-11T01:03:17.997543+00:00",
+    "retrievedAt": "2026-10-13T03:43:26.344Z",
     "sessions": {
       "2026-10-05": {
         "spx": 7773.95,
@@ -682,9 +690,14 @@
       "2026-10-09": {
         "spx": 7811.54,
         "nasdaq": 27366.17
+      },
+      "2026-10-12": {
+        "spx": 7807.24,
+        "nasdaq": 27245.9
       }
     },
-    "revisionNote": "10/9 SPX7811.51→7811.54 재조회차이·원인미확정·전일관측보존"
+    "revisionNote": "10/9 SPX7811.51→7811.54 재조회차이·원인미확정·전일관측보존",
+    "latestSource": "https://www.reuters.com/business/us-stock-futures-muted-oil-stays-above-100-ahead-earnings-2026-10-12/"
   },
   "volatilityContext": {
     "observationOnly": true,
@@ -697,8 +710,8 @@
     "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
     "yieldIntradayRangeBp": 6.1,
     "priorYieldIntradayRangeBp": 13.1,
-    "retrievedAt": "2026-10-12T01:08:00+00:00",
-    "note": "금리 종가/RSI 소폭상승과 MOVE 하락·장중범위축소는 다른 관측.100은 자동 경보 임계치 아님.기존 판정 가중치0."
+    "retrievedAt": "2026-10-13T03:43:26.344Z",
+    "note": "MOVE 최신 게시10/9 98.47·4연속하락 유지.10/12신규행 없음.10/13장중금리하락은 종가RSI와 별도."
   },
   "newCompletedSessions": []
 }
