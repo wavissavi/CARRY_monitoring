@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-10-24",
+  "asof": "2026-10-25",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-10-24T01:00:25+00:00",
+    "retrievedAt": "2026-10-25T01:04:38+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
     "sessionCount": 165,
@@ -477,7 +477,7 @@
       }
     ],
     "intradayObservations": [],
-    "updateNote": "10/23 완료 세션 연장. 10/22 공개표 4.955→4.953 정정은 현재 재계산에만 반영하고 당시 스냅샷 보존."
+    "updateNote": "일요일 신규 완료세션 없음. 10/23 완료값·Wilder RSI 유지, 주말을 0 또는 보간값으로 추가하지 않음."
   },
   "patterns": {
     "momentumSlowdownCandidate": false,
@@ -486,7 +486,7 @@
     "rsiDifference": -33.72328468432647,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
     "state": "다시 악화",
-    "stateNote": "10/23 금리와 RSI가 함께 반등해 직전 1세션 완화가 중단. 같은 사건 경과이며 새 독립 사례 아님.",
+    "stateNote": "일요일 신규 완료세션 없음. 10/23 금리·RSI 반등으로 확인된 다시 악화 상태를 유지하며 경과 세션 수는 13으로 동결.",
     "firstCandidateDate": "2026-10-05",
     "elapsedCompletedSessions": 13,
     "yieldChangeFromFirstBp": -31.700000000000017,
@@ -521,7 +521,7 @@
     "price": null,
     "volume": null,
     "settlement": null,
-    "checkedAt": "2026-10-24T01:00:25+00:00"
+    "checkedAt": "2026-10-25T01:04:38+00:00"
   },
   "cftc": {
     "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
@@ -557,15 +557,15 @@
     "frequencyLabel": "주간지표",
     "verifiedAt": "2026-10-24T01:00:25+00:00",
     "collectedAt": "2026-10-24T01:00:25+00:00",
-    "checkedAt": "2026-10-24T01:00:25+00:00",
-    "newReport": true,
+    "checkedAt": "2026-10-25T01:04:38+00:00",
+    "newReport": false,
     "reportReleaseDate": null,
     "reportPageUpdatedDate": "2026-10-24",
-    "reportReleaseNote": "공식 10/20 포지션 기준 신규 주간자료. 10/22~23 급변은 미포함.",
+    "reportReleaseNote": "10/20 포지션 기준 주간자료 유지. 일요일 신규 공식 주간자료 없음.",
     "coversReversalDate": true,
-    "note": "10/20 [주간지표] 신규 반영. Asset Manager 순롱 +26,854, Leveraged Fund 총숏 -20,522·순포지션 +98,713(덜 순숏). 10/22~23 급변의 포지션 동반 여부는 확인대기."
+    "note": "10/20 [주간지표] 유지. Asset Manager 순롱 +26,854, Leveraged Fund 총숏 -20,522·순포지션 +98,713(덜 순숏). 10/22~23 급변의 포지션 동반 여부는 확인대기이며 동일 자료를 신규 신호로 반복하지 않음."
   },
-  "rawFile": "data/bond-flow-raw-20261024.json",
+  "rawFile": "data/bond-flow-raw-20261025.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -784,7 +784,7 @@
     },
     "revisionNote": "10/23 완료 세션 연장. SPX 10/22 7663.39→7663.43 재조회 정정·당시 스냅샷 보존.",
     "latestSource": "https://www.reuters.com/business/us-stock-futures-muted-oil-stays-above-100-ahead-earnings-2026-10-12/",
-    "checkedAt": "2026-10-24T01:00:25+00:00"
+    "checkedAt": "2026-10-25T01:04:38+00:00"
   },
   "volatilityContext": {
     "observationOnly": true,
@@ -797,10 +797,8 @@
     "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
     "yieldIntradayRangeBp": 6.1,
     "priorYieldIntradayRangeBp": 17.6,
-    "retrievedAt": "2026-10-24T01:00:25+00:00",
-    "note": "MOVE와 장중 금리범위는 완화됐지만 10Y 종가는 +4.1bp 반등. 방향과 변동성을 분리해 관찰."
+    "retrievedAt": "2026-10-25T01:04:38+00:00",
+    "note": "일요일 신규 세션 없음. 10/23 MOVE 103.31·10Y +4.1bp 관측 유지."
   },
-  "newCompletedSessions": [
-    "2026-10-23"
-  ]
+  "newCompletedSessions": []
 }
