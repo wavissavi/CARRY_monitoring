@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-10-31",
+  "asof": "2026-11-01",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-10-31T00:58:09+00:00",
+    "retrievedAt": "2026-11-01T01:04:26+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
     "sessionCount": 170,
@@ -497,7 +497,7 @@
       }
     ],
     "intradayObservations": [],
-    "updateNote": "10/30 완료 종가 4.921% 추가. 10/29 재조회값 4.989%를 오늘 계산에 반영하고 과거 스냅샷은 보존."
+    "updateNote": "11/1 일요일 휴장으로 새 완료 세션·화살표 없음. 10/30 종가 4.921%·RSI 38.14 유지. USD/JPY 재조회 변경은 당시 스냅샷을 보존하고 오늘 기록에만 반영."
   },
   "patterns": {
     "momentumSlowdownCandidate": false,
@@ -506,7 +506,7 @@
     "rsiDifference": -37.61083778042262,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
     "state": "지속",
-    "stateNote": "10/29~10/30 금리 -12.4bp·RSI -9.10p로 2세션 완화 지속. 10/29 재조회값 변경을 반영했으며 포지션 동반 여부는 별도 해석.",
+    "stateNote": "11/1 일요일 휴장. 10/29~10/30 금리 -12.4bp·RSI -9.10p의 2세션 완화 지속 상태를 유지하며 새 완료 세션은 없음.",
     "firstCandidateDate": "2026-10-05",
     "elapsedCompletedSessions": 18,
     "yieldChangeFromFirstBp": -38.99999999999997,
@@ -541,7 +541,7 @@
     "price": null,
     "volume": null,
     "settlement": null,
-    "checkedAt": "2026-10-31T00:58:09+00:00"
+    "checkedAt": "2026-11-01T01:04:26+00:00"
   },
   "cftc": {
     "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
@@ -577,15 +577,15 @@
     "frequencyLabel": "주간지표",
     "verifiedAt": "2026-10-31T00:58:09+00:00",
     "collectedAt": "2026-10-31T00:58:09+00:00",
-    "checkedAt": "2026-10-31T00:58:09+00:00",
-    "newReport": true,
+    "checkedAt": "2026-11-01T01:04:26+00:00",
+    "newReport": false,
     "reportReleaseDate": "2026-10-30",
     "reportPageUpdatedDate": "2026-10-30",
-    "reportReleaseNote": "10/27 포지션 기준 신규 공식 [주간지표] 반영.",
+    "reportReleaseNote": "10/27 포지션 기준 공식 [주간지표] 유지. 일요일 신규 보고서 없음.",
     "coversReversalDate": true,
-    "note": "10/27 [주간지표]: Asset Manager 순롱 +74,748, Leveraged Fund 총숏 +58,808·순포지션 -120,051. 거래유형·basis hedge는 식별 불가."
+    "note": "10/27 [주간지표] 유지. 일요일에는 새 수급 신호로 반복 표시하지 않음; 거래유형·basis hedge는 식별 불가."
   },
-  "rawFile": "data/bond-flow-raw-20261031.json",
+  "rawFile": "data/bond-flow-raw-20261101.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -640,7 +640,7 @@
           "reconstructedAt": "2026-10-22T04:35:37.438Z"
         }
       },
-      "note": "동일 사건 경과 18세션. 금리·RSI 완화는 2세션 지속했지만 기술주 급락으로 양 지수가 post-bond 신저가를 만들었고 ADD 창은 만료. 신규 CFTC는 Asset Manager 순롱과 Leveraged Fund 숏이 함께 늘어 수급 방향 단정 불가.",
+      "note": "동일 사건 경과 18완료세션 유지. 일요일 새 시장 세션은 없고, 금리·RSI 2세션 완화 및 주식 post-bond 신저가 상태를 보존. CFTC 10/27 주간지표는 새 신호로 반복하지 않음.",
       "stateHistory": [
         {
           "sessionDate": "2026-10-05",
@@ -954,6 +954,17 @@
           "alternateRegionalTable": 5.292,
           "collectedAt": "2026-10-31T00:58:09+00:00",
           "reason": "지역별 공개표 값 차이 기록·영문 기본표 완료행 사용·원인 미추정"
+        },
+        {
+          "metric": "USDJPY",
+          "sessionDate": "2026-10-30",
+          "oldClose": 157.58,
+          "newClose": 157.55,
+          "oldLow": 156.96,
+          "newLow": 156.95,
+          "collectedAt": "2026-11-01T01:04:26+00:00",
+          "reason": "공개 일별표 재조회값 변경·원인 미확정",
+          "preservedSnapshot": "history.json:2026-10-31; bond-flow-history.json:2026-10-31"
         }
       ]
     }
@@ -1058,10 +1069,8 @@
     "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
     "yieldIntradayRangeBp": 6.99999999999994,
     "priorYieldIntradayRangeBp": 11.099999999999977,
-    "retrievedAt": "2026-10-31T00:58:09+00:00",
-    "note": "10/30 UST10Y 직접표 -6.8bp·장중 범위7.0bp. MOVE 최신값은 일관된 공개 일별표 미확보로 확인대기."
+    "retrievedAt": "2026-11-01T01:04:26+00:00",
+    "note": "11/1 일요일 휴장. 10/30 UST10Y 장중 범위7.0bp 유지; MOVE 최신 일관계열은 확인대기."
   },
-  "newCompletedSessions": [
-    "2026-10-30"
-  ]
+  "newCompletedSessions": []
 }
