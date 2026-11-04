@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-11-03",
+  "asof": "2026-11-04",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-11-03T01:01:15+00:00",
+    "retrievedAt": "2026-11-04T01:00:00+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
-    "sessionCount": 171,
+    "sessionCount": 172,
     "excludedDates": [
       "2026-10-04"
     ],
     "latest": {
-      "date": "2026-11-02",
-      "close": 4.903,
-      "high": 4.947,
-      "low": 4.874,
-      "rsi14": 36.9576225073781
+      "date": "2026-11-03",
+      "close": 4.947,
+      "high": 4.968,
+      "low": 4.891,
+      "rsi14": 41.881328149405434
     },
     "comparison": {
       "date": "2026-10-05",
@@ -29,13 +29,6 @@
       "rsi14": 75.75469298379576
     },
     "chart": [
-      {
-        "date": "2026-10-05",
-        "close": 5.311,
-        "high": 5.349,
-        "low": 5.249,
-        "rsi14": 75.75469298379576
-      },
       {
         "date": "2026-10-06",
         "close": 5.271,
@@ -164,10 +157,17 @@
       },
       {
         "date": "2026-11-02",
-        "close": 4.903,
+        "close": 4.894,
         "high": 4.947,
         "low": 4.874,
-        "rsi14": 36.9576225073781
+        "rsi14": 36.40890337816018
+      },
+      {
+        "date": "2026-11-03",
+        "close": 4.947,
+        "high": 4.968,
+        "low": 4.891,
+        "rsi14": 41.881328149405434
       }
     ],
     "signals": {
@@ -236,26 +236,13 @@
     },
     "dailyMetrics": [
       {
-        "date": "2026-10-05",
-        "close": 5.311,
-        "high": 5.349,
-        "low": 5.249,
-        "rsi14": 75.75469298379576,
-        "yieldChangeBp": null,
-        "rsiChangePoints": null,
-        "yieldChange3SessionsBp": null,
-        "rsiChange3SessionsPoints": null,
-        "yieldChange5SessionsBp": null,
-        "rsiChange5SessionsPoints": null
-      },
-      {
         "date": "2026-10-06",
         "close": 5.271,
         "high": 5.326,
         "low": 5.252,
         "rsi14": 70.49983828450233,
-        "yieldChangeBp": -4.0000000000000036,
-        "rsiChangePoints": -5.254854699293432,
+        "yieldChangeBp": null,
+        "rsiChangePoints": null,
         "yieldChange3SessionsBp": null,
         "rsiChange3SessionsPoints": null,
         "yieldChange5SessionsBp": null,
@@ -282,8 +269,8 @@
         "rsi14": 65.1272393899398,
         "yieldChangeBp": -4.400000000000048,
         "rsiChangePoints": -5.6994967950491,
-        "yieldChange3SessionsBp": -7.800000000000029,
-        "rsiChange3SessionsPoints": -10.627453593855961,
+        "yieldChange3SessionsBp": null,
+        "rsiChange3SessionsPoints": null,
         "yieldChange5SessionsBp": null,
         "rsiChange5SessionsPoints": null
       },
@@ -310,8 +297,8 @@
         "rsiChangePoints": -3.4961571909721556,
         "yieldChange3SessionsBp": -6.00000000000005,
         "rsiChange3SessionsPoints": -8.456148027914281,
-        "yieldChange5SessionsBp": -9.40000000000003,
-        "rsiChange5SessionsPoints": -13.384104826721142
+        "yieldChange5SessionsBp": null,
+        "rsiChange5SessionsPoints": null
       },
       {
         "date": "2026-10-14",
@@ -484,58 +471,71 @@
       },
       {
         "date": "2026-11-02",
-        "close": 4.903,
+        "close": 4.894,
         "high": 4.947,
         "low": 4.874,
-        "rsi14": 36.9576225073781,
-        "yieldChangeBp": -2.600000000000069,
-        "rsiChangePoints": -1.6823248777978392,
-        "yieldChange3SessionsBp": -14.200000000000035,
-        "rsiChange3SessionsPoints": -10.284184103806432,
-        "yieldChange5SessionsBp": -8.300000000000018,
-        "rsiChange5SessionsPoints": -4.405274435746513
+        "rsi14": 36.40890337816018,
+        "yieldChangeBp": -3.500000000000014,
+        "rsiChangePoints": -2.231044007015754,
+        "yieldChange3SessionsBp": -15.09999999999998,
+        "rsiChange3SessionsPoints": -10.832903233024346,
+        "yieldChange5SessionsBp": -9.199999999999964,
+        "rsiChange5SessionsPoints": -4.953993564964428
+      },
+      {
+        "date": "2026-11-03",
+        "close": 4.947,
+        "high": 4.968,
+        "low": 4.891,
+        "rsi14": 41.881328149405434,
+        "yieldChangeBp": 5.299999999999994,
+        "rsiChangePoints": 5.472424771245251,
+        "yieldChange3SessionsBp": -4.1999999999999815,
+        "rsiChange3SessionsPoints": -0.935089451924334,
+        "yieldChange5SessionsBp": -4.600000000000026,
+        "rsiChange5SessionsPoints": -0.1986903489011027
       }
     ],
     "intradayObservations": [
       {
-        "date": "2026-11-03",
-        "value": 4.907,
-        "observedAt": "2026-11-03T10:01:15+09:00",
+        "date": "2026-11-04",
+        "value": 4.946,
+        "observedAt": "2026-11-04T10:00:00+09:00",
         "source": "Investing real-time page",
         "status": "진행 중·RSI 제외"
       }
     ],
-    "updateNote": "11/2 완료 세션 추가. 금리·RSI 3세션 완화 지속; 10/30 하락 화살표를 반복하지 않음."
+    "updateNote": "11/3 완료 금리 +5.3bp·RSI +5.47p로 재악화. 기존 완화 구간 종료; 한 세션 반전이라 새 화살표 없음."
   },
   "patterns": {
     "momentumSlowdownCandidate": false,
-    "rsiEasingSessions": 3,
-    "yieldEasingSessions": 3,
-    "rsiDifference": -38.797070476417666,
+    "rsiEasingSessions": 0,
+    "yieldEasingSessions": 0,
+    "rsiDifference": -33.87336483439033,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
-    "state": "지속",
-    "stateNote": "10/29~11/2 금리 -14.2bp·RSI -10.28p의 3세션 완화 지속.",
+    "state": "다시 악화",
+    "stateNote": "11/3 금리 +5.3bp·RSI +5.47p로 직전 3세션 완화 종료. 한 세션 반전이어서 새 상승 화살표 조건 미충족.",
     "firstCandidateDate": "2026-10-05",
-    "elapsedCompletedSessions": 19,
-    "yieldChangeFromFirstBp": -40.80000000000004,
-    "rsiChangeFromFirstPoints": -38.797070476417666,
-    "yieldChangeDayBp": -2.600000000000069,
-    "rsiChangeDayPoints": -1.6823248777978392,
-    "positionConfirmation": "CFTC 10/27 [주간지표] 유지; 최근 흐름 수급 확인대기",
+    "elapsedCompletedSessions": 20,
+    "yieldChangeFromFirstBp": -36.39999999999999,
+    "rsiChangeFromFirstPoints": -33.87336483439033,
+    "yieldChangeDayBp": 5.299999999999994,
+    "rsiChangeDayPoints": 5.472424771245251,
+    "positionConfirmation": "CFTC 10/27 [주간지표] 유지; 11/3 사건 수급 확인대기",
     "changes": {
       "3": {
         "sessions": 3,
-        "fromDate": "2026-10-28",
-        "toDate": "2026-11-02",
-        "yieldChangeBp": -14.200000000000035,
-        "rsiChangePoints": -10.284184103806432
+        "fromDate": "2026-10-29",
+        "toDate": "2026-11-03",
+        "yieldChangeBp": -4.1999999999999815,
+        "rsiChangePoints": -0.935089451924334
       },
       "5": {
         "sessions": 5,
-        "fromDate": "2026-10-26",
-        "toDate": "2026-11-02",
-        "yieldChangeBp": -8.300000000000018,
-        "rsiChangePoints": -4.405274435746513
+        "fromDate": "2026-10-27",
+        "toDate": "2026-11-03",
+        "yieldChangeBp": -4.600000000000026,
+        "rsiChangePoints": -0.1986903489011027
       }
     }
   },
@@ -549,7 +549,7 @@
     "price": null,
     "volume": null,
     "settlement": null,
-    "checkedAt": "2026-11-03T01:01:15+00:00"
+    "checkedAt": "2026-11-04T01:00:00+00:00"
   },
   "cftc": {
     "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
@@ -585,15 +585,15 @@
     "frequencyLabel": "주간지표",
     "verifiedAt": "2026-10-31T00:58:09+00:00",
     "collectedAt": "2026-10-31T00:58:09+00:00",
-    "checkedAt": "2026-11-03T01:01:15+00:00",
+    "checkedAt": "2026-11-04T01:00:00+00:00",
     "newReport": false,
     "reportReleaseDate": "2026-10-30",
     "reportPageUpdatedDate": "2026-10-30",
-    "reportReleaseNote": "10/27 포지션 기준 공식 [주간지표] 유지. 화요일 오전 신규 보고서 없음.",
+    "reportReleaseNote": "10/27 포지션 기준 공식 [주간지표] 유지. 수요일 오전 신규 보고서 없음.",
     "coversReversalDate": true,
     "note": "10/27 [주간지표] 유지; 새 수급 신호로 반복하지 않음."
   },
-  "rawFile": "data/bond-flow-raw-20261103.json",
+  "rawFile": "data/bond-flow-raw-20261104.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -601,18 +601,18 @@
       "firstDate": "2026-10-05",
       "criteria": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
       "outcomeCriteria": "Completed sessions +1/+3/+5/+10 from first candidate; close yield change, any high above event high, independent Bond Reversal, equity close percent change. No predicted success or pooled hit rate.",
-      "elapsedCompletedSessions": 19,
-      "state": "EASING_CONTINUES",
+      "elapsedCompletedSessions": 20,
+      "state": "REWORSENED",
       "outcome": "진행 중·결과 미정",
       "eventHigh": 5.349,
       "peakRebreakDate": "2026-10-07",
       "highRebreak": true,
       "bondReversalIndependent": "CONFIRMED",
-      "latestSessionDate": "2026-11-02",
-      "yieldChangeBp": -40.80000000000004,
-      "rsiChangePoints": -38.797070476417666,
-      "spxChangePct": -1.8307295519009004,
-      "nasdaqChangePct": -6.475379140097781,
+      "latestSessionDate": "2026-11-03",
+      "yieldChangeBp": -36.39999999999999,
+      "rsiChangePoints": -33.87336483439033,
+      "spxChangePct": -2.637397976575606,
+      "nasdaqChangePct": -7.661958175672956,
       "horizons": {
         "1": {
           "sessionDate": "2026-10-06",
@@ -648,7 +648,7 @@
           "reconstructedAt": "2026-10-22T04:35:37.438Z"
         }
       },
-      "note": "동일 사건 경과 19세션. 금리·RSI 3세션 완화; Investing 주식계열은 10/30 저점 뒤 1회 higher close. 출처 차이 보존.",
+      "note": "동일 사건 경과 20세션. 11/3 금리 +5.3bp·RSI +5.47p 재악화; 주식은 11/2 재조회 저점 뒤 1회 higher close.",
       "stateHistory": [
         {
           "sessionDate": "2026-10-05",
@@ -736,6 +736,11 @@
           "sessionDate": "2026-10-30",
           "state": "EASING_CONTINUES",
           "observedAt": "2026-10-31T00:58:09+00:00"
+        },
+        {
+          "sessionDate": "2026-11-03",
+          "state": "REWORSENED",
+          "note": "금리 +5.3bp·RSI +5.47p; 새 고점 재돌파 아님"
         }
       ],
       "sourceRevisionApplied": {
@@ -1045,13 +1050,88 @@
           "reutersClose": 25164.32,
           "collectedAt": "2026-11-03T01:01:15+00:00",
           "reason": "출처별 종가 차이 기록·기존 Investing 완료계열 사용·원인 미추정"
+        },
+        {
+          "metric": "USDJPY",
+          "sessionDate": "2026-11-02",
+          "previousSnapshot": 157.84,
+          "publicRecheck": 157.95,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+        },
+        {
+          "metric": "JGB10Y",
+          "sessionDate": "2026-11-02",
+          "previousSnapshot": 2.787,
+          "publicRecheck": 2.775,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+        },
+        {
+          "metric": "UST10Y",
+          "sessionDate": "2026-11-02",
+          "previousSnapshot": 4.903,
+          "publicRecheck": 4.894,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+        },
+        {
+          "metric": "UST30Y",
+          "sessionDate": "2026-11-02",
+          "previousSnapshot": 5.298,
+          "publicRecheck": 5.287,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+        },
+        {
+          "metric": "SPX",
+          "sessionDate": "2026-11-02",
+          "previousSnapshot": 7631.63,
+          "publicRecheck": 7541.4,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+        },
+        {
+          "metric": "NASDAQ",
+          "sessionDate": "2026-11-02",
+          "previousSnapshot": 25698.05,
+          "publicRecheck": 25164.31,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+        },
+        {
+          "metric": "USDJPY",
+          "sessionDate": "2026-11-04",
+          "englishLive": 158.48,
+          "koreanLocalizedQuote": 158.08,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "지역별 실시간 표시 차이 기록·원인 미추정"
+        },
+        {
+          "metric": "SPX",
+          "sessionDate": "2026-11-03",
+          "apClose": 7568.92,
+          "investingRegional": 7586.06,
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "출처별 종가 차이 기록·AP 완료값 사용·원인 미추정"
+        },
+        {
+          "metric": "NASDAQ",
+          "sessionDate": "2026-11-03",
+          "apClose": 25372.01,
+          "investingRegionalValues": [
+            25351.1,
+            25434.1
+          ],
+          "collectedAt": "2026-11-04T01:00:00+00:00",
+          "reason": "지역별 공개값 차이 기록·AP 완료값 사용·원인 미추정"
         }
       ]
     }
   ],
   "equityCloses": {
     "source": "Investing completed daily series; SPX CFD/Nasdaq Composite",
-    "retrievedAt": "2026-11-03T01:01:15+00:00",
+    "retrievedAt": "2026-11-04T01:00:00+00:00",
     "sessions": {
       "2026-10-05": {
         "spx": 7773.95,
@@ -1134,13 +1214,17 @@
         "nasdaq": 25437.0
       },
       "2026-11-02": {
-        "spx": 7631.63,
-        "nasdaq": 25698.05
+        "spx": 7541.4,
+        "nasdaq": 25164.31
+      },
+      "2026-11-03": {
+        "spx": 7568.92,
+        "nasdaq": 25372.01
       }
     },
-    "revisionNote": "11/2 완료 세션 추가. Investing 완료계열은 반등; Reuters 종가 차이 보존.",
+    "revisionNote": "11/2 재조회값을 최신 계산계열에 반영하고 11/3 당시 스냅샷은 보존. 11/3 AP 완료값 사용; 지역별 Investing 차이 기록.",
     "latestSource": "https://ca.investing.com/indices/us-spx-500-historical-data",
-    "checkedAt": "2026-11-03T01:01:15+00:00"
+    "checkedAt": "2026-11-04T01:00:00+00:00"
   },
   "volatilityContext": {
     "observationOnly": true,
@@ -1153,10 +1237,10 @@
     "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
     "yieldIntradayRangeBp": 6.99999999999994,
     "priorYieldIntradayRangeBp": 11.099999999999977,
-    "retrievedAt": "2026-11-03T01:01:15+00:00",
-    "note": "11/2 UST10Y 일중 범위 7.3bp. MOVE 최신 일관계열 확인대기."
+    "retrievedAt": "2026-11-04T01:00:00+00:00",
+    "note": "11/3 UST10Y 일중 범위 7.7bp. MOVE 최신 일관계열 확인대기."
   },
   "newCompletedSessions": [
-    "2026-11-02"
+    "2026-11-03"
   ]
 }
