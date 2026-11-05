@@ -15133,7 +15133,7 @@
     "bondReversalInvalidatedReason": "10/7 새shock고점으로기존10/6후보무효 이력보존.10/8 별도새후보;이전확인을복원하지않음.",
     "bondReversalTriggerYield": 5.264,
     "bondReversalCandidateDate": "2026-10-08",
-    "bondReversalCandidateNote": "CONFIRMED D18. 최근 shock 고점5.146% 대비 11/4 계산계열 4.928%로 -21.8bp. D0~D5 만료로 ADD OFF.",
+    "bondReversalCandidateNote": "CONFIRMED D18. 최근 shock 고점5.146% 대비 11/4 계산계열 4.891%로 -25.5bp. D0~D5 만료로 ADD OFF.",
     "ust10High": 4.951,
     "ust10HighDate": "2026-11-04",
     "ust10HighSource": "Investing 일별계열",
@@ -15450,9 +15450,9 @@
         "2026-11-04"
       ]
     },
-    "yieldRsi14": 40.53462444719214,
+    "yieldRsi14": 38.14599553316195,
     "yieldRsiSessionDate": "2026-11-04",
-    "yieldRsiSourceClose": 4.928,
+    "yieldRsiSourceClose": 4.891,
     "yieldRsiCollectedAt": "2026-11-05T00:55:52+00:00",
     "yieldRsiEasingSessions": 1,
     "flowUpdatedAt": "2026-11-05T00:55:52+00:00",
@@ -15462,7 +15462,7 @@
     "flowAffectsADD": false,
     "flowFirstCandidateDate": "2026-10-05",
     "flowElapsedSessions": 21,
-    "flowRsiDayChange": -1.346703702213297,
+    "flowRsiDayChange": -3.7353326162434826,
     "flowCftcAsOf": "2026-10-27",
     "spxClose": 7688.62,
     "nasdaqClose": 25736.51,
@@ -15473,7 +15473,7 @@
       "ust": "11/4 market close 4.891% (below 4.9%); 3D -3.8bp; Investing 4.928% discrepancy retained",
       "policy": "11/4 Quarterly Refunding: 쿠폰 규모 당분간 유지·장기물 발행 조정 가능성 및 최대 700억달러 buyback 계획. 신규 FX개입 없음.",
       "equity": "11/4 AP SPX 7688.62·Nasdaq 25736.51; 11/2 저점 뒤 2회 higher close이나 D18 ADD 창 종료.",
-      "flow": "11/4 금리 -1.9bp·RSI -1.35p→40.53; 재악화 뒤 1세션 완화·경과21세션. CFTC10/27 [주간지표] 유지."
+      "flow": "11/4 UST10Y -5.6bp, RSI -3.74p to 38.15; prior snapshots preserved"
     },
     "jgb20": 3.63,
     "jgb30": 3.88,
@@ -15734,6 +15734,15 @@
         "fxGloryClose": 158.669,
         "collectedAt": "2026-11-05T00:55:52+00:00",
         "reason": "공개 일별표 종가 차이 기록·Yahoo 동일계열을 계산 본값으로 사용·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-04",
+        "previousSnapshot": 4.928,
+        "correctedClose": 4.891,
+        "source": "WSJ/LSEG-Tradeweb",
+        "reason": "market close below 4.9%, Investing alternate 4.928 retained",
+        "preservedHistory": "2026-11-04 and earlier"
       }
     ],
     "newCompletedSessions": [
