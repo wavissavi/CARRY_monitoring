@@ -16,10 +16,10 @@
     ],
     "latest": {
       "date": "2026-11-04",
-      "close": 4.928,
+      "close": 4.891,
       "high": 4.951,
       "low": 4.888,
-      "rsi14": 40.53462444719214
+      "rsi14": 38.14599553316195
     },
     "comparison": {
       "date": "2026-10-05",
@@ -164,10 +164,10 @@
       },
       {
         "date": "2026-11-04",
-        "close": 4.928,
+        "close": 4.891,
         "high": 4.951,
         "low": 4.888,
-        "rsi14": 40.53462444719214
+        "rsi14": 38.14599553316195
       }
     ],
     "signals": {
@@ -484,28 +484,20 @@
       },
       {
         "date": "2026-11-04",
-        "close": 4.928,
+        "close": 4.891,
         "high": 4.951,
         "low": 4.888,
-        "rsi14": 40.53462444719214,
-        "yieldChangeBp": -1.9000000000000128,
-        "rsiChangePoints": -1.346703702213297,
-        "yieldChange3SessionsBp": -0.1000000000000334,
-        "rsiChange3SessionsPoints": 1.8946770620162,
-        "yieldChange5SessionsBp": -11.7,
-        "rsiChange5SessionsPoints": -6.7071821639923925
+        "rsi14": 38.14599553316195,
+        "yieldChangeBp": -5.600000000000005,
+        "rsiChangePoints": -3.7353326162434826,
+        "yieldChange3SessionsBp": -3.8000000000000256,
+        "rsiChange3SessionsPoints": -0.4939518520139856,
+        "yieldChange5SessionsBp": -15.399999999999991,
+        "rsiChange5SessionsPoints": -9.095811078022578
       }
     ],
-    "intradayObservations": [
-      {
-        "date": "2026-11-05",
-        "value": 4.891,
-        "observedAt": "2026-11-05T09:55:52+09:00",
-        "source": "Tradeweb/WSJ close display",
-        "status": "별도 관측·RSI 제외"
-      }
-    ],
-    "updateNote": "11/4 완료 금리 -1.9bp·RSI -1.35p. 11/3 재악화 뒤 한 세션 완화여서 새 하락 화살표 조건 미충족."
+    "intradayObservations": [],
+    "updateNote": "Nov 4 UST10Y market close 4.891%, below 4.9%; RSI recalculated. Investing 4.928% discrepancy preserved in history."
   },
   "patterns": {
     "momentumSlowdownCandidate": false,
@@ -767,7 +759,7 @@
       "latestEquityObservation": {
         "sessionDate": "2026-10-30",
         "spx": 7580.07,
-        "nasdaq": 25437.0
+        "nasdaq": 25437
       },
       "revisionObservations": [
         {
@@ -1233,7 +1225,7 @@
       },
       "2026-10-30": {
         "spx": 7580.07,
-        "nasdaq": 25437.0
+        "nasdaq": 25437
       },
       "2026-11-02": {
         "spx": 7541.4,
