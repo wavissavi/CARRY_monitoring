@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-11-08",
+  "asof": "2026-11-09",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-11-08T01:04:38+00:00",
+    "retrievedAt": "2026-11-09T01:00:09+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
     "sessionCount": 175,
@@ -517,7 +517,7 @@
       }
     ],
     "intradayObservations": [],
-    "updateNote": "11/6 완료 금리 +2.5bp·RSI +2.63p. 직전 완화 구간 종료; 상승 1세션으로 새 화살표 기준 미충족."
+    "updateNote": "11/9 10시 KST 미국장 미개장·신규 완료세션 없음. 11/6 완료 금리·RSI와 화살표 상태 유지."
   },
   "patterns": {
     "momentumSlowdownCandidate": false,
@@ -526,7 +526,7 @@
     "rsiDifference": -38.59475870434876,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
     "state": "다시 악화",
-    "stateNote": "주말 휴장·신규 완료세션 없음. 11/6 금리 +2.5bp·RSI +2.63p 반등으로 직전 완화가 종료된 상태를 유지하며 새 화살표 없음.",
+    "stateNote": "신규 UST 완료세션 없음. 11/6 금리 +2.5bp·RSI +2.63p 반등으로 직전 완화가 종료된 상태를 유지하며 새 화살표 없음.",
     "firstCandidateDate": "2026-10-05",
     "elapsedCompletedSessions": 23,
     "yieldChangeFromFirstBp": -45.59999999999995,
@@ -561,7 +561,7 @@
     "price": null,
     "volume": null,
     "settlement": null,
-    "checkedAt": "2026-11-08T01:04:38+00:00"
+    "checkedAt": "2026-11-09T01:00:09+00:00"
   },
   "cftc": {
     "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
@@ -595,9 +595,9 @@
     "coversCandidateDate": true,
     "frequency": "weekly",
     "frequencyLabel": "주간지표",
-    "verifiedAt": "2026-11-08T01:04:38+00:00",
-    "collectedAt": "2026-11-08T01:04:38+00:00",
-    "checkedAt": "2026-11-08T01:04:38+00:00",
+    "verifiedAt": "2026-11-09T01:00:09+00:00",
+    "collectedAt": "2026-11-09T01:00:09+00:00",
+    "checkedAt": "2026-11-09T01:00:09+00:00",
     "newReport": false,
     "reportReleaseDate": "2026-11-06",
     "reportPageUpdatedDate": "2026-11-06",
@@ -605,7 +605,7 @@
     "coversReversalDate": true,
     "note": "자산운용사 순롱 +30,072; 레버리지 총숏 +114,598, 순포지션 -35,035. 거래 동기·실제 현금유입 확정 자료 아님."
   },
-  "rawFile": "data/bond-flow-raw-20261108.json",
+  "rawFile": "data/bond-flow-raw-20261109.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -1259,7 +1259,7 @@
   ],
   "equityCloses": {
     "source": "Investing completed daily series; SPX CFD/Nasdaq Composite",
-    "retrievedAt": "2026-11-08T01:04:38+00:00",
+    "retrievedAt": "2026-11-09T01:00:09+00:00",
     "sessions": {
       "2026-10-05": {
         "spx": 7773.95,
@@ -1362,9 +1362,9 @@
         "nasdaq": 24579.42
       }
     },
-    "revisionNote": "주말 휴장·신규 완료세션 없음. 11/6 완료값과 과거 당시 스냅샷 보존.",
+    "revisionNote": "11/9 10시 KST 미국장 미개장·신규 완료세션 없음. 11/6 완료값과 과거 당시 스냅샷 보존.",
     "latestSource": "https://ca.investing.com/indices/us-spx-500-historical-data",
-    "checkedAt": "2026-11-08T01:04:38+00:00"
+    "checkedAt": "2026-11-09T01:00:09+00:00"
   },
   "volatilityContext": {
     "observationOnly": true,
@@ -1377,8 +1377,8 @@
     "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
     "yieldIntradayRangeBp": 6.99999999999994,
     "priorYieldIntradayRangeBp": 11.099999999999977,
-    "retrievedAt": "2026-11-08T01:04:38+00:00",
-    "note": "주말 휴장·신규 완료세션 없음. 11/6 UST10Y 동일 Investing 계열 일중 범위 9.3bp 유지; MOVE 최신 일관계열 확인대기."
+    "retrievedAt": "2026-11-09T01:00:09+00:00",
+    "note": "신규 UST 완료세션 없음. 11/6 UST10Y 동일 Investing 계열 일중 범위 9.3bp 유지; MOVE 최신 일관계열 확인대기."
   },
   "newCompletedSessions": []
 }
