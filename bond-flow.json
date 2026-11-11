@@ -22,9 +22,11 @@
       "rsi14": 49.20262077702969
     },
     "comparison": {
-      "previousDate": "2026-11-09",
-      "yieldChangeBp": 11.9,
-      "rsiChangePoints": 11.080079396195572
+      "date": "2026-10-09",
+      "close": 5.244,
+      "high": 5.28,
+      "low": 5.219,
+      "rsi14": 65.86674534804678
     },
     "chart": [
       {
