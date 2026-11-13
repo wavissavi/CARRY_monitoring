@@ -203,7 +203,8 @@ function triggerStage(d){
   const longConfirm=d.ust30AccelConfirm===true||d.longEndConfirm===true||(d.curveStress??0)>=2;
   const policyWeak=(d.policyFails||0)>=1||d.buybackState==="효과 미흡"||d.buybackState==="역행";
   let s=0;if(cross5)s=1;if(cross5&&a15)s=2;if(cross5&&a20&&longConfirm)s=3;
-  if(s>=3&&(((d.ust10??0)>=5.3)||(d.ust53Intraday||0)>0)&&policyWeak)s=4;
+  const stress53Now=(d.ust10??0)>=5.25||(d.ustSessionBreaches?.ust53Intraday||0)>0||(d.ustSessionBreaches?.ust53Close||0)>0;
+  if(s>=3&&stress53Now&&policyWeak)s=4;
   return s;
 }
 function triggerLabel(d){
