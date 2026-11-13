@@ -390,7 +390,7 @@ function render(date){
   const i=dates.indexOf(date),p=i>0?records[dates[i-1]]:null,PB=p?badge(levels(p).overall)[0]:"없음";
   $("delta").innerHTML=`전일 RISK <b>${PB}</b> → 현재 <b>${B[0]}</b>${p&&d.fxNow!=null&&p.fxNow!=null?` · USD/JPY ${pct((d.fxNow/p.fxNow-1)*100)}`:""}${p&&d.ust10!=null&&p.ust10!=null?` · UST10Y ${bp((d.ust10-p.ust10)*100)}`:""} · ADD <b>${A.text}</b>`;
   const notes=d.dataNotes||{};$("notes").innerHTML=["fx","jgb","ust","policy","equity"].filter(k=>notes[k]).map(k=>`<div><b>${k.toUpperCase()}:</b> ${notes[k]}</div>`).join("")||"메모 없음";
-  const ts=triggerLabel(d);$("headline").textContent=`RISK ${B[0]} · UST ${ts} · CoAccel ${C.text} · 5% Quality ${Q.label} · ADD ${A.text}. ${d.bondReversalInvalidated===true?"신 shock 고점으로 기존 Reversal 무효. ":""}${A.veto?"FX/JGB 위험으로 추매 관찰신호 VETO 적용.":"위험경보와 추매 관찰창을 분리해 해석."}`;
+  const ts=triggerLabel(d);$("headline").textContent=`RISK ${B[0]} · UST ${ts} · CoAccel ${C.text} · 5% Quality ${Q.label} · ADD ${A.text}. ${d.bondReversalInvalidated===true&&effectiveBondState(d)==="OFF"?"신 shock 고점으로 기존 Reversal 무효. ":""}${A.veto?"FX/JGB 위험으로 추매 관찰신호 VETO 적용.":"위험경보와 추매 관찰창을 분리해 해석."}`;
   renderFlow(date);renderHistory();
 }
 function renderHistory(){
