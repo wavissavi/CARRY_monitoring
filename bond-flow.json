@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-11-15",
+  "asof": "2026-11-16",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-11-15T00:55:41+00:00",
+    "retrievedAt": "2026-11-16T01:06:54+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
     "sessionCount": 179,
@@ -626,14 +626,14 @@
     "rsiDifference": -38.59475870434876,
     "rule": "Latest completed close exceeds prior 20-session maximum close while RSI is lower. Descriptive pair; no proven exhaustion threshold.",
     "state": "다시 악화",
-    "stateNote": "주말 신규 완료세션 없음. 11/13 금리 +0.4bp·RSI +0.23p의 다시 악화 상태를 유지하며 같은 상승 구간의 화살표는 11/10 1회 표시 후 중복하지 않음.",
+    "stateNote": "11/16 10시 KST 미국 신규 완료세션 없음. 11/13 금리 +0.4bp·RSI +0.23p의 다시 악화 상태를 유지하며 같은 상승 구간의 화살표는 11/10 1회 표시 후 중복하지 않음.",
     "firstCandidateDate": "2026-10-05",
     "elapsedCompletedSessions": 27,
     "yieldChangeFromFirstBp": -16.999999999999993,
     "rsiChangeFromFirstPoints": -16.181179478790852,
     "yieldChangeDayBp": 0.4,
     "rsiChangeDayPoints": 0.2258410626162899,
-    "positionConfirmation": "CFTC 11/3 [주간지표]: 자산운용사 순롱 증가와 레버리지 총숏 증가가 동시 관측돼 완화의 수급 확인으로 단정 불가",
+    "positionConfirmation": "CFTC 11/3 [주간지표]: 자산운용사 순롱 증가와 레버리지 총숏 증가가 동시 관측돼 완화의 수급 확인으로 단정 불가; 11/10 보고서는 발표 전",
     "changes": {
       "3": {
         "sessions": 3,
@@ -661,7 +661,7 @@
     "price": null,
     "volume": null,
     "settlement": null,
-    "checkedAt": "2026-11-15T00:55:41+00:00"
+    "checkedAt": "2026-11-16T01:06:54+00:00"
   },
   "cftc": {
     "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
@@ -695,17 +695,17 @@
     "coversCandidateDate": true,
     "frequency": "weekly",
     "frequencyLabel": "주간지표",
-    "verifiedAt": "2026-11-15T00:55:41+00:00",
-    "collectedAt": "2026-11-15T00:55:41+00:00",
-    "checkedAt": "2026-11-15T00:55:41+00:00",
+    "verifiedAt": "2026-11-16T01:06:54+00:00",
+    "collectedAt": "2026-11-16T01:06:54+00:00",
+    "checkedAt": "2026-11-16T01:06:54+00:00",
     "newReport": false,
     "reportReleaseDate": "2026-11-06",
     "reportPageUpdatedDate": "2026-11-06",
-    "reportReleaseNote": "11/15 재확인 시 공식 [주간지표]는 여전히 11/3 포지션 기준. 11/10 기준 보고서는 11/16 예정이라 신규 수급 신호로 표시하지 않음.",
+    "reportReleaseNote": "11/16 10시 KST 공식 [주간지표] 재확인: 11/3 포지션 기준 유지. 11/10 기준 보고서는 미국 발표 전이라 신규 수급 신호로 표시하지 않음.",
     "coversReversalDate": true,
     "note": "자산운용사 순롱 +30,072; 레버리지 총숏 +114,598, 순포지션 -35,035. 거래 동기·실제 현금유입 확정 자료 아님."
   },
-  "rawFile": "data/bond-flow-raw-20261115.json",
+  "rawFile": "data/bond-flow-raw-20261116.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -760,7 +760,7 @@
           "reconstructedAt": "2026-10-22T04:35:37.438Z"
         }
       },
-      "note": "동일 사건 경과 27 완료세션. 주말 신규 세션이 없어 11/13의 다시 악화 상태와 결과 미정을 유지.",
+      "note": "동일 사건 경과 27 완료세션. 11/16 오전 신규 미국 세션이 없어 11/13의 다시 악화 상태와 결과 미정을 유지.",
       "stateHistory": [
         {
           "sessionDate": "2026-10-05",
@@ -1460,7 +1460,7 @@
   ],
   "equityCloses": {
     "source": "Investing completed daily series; SPX CFD/Nasdaq Composite",
-    "retrievedAt": "2026-11-14T00:59:53+00:00",
+    "retrievedAt": "2026-11-16T01:06:54+00:00",
     "sessions": {
       "2026-10-05": {
         "spx": 7773.95,
@@ -1585,7 +1585,7 @@
     },
     "revisionNote": "11/13 미국 주식 완료값 반영.",
     "latestSource": "https://ca.investing.com/indices/us-spx-500-historical-data",
-    "checkedAt": "2026-11-14T00:59:53+00:00"
+    "checkedAt": "2026-11-16T01:06:54+00:00"
   },
   "volatilityContext": {
     "observationOnly": true,
@@ -1598,8 +1598,61 @@
     "moveSource": "https://www.investing.com/indices/ice-bofaml-move-historical-data",
     "yieldIntradayRangeBp": 6.99999999999994,
     "priorYieldIntradayRangeBp": 11.099999999999977,
-    "retrievedAt": "2026-11-14T00:59:53+00:00",
-    "note": "11/13 UST10Y 시장종가 5.150%, Flow 동일계열 5.141%로 모두 5% 상회·3D 급등 지속. MOVE 일관계열은 자료 확인대기."
+    "retrievedAt": "2026-11-16T01:06:54+00:00",
+    "note": "11/13 UST10Y 시장종가 5.150%, Flow 동일계열 5.141%로 모두 5% 상회·3D 급등 지속. 11/16 신규 미국 완료세션 없고 MOVE 일관계열은 자료 확인대기."
   },
-  "newCompletedSessions": []
+  "newCompletedSessions": [],
+  "marketObservations": {
+    "fx": {
+      "sessionDate": "2026-11-16",
+      "sessionStatus": "장중·미완료",
+      "usdJpy": 159.75,
+      "intradayLow": 159.73,
+      "intradayHigh": 159.82,
+      "source": "Investing public intraday table",
+      "observedAt": "2026-11-16T01:06:54+00:00"
+    },
+    "jgb10": {
+      "sessionDate": "2026-11-16",
+      "yield": null,
+      "sessionStatus": "장중·미확정",
+      "source": "독립 검증 가능한 10시대 호가 미확보",
+      "observedAt": "2026-11-16T01:06:54+00:00"
+    },
+    "completed": {
+      "sessionDate": "2026-11-13",
+      "fxClose": 159.864,
+      "fxLow": 159.798,
+      "jgb10": 2.86,
+      "spx": 7561.67,
+      "nasdaq": 25136.27
+    },
+    "ustCompleted": {
+      "sessionDate": "2026-11-13",
+      "marketClose10Y": 5.15,
+      "flowClose10Y": 5.141,
+      "market20Y": 5.52,
+      "marketClose30Y": 5.473,
+      "officialTableLatest": "2026-11-13"
+    },
+    "sourceConflict": {
+      "ust10FlowClose": 5.141,
+      "ust10MarketClose": 5.15,
+      "priorFlowSession": "2026-11-12",
+      "priorStoredClose": 5.137,
+      "priorPublicRecheck": 5.103,
+      "handling": "차이·소급변경 기록·원인 미추정·주계열/Flow계열 분리·과거 스냅샷 보존",
+      "usdJpyPreviousSnapshot": {
+        "close": 159.864,
+        "high": 159.941,
+        "low": 159.798
+      },
+      "usdJpyPublicRecheck": {
+        "close": 159.69,
+        "high": 160.2,
+        "low": 159.51
+      },
+      "usdJpyHandling": "11/14 당시 관측 보존·11/15 재조회 변경값 별도 기록·원인 미추정"
+    }
+  }
 }
