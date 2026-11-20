@@ -27293,6 +27293,18 @@
       "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
       "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
       "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    },
+    "techAdd": {
+      "stage": "OFF",
+      "status": "[E] 잠정",
+      "soxClose": 9642.88,
+      "soxAsOf": "2026-11-17",
+      "skHynixClose": 1098000,
+      "skHynixAsOf": "2026-11-17",
+      "soxChangeFromNov13Pct": -4.96,
+      "reason": "미국 SOX 추세 회복 미확인, 기존 Bond→Equity ADD 창 만료; SKHY/DRAM/NASDAQ100/RS/EPS 전체 검증 전이므로 정식 점수 미산출",
+      "sourceSOX": "https://ycharts.com/indices/%5ESOX/level",
+      "sourceSKH": "https://stockanalysis.com/quote/krx/000660/history/"
     }
   },
   "2026-11-18": {
@@ -27352,6 +27364,18 @@
       "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
       "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
       "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    },
+    "techAdd": {
+      "stage": "OFF",
+      "status": "[E] 잠정",
+      "soxClose": 9652.8,
+      "soxAsOf": "2026-11-18",
+      "skHynixClose": 1144000,
+      "skHynixAsOf": "2026-11-18",
+      "soxChangeFromNov13Pct": -4.86,
+      "reason": "미국 SOX 추세 회복 미확인, 기존 Bond→Equity ADD 창 만료; SKHY/DRAM/NASDAQ100/RS/EPS 전체 검증 전이므로 정식 점수 미산출",
+      "sourceSOX": "https://ycharts.com/indices/%5ESOX/level",
+      "sourceSKH": "https://stockanalysis.com/quote/krx/000660/history/"
     }
   },
   "2026-11-19": {
@@ -27411,6 +27435,18 @@
       "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
       "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
       "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    },
+    "techAdd": {
+      "stage": "OFF",
+      "status": "[E] 잠정",
+      "soxClose": 9419.72,
+      "soxAsOf": "2026-11-19",
+      "skHynixClose": 1183000,
+      "skHynixAsOf": "2026-11-19",
+      "soxChangeFromNov13Pct": -7.16,
+      "reason": "미국 SOX 추세 회복 미확인, 기존 Bond→Equity ADD 창 만료; SKHY/DRAM/NASDAQ100/RS/EPS 전체 검증 전이므로 정식 점수 미산출",
+      "sourceSOX": "https://ycharts.com/indices/%5ESOX/level",
+      "sourceSKH": "https://stockanalysis.com/quote/krx/000660/history/"
     }
   },
   "2026-11-20": {
@@ -27470,6 +27506,18 @@
       "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
       "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
       "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    },
+    "techAdd": {
+      "stage": "OFF",
+      "status": "[E] 잠정",
+      "soxClose": 9419.72,
+      "soxAsOf": "2026-11-19",
+      "skHynixClose": null,
+      "skHynixAsOf": "2026-11-19",
+      "soxChangeFromNov13Pct": -7.16,
+      "reason": "미국 SOX 추세 회복 미확인, 기존 Bond→Equity ADD 창 만료; SKHY/DRAM/NASDAQ100/RS/EPS 전체 검증 전이므로 정식 점수 미산출",
+      "sourceSOX": "https://ycharts.com/indices/%5ESOX/level",
+      "sourceSKH": "https://stockanalysis.com/quote/krx/000660/history/"
     }
   }
 }
