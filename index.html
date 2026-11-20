@@ -250,7 +250,9 @@ function addComment(d,L,A){
   return "채권 반전·주가 안정화·관찰 기간의 동시 충족 없음. 신규 추매 보류.";
 }
 function techAddComment(d,L){
-  if(L.fx>=3||L.jgb>=3)return ["VETO","FX/JGB PRE-EXIT 이상. 기술주 점수와 무관하게 신규 매수 차단."];
+  const t=d.techAdd;
+  if(L.fx>=3||L.jgb>=3)return ["VETO","FX/JGB PRE-EXIT 이상. 기술주 점수와 무관하게 신규 매수 차단."+(t?" SOX "+t.soxClose+" ("+t.soxAsOf+"), 잠정 TECH ADD "+t.stage+".":"")];
+  if(t)return [t.stage+" "+t.status,"SOX "+t.soxClose+" ("+t.soxAsOf+"), 11/13 대비 "+t.soxChangeFromNov13Pct+"%. "+(t.skHynixClose==null?"SK하이닉스 당일 종가 미확정.":"SK하이닉스 "+t.skHynixClose.toLocaleString("ko-KR")+"원.")+" "+t.reason];
   return ["자료 확인대기","SKHY·DRAM·SOX·NASDAQ100·한국 반도체 상대강도와 EPS 데이터가 연결되지 않아 TECH ADD 점수를 확정할 수 없음. 기존 ADD "+addDecision(d,L).text+" 유지."];
 }
 function riskName(x){return badge(x)[0]}
