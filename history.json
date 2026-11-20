@@ -16230,7 +16230,7 @@
     "flowRsiDayChange": -3.6130121754337665,
     "flowCftcAsOf": "2026-10-27",
     "spxClose": 7353.73,
-    "nasdaqClose": 24315.0,
+    "nasdaqClose": 24315,
     "equityCloseDate": "2026-11-05",
     "dataNotes": {
       "fx": "11/5 USD/JPY 157.49, 저가157.26; 11/6 오전 157.48. 152/150 신규 이탈 없음. 3D -0.29%, RV3 0.78%, 가속 +31.71%.",
@@ -22209,9 +22209,9 @@
     "jgbAccel": -2.8158561628543577,
     "coAccel": 2,
     "ust10": 5.102,
-    "ust3d": 24.0,
+    "ust3d": 24,
     "ust30": 5.433,
-    "ust30_3d": 17.0,
+    "ust30_3d": 17,
     "curveStress": 2,
     "buybackState": "확인대기",
     "fxReaccel": null,
@@ -23381,7 +23381,7 @@
     "jgbAccel": 10.436348387226557,
     "coAccel": 1,
     "ust10": 5.15,
-    "ust3d": 27.0,
+    "ust3d": 27,
     "ust30": 5.473,
     "ust30_3d": 21.3,
     "curveStress": 2,
@@ -24674,7 +24674,7 @@
     "jgbAccel": 10.436348387226557,
     "coAccel": 1,
     "ust10": 5.15,
-    "ust3d": 27.0,
+    "ust3d": 27,
     "ust30": 5.473,
     "ust30_3d": 21.3,
     "curveStress": 2,
@@ -25985,7 +25985,7 @@
     "jgbAccel": 10.436348387226557,
     "coAccel": 1,
     "ust10": 5.15,
-    "ust3d": 27.0,
+    "ust3d": 27,
     "ust30": 5.473,
     "ust30_3d": 21.3,
     "curveStress": 2,
@@ -27235,5 +27235,241 @@
     "jgbObservationAt": "2026-11-16T01:06:54+00:00",
     "jgbObservationStatus": "11/16 10시대의 일관된 장중 JGB10Y 호가를 독립 검증하지 못해 null. 11/13 일본 채권시장 완료 2.865%를 계산계열에 유지",
     "jgbChangeFromPriorCompletedBp": null
+  },
+  "2026-11-17": {
+    "asof": "2026-11-17",
+    "reconstruction": true,
+    "reconstructionBasis": "[C] 확인된 완료 종가",
+    "dataStatus": "[C] 주요 종가 확정·[E] 보조 판정",
+    "metricsAsOf": "2026-11-17",
+    "fxNow": 159.37,
+    "jgbNow": 2.883,
+    "ust10": 5.1,
+    "ust30": 5.46,
+    "fx3d": null,
+    "jgb3d": null,
+    "ust3d": null,
+    "curveStress": 2,
+    "policyFails": 2,
+    "ustDriver": "[E] MIXED",
+    "ustDriverNote": "동인별 기여도 미검증, 추정 분류",
+    "bondReversalState": "[E] CONFIRMED",
+    "bondPeakDate": "2026-10-08",
+    "bondLagDay": 26,
+    "addSignal": "OFF",
+    "techAddStage": "자료 확인대기",
+    "crossAssetVeto": "[E] 판정보류",
+    "flowTurn": "[E] 판정보류",
+    "cftcStatus": "직전 확정 주간값 유지·신규 미검증",
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 150 미이탈. 누적 유지."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 152 미이탈. 누적 유지."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 153 미이탈. 누적 유지."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "11/13 완료 저가159.798·종가159.864로 155 미이탈. 누적 유지."
+      }
+    },
+    "dataNotes": {
+      "fx": "Investing 완료 종가 159.37",
+      "jgb": "Investing 완료 종가 2.883%",
+      "ust": "US Treasury 공식 10Y 5.1%, 30Y 5.46%",
+      "method": "누락일 사후복원. 장중 임계돌파·RSI·CFTC 수치는 미검증 상태로 누적하지 않음"
+    },
+    "sources": {
+      "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
+      "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
+      "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    }
+  },
+  "2026-11-18": {
+    "asof": "2026-11-18",
+    "reconstruction": true,
+    "reconstructionBasis": "[C] 확인된 완료 종가",
+    "dataStatus": "[C] 주요 종가 확정·[E] 보조 판정",
+    "metricsAsOf": "2026-11-18",
+    "fxNow": 159.35,
+    "jgbNow": 2.876,
+    "ust10": 5.07,
+    "ust30": 5.41,
+    "fx3d": -0.213,
+    "jgb3d": 0.454,
+    "ust3d": -8,
+    "curveStress": 2,
+    "policyFails": 2,
+    "ustDriver": "[E] MIXED",
+    "ustDriverNote": "동인별 기여도 미검증, 추정 분류",
+    "bondReversalState": "[E] CONFIRMED",
+    "bondPeakDate": "2026-10-08",
+    "bondLagDay": 27,
+    "addSignal": "OFF",
+    "techAddStage": "자료 확인대기",
+    "crossAssetVeto": "[E] 판정보류",
+    "flowTurn": "[E] 판정보류",
+    "cftcStatus": "직전 확정 주간값 유지·신규 미검증",
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 150 미이탈. 누적 유지."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 152 미이탈. 누적 유지."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 153 미이탈. 누적 유지."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "11/13 완료 저가159.798·종가159.864로 155 미이탈. 누적 유지."
+      }
+    },
+    "dataNotes": {
+      "fx": "Investing 완료 종가 159.35",
+      "jgb": "Investing 완료 종가 2.876%",
+      "ust": "US Treasury 공식 10Y 5.07%, 30Y 5.41%",
+      "method": "누락일 사후복원. 장중 임계돌파·RSI·CFTC 수치는 미검증 상태로 누적하지 않음"
+    },
+    "sources": {
+      "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
+      "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
+      "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    }
+  },
+  "2026-11-19": {
+    "asof": "2026-11-19",
+    "reconstruction": true,
+    "reconstructionBasis": "[C] 확인된 완료 종가",
+    "dataStatus": "[C] 주요 종가 확정·[E] 보조 판정",
+    "metricsAsOf": "2026-11-19",
+    "fxNow": 159.7,
+    "jgbNow": 2.828,
+    "ust10": 5.04,
+    "ust30": 5.4,
+    "fx3d": 0.163,
+    "jgb3d": -2.01,
+    "ust3d": -8,
+    "curveStress": 2,
+    "policyFails": 2,
+    "ustDriver": "[E] MIXED",
+    "ustDriverNote": "동인별 기여도 미검증, 추정 분류",
+    "bondReversalState": "[E] CONFIRMED",
+    "bondPeakDate": "2026-10-08",
+    "bondLagDay": 28,
+    "addSignal": "OFF",
+    "techAddStage": "자료 확인대기",
+    "crossAssetVeto": "[E] 판정보류",
+    "flowTurn": "[E] 판정보류",
+    "cftcStatus": "직전 확정 주간값 유지·신규 미검증",
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 150 미이탈. 누적 유지."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 152 미이탈. 누적 유지."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 153 미이탈. 누적 유지."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "11/13 완료 저가159.798·종가159.864로 155 미이탈. 누적 유지."
+      }
+    },
+    "dataNotes": {
+      "fx": "Investing 완료 종가 159.7",
+      "jgb": "Investing 완료 종가 2.828%",
+      "ust": "US Treasury 공식 10Y 5.04%, 30Y 5.4%",
+      "method": "누락일 사후복원. 장중 임계돌파·RSI·CFTC 수치는 미검증 상태로 누적하지 않음"
+    },
+    "sources": {
+      "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
+      "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
+      "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    }
+  },
+  "2026-11-20": {
+    "asof": "2026-11-20",
+    "reconstruction": true,
+    "reconstructionBasis": "[E] 직전 완료종가 이월",
+    "dataStatus": "[E] 종가 이월·일부 지표 추정",
+    "metricsAsOf": "2026-11-19",
+    "fxNow": 159.7,
+    "jgbNow": 2.828,
+    "ust10": 5.04,
+    "ust30": 5.4,
+    "fx3d": 0.207,
+    "jgb3d": -1.908,
+    "ust3d": -6,
+    "curveStress": 2,
+    "policyFails": 2,
+    "ustDriver": "[E] MIXED",
+    "ustDriverNote": "동인별 기여도 미검증, 추정 분류",
+    "bondReversalState": "[E] CONFIRMED",
+    "bondPeakDate": "2026-10-08",
+    "bondLagDay": 29,
+    "addSignal": "OFF",
+    "techAddStage": "자료 확인대기",
+    "crossAssetVeto": "[E] 판정보류",
+    "flowTurn": "[E] 판정보류",
+    "cftcStatus": "직전 확정 주간값 유지·신규 미검증",
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 150 미이탈. 누적 유지."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 152 미이탈. 누적 유지."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "11/13 완료 저가159.798·종가159.864로 153 미이탈. 누적 유지."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "11/13 완료 저가159.798·종가159.864로 155 미이탈. 누적 유지."
+      }
+    },
+    "dataNotes": {
+      "fx": "[E] 11/19 완료종가 159.70 이월",
+      "jgb": "[E] 11/19 완료종가 2.828% 이월",
+      "ust": "[E] 11/19 미국채 공식종가 이월",
+      "method": "누락일 사후복원. 장중 임계돌파·RSI·CFTC 수치는 미검증 상태로 누적하지 않음"
+    },
+    "sources": {
+      "fx": "https://www.investing.com/currencies/usd-jpy-historical-data",
+      "jgb": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data",
+      "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve"
+    }
   }
 }
