@@ -25988,7 +25988,7 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid 
         ]
       }
     },
-    "yieldRsi14": 43.5327744873946,
+    "yieldRsi14": 43.65529064579672,
     "yieldRsiSessionDate": "2026-11-20",
     "yieldRsiSourceClose": 4.941,
     "yieldRsiCollectedAt": "2026-11-21T01:01:36+00:00",
@@ -26000,7 +26000,7 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid 
     "flowAffectsADD": false,
     "flowFirstCandidateDate": "2026-10-05",
     "flowElapsedSessions": 32,
-    "flowRsiDayChange": -8.196006750135943,
+    "flowRsiDayChange": -8.211186871953885,
     "flowCftcAsOf": "2026-11-17",
     "spxClose": 6910.39,
     "nasdaqClose": 22617.73,
@@ -26050,8 +26050,7 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid 
         "sessionDate": "2026-10-29",
         "old": 4.911,
         "new": 4.989,
-        "collectedAt": "2026-10-31T00:58:09+00:00",
-  "note": "long-end 교차검증"
+        "collectedAt": "2026-10-31T00:58:09+00:00",  "note": "long-end 교차검증"
       },
       {
         "metric": "UST10Y",
@@ -26204,7 +26203,7 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid 
         ]
       }
     },
-    "yieldRsi14": 43.5327744873946,
+    "yieldRsi14": 43.65529064579672,
     "yieldRsiSessionDate": "2026-11-20",
     "yieldRsiSourceClose": 4.941,
     "yieldRsiCollectedAt": "2026-11-21T01:01:36+00:00",
@@ -26216,7 +26215,7 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid 
     "flowAffectsADD": false,
     "flowFirstCandidateDate": "2026-10-05",
     "flowElapsedSessions": 32,
-    "flowRsiDayChange": -8.196006750135943,
+    "flowRsiDayChange": -8.211186871953885,
     "flowCftcAsOf": "2026-11-17",
     "spxClose": 6910.39,
     "nasdaqClose": 22617.73,
