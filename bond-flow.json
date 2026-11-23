@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asof": "2026-11-22",
+  "asof": "2026-11-23",
   "observationOnly": true,
   "riskWeight": 0,
   "affectsADD": false,
   "validation": "미검증 가설 · 전향적 관찰 중 · 적중률 미산출",
   "yield": {
     "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
-    "retrievedAt": "2026-11-22T01:03:54+00:00",
+    "retrievedAt": "2026-11-23T00:56:48+00:00",
     "series": "Investing.com UST 10Y yield daily weekday closes",
     "method": "Wilder RSI(14): first 14 arithmetic-average changes, then (previous*13+change)/14; excludes current session and weekends.",
     "sessionCount": 184,
@@ -674,7 +674,7 @@
       }
     ],
     "intradayObservations": [],
-    "updateNote": "11/22 일요일 휴장. 11/20 완료계열과 Wilder RSI(14) 유지; 신규 완료세션 없음."
+    "updateNote": "11/23 10시 KST 미국 현물세션 전. 11/20 완료계열과 Wilder RSI(14) 유지; 신규 완료세션 없음."
   },
   "patterns": {
     "momentumSlowdownCandidate": false,
@@ -718,7 +718,7 @@
     "price": null,
     "volume": null,
     "settlement": null,
-    "checkedAt": "2026-11-22T01:03:54+00:00"
+    "checkedAt": "2026-11-23T00:56:48+00:00"
   },
   "cftc": {
     "url": "https://www.cftc.gov/dea/futures/financial_lf.htm",
@@ -752,17 +752,17 @@
     "coversCandidateDate": true,
     "frequency": "weekly",
     "frequencyLabel": "주간지표",
-    "verifiedAt": "2026-11-22T01:03:54+00:00",
-    "collectedAt": "2026-11-22T01:03:54+00:00",
-    "checkedAt": "2026-11-22T01:03:54+00:00",
+    "verifiedAt": "2026-11-23T00:56:48+00:00",
+    "collectedAt": "2026-11-23T00:56:48+00:00",
+    "checkedAt": "2026-11-23T00:56:48+00:00",
     "newReport": false,
     "reportReleaseDate": "2026-11-20",
     "reportPageUpdatedDate": "2026-11-20",
-    "reportReleaseNote": "11/22 일요일 재확인: 최신 공식 [주간지표]는 포지션 기준 11/17·발표 11/20. 동일 주간 자료를 새 수급 신호로 반복하지 않음.",
+    "reportReleaseNote": "11/23 재확인: 최신 공식 [주간지표]는 포지션 기준 11/17·발표 11/20. 동일 주간 자료 반복 신호 없음.",
     "coversReversalDate": true,
     "note": "자산운용사 순롱 증가와 레버리지 총숏·순숏 확대가 병존. 거래 동기·실제 현금 유입 또는 숏커버 종료를 확정하지 않음."
   },
-  "rawFile": "data/bond-flow-raw-20261122.json",
+  "rawFile": "data/bond-flow-raw-20261123.json",
   "events": [
     {
       "eventId": "UST10Y-MOMENTUM-20261005",
@@ -1542,7 +1542,7 @@
   ],
   "equityCloses": {
     "source": "Investing completed daily series; SPX CFD/Nasdaq Composite",
-    "retrievedAt": "2026-11-22T01:03:54+00:00",
+    "retrievedAt": "2026-11-23T00:56:48+00:00",
     "sessions": {
       "2026-10-05": {
         "spx": 7773.95,
@@ -1687,7 +1687,7 @@
     },
     "revisionNote": "11/20 미국 완료값 반영. 11/20 S&P500 -3.70%, Nasdaq -5.28%; 채권 완화와 주식 안정화를 분리 판정.",
     "latestSource": "https://finance.yahoo.com/quote/%5EGSPC/history/",
-    "checkedAt": "2026-11-22T01:03:54+00:00"
+    "checkedAt": "2026-11-23T00:56:48+00:00"
   },
   "volatilityContext": {
     "observationOnly": true,
@@ -1748,9 +1748,33 @@
         },
         "handling": "재조회 차이만 기록·원인 미추정·완료 본계열과 RSI 미변경"
       }
+    },
+    "current": {
+      "collectedAt": "2026-11-23T00:56:48+00:00",
+      "fx": {
+        "value": 158.98,
+        "source": "WSJ/LSEG",
+        "sourceTime": "2026-11-23 09:24 KST",
+        "status": "장중·미완료",
+        "dayLow": null
+      },
+      "jgb": {
+        "status": "일본 공휴일 휴장",
+        "lastCompletedDate": "2026-11-20",
+        "lastCompleted10Y": 2.79
+      },
+      "us": {
+        "status": "11/23 미국 세션 전",
+        "lastCompletedDate": "2026-11-20"
+      },
+      "korea": {
+        "status": "장중",
+        "kospiMove": "개장 직후 -3% 이상",
+        "componentPrices": "정확한 10시 값 미확정"
+      }
     }
   },
-  "retrievedAt": "2026-11-22T01:03:54+00:00",
+  "retrievedAt": "2026-11-23T00:56:48+00:00",
   "sourceRevisions": [
     {
       "metric": "USDJPY",
