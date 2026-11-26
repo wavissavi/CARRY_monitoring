@@ -33836,5 +33836,1479 @@
         "usdJpy": "159.19·당일저가158.75"
       }
     }
+  },
+  "2026-11-26": {
+    "policyFails": 2,
+    "thresholds": {
+      "150": {
+        "intraday": 0,
+        "close": 0,
+        "comment": "11/25 완료 저가 159.077·종가 159.143로 150 하향 이탈 없음. 기존 누적 유지."
+      },
+      "152": {
+        "intraday": 1,
+        "close": 0,
+        "comment": "11/25 완료 저가 159.077·종가 159.143로 152 하향 이탈 없음. 기존 누적 유지."
+      },
+      "153": {
+        "intraday": 2,
+        "close": 0,
+        "comment": "11/25 완료 저가 159.077·종가 159.143로 153 하향 이탈 없음. 기존 누적 유지."
+      },
+      "155": {
+        "intraday": 2,
+        "close": 4,
+        "comment": "11/25 완료 저가 159.077·종가 159.143로 155 하향 이탈 없음. 기존 누적 유지."
+      }
+    },
+    "sources": {
+      "fx": "https://finance.yahoo.com/quote/USDJPY%3DX/history/",
+      "fxLive": "https://www.investing.com/currencies/usd-jpy",
+      "jgb": "https://www.bb.jbts.co.jp/en/historical.html",
+      "ust10": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+      "ust30": "https://www.investing.com/rates-bonds/u.s.-30-year-bond-yield-historical-data",
+      "reuters": "https://www.reuters.com/business/four-signs-it-is-about-get-uglier-bond-market-2026-10-09/",
+      "wsj": "https://www.wsj.com/finance/investing/u-s-treasury-yields-eurozone-bond-yields-rise-relentlessly-b7d3ba07",
+      "fed": "https://www.reuters.com/markets/us/feds-hammack-backs-restrictive-policy-says-better-if-it-comes-relatively-quickly-2026-10-12/",
+      "boj": "https://www.investing.com/news/economy-news/boj-keeps-interest-rates-steady-signals-further-rate-hikes-4985752",
+      "buybackUnverified": "https://thevaultreport.com/treasury-buybacks",
+      "cftc": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+      "equity": "https://finance.yahoo.com/quote/%5EGSPC/history/",
+      "nasdaq": "https://www.investing.com/indices/nasdaq-composite-historical-data",
+      "fxPolicy": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/monthly/20261030e.html",
+      "cftcRelease": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/ReleaseSchedule/index.htm",
+      "ust2": "https://www.investing.com/rates-bonds/u.s.-2-year-bond-yield-historical-data",
+      "spx": "https://www.investing.com/indices/us-spx-500-historical-data",
+      "jgbContext": "https://tradingeconomics.com/japan/government-bond-yield",
+      "bojSchedule": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr260930a.pdf",
+      "policyReview": "https://www.reuters.com/markets/asia/feds-warsh-gives-no-hint-october-policy-decision-2026-10-16/",
+      "ustHoliday": "https://www.sifma.org/resources/general/holiday-schedule/",
+      "usMarketHolidayContext": "https://www.kiplinger.com/investing/is-the-stock-market-open-on-columbus-day-2026",
+      "ustDriver": "https://www.fidelity.com/news/article/us-markets/202611060939RTRSNEWSCOMBINED_L2N46N0L3_1",
+      "buybackOfficial": "https://www.treasurydirect.gov/auctions/announcements-data-results/buy-backs/",
+      "inflation": "https://www.reuters.com/business/us-import-prices-increase-more-than-expected-september-2026-10-16/",
+      "equityLatest": "https://apnews.com/article/6cc4e580290aadf304ee316d6d46dd81",
+      "cftcCurrent": "https://www.cftc.gov/dea/futures/financial_lf.htm",
+      "jgbLive": "https://jen.jiji.com/page/2/",
+      "ustMarketLatest": "https://tradingeconomics.com/united-states/government-bond-yield",
+      "treasuryBuybackSchedule": "https://home.treasury.gov/system/files/221/Tentative-Buyback-ScheduleQ42026.pdf",
+      "fxPolicyLatest": "https://www.reuters.com/markets/us/japans-finance-minister-vows-action-yen-breaches-160-threshold-2026-11-13/",
+      "fxPublicRecheck": "https://www.investing.com/currencies/usd-jpy-historical-data",
+      "jgbOfficialLatest": "https://www.bb.jbts.co.jp/en/historical.html",
+      "fedLatest": "https://www.reuters.com/world/us/fed-has-some-work-do-inflation-kc-fed-chief-says-2026-11-15/",
+      "bojSpeechSchedule": "https://www.boj.or.jp/en/about/calendar/index.htm",
+      "ust": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
+      "soxLatest": "https://closelooknet.pages.dev/today/",
+      "koreaLive": "https://www.ajupress.com/view/20261125091724241"
+    },
+    "asof": "2026-11-26",
+    "collectedAt": "2026-11-26T01:00:00+00:00",
+    "requestedObservationTime": "2026-11-26T10:00:00+09:00",
+    "observationTimingNote": "11/25 미국·일본·한국 완료세션을 본 계산에 반영. 11/26 10시 전후 USD/JPY·한국장은 장중 관측으로 분리; 미국은 Thanksgiving 휴장.",
+    "fxNow": 159.22,
+    "fxDayLow": 158.66,
+    "fx3d": -0.3531466998941801,
+    "fxrv3": 0.4955797487852968,
+    "fxAccel": -6.4001525356370825,
+    "jgbNow": 2.62,
+    "jgb3d": -7.092198581560272,
+    "jgbrv3": 4.5281441010282055,
+    "jgbAccel": 43.0297036664822,
+    "coAccel": 0,
+    "ust10": 4.85,
+    "ust3d": -19,
+    "ust30": 5.24,
+    "ust30_3d": -16,
+    "curveStress": 1,
+    "buybackState": "부분 완충·효과 평가중",
+    "fxReaccel": "아니오",
+    "dataStatus": "11/25 완료세션 반영·UST/JGB 금리 하락·Flow 하락 표시 기준 재충족·미국 Thanksgiving 휴장·한국 기술주 장중 1회 반등",
+    "ust5Intraday": 36,
+    "ust5Close": 27,
+    "ust53Intraday": 7,
+    "ust53Close": 1,
+    "ust30AccelConfirm": false,
+    "ustDriver": "GROWTH / SAFE HAVEN",
+    "ustDriverNote": "11/25 10Y·30Y 공식금리가 각각 6bp 하락. AI·관세 우려로 주식이 장중 급락하며 국채 안전수요가 유입됐고, 강한 GDP·높은 PCE로 Fed 인상 기대는 유지돼 금리하락을 정책 완화로 해석하지 않음.",
+    "bondReversalState": "CONFIRMED",
+    "bondPeakDate": "2026-11-13",
+    "bondLagDay": 5,
+    "bondReversal": true,
+    "spxPostBondLow": true,
+    "nasdaqPostBondLow": true,
+    "equityStabilized": false,
+    "shockPeakDate": "2026-11-13",
+    "shockPeakYield": 5.174,
+    "bondPeakYield": 5.174,
+    "previousBondPeakDate": "2026-10-08",
+    "previousBondPeakYield": 5.364,
+    "bondReversalInvalidated": false,
+    "bondReversalInvalidatedDate": null,
+    "bondReversalInvalidatedReason": null,
+    "bondReversalTriggerYield": 5.074,
+    "bondReversalCandidateDate": "2026-11-18",
+    "bondReversalCandidateNote": "11/18 반전 확인 후 11/25는 D5. S&P500·Nasdaq이 11/24에 이어 하락해 post-bond 신저가를 갱신했고 2회 연속 higher close 조건은 불충족. 광의 ADD WATCH 유지, TECH ADD OFF.",
+    "ust10High": 4.924,
+    "ust10HighDate": "2026-11-25",
+    "ust10HighSource": "Investing completed daily",
+    "ust10Close": 4.85,
+    "ust10CloseDate": "2026-11-25",
+    "ust10CloseSource": "U.S. Treasury official daily",
+    "ust10Low": 4.799,
+    "ust10LowDate": "2026-11-25",
+    "ust30High": null,
+    "ust30HighDate": "2026-11-24",
+    "ust30HighSource": "당일 일중범위 독립확정 못함",
+    "metricsAsOf": "2026-11-25",
+    "ustCountThrough": "2026-11-25",
+    "fxCountThrough": "2026-11-25",
+    "ustSessionBreaches": {
+      "sessionDate": "2026-11-25",
+      "sessionStatus": "완료",
+      "ust5Intraday": 0,
+      "ust5Close": 0,
+      "ust53Intraday": 0,
+      "ust53Close": 0,
+      "ust55Intraday": 0,
+      "ust55Close": 0
+    },
+    "fxSessionBreaches": {
+      "sessionDate": "2026-11-25",
+      "sessionStatus": "완료",
+      "intraday": {
+        "150": 0,
+        "152": 0,
+        "153": 0,
+        "155": 0
+      },
+      "close": {
+        "150": 0,
+        "152": 0,
+        "153": 0,
+        "155": 0
+      }
+    },
+    "ust10Latest": {
+      "value": 4.91,
+      "source": "U.S. Treasury official daily par yield",
+      "retrievedAt": "2026-11-25T01:00:00+00:00",
+      "sourceTimeLabel": "11/24 미국 완료",
+      "sourceTimezone": "ET",
+      "status": "공식 일일표 확정; Flow Investing 4.917과 분리"
+    },
+    "observations": [
+      {
+        "metric": "UST10Y",
+        "value": 4.855,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-06",
+        "retrievedAt": "2026-11-07T01:00:00+00:00",
+        "note": "Reuters4.878·Treasury4.86 차이 기록"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.256,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-06",
+        "retrievedAt": "2026-11-07T01:00:00+00:00",
+        "note": "Reuters5.277·Treasury5.26 차이 기록"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.49,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-06",
+        "retrievedAt": "2026-11-07T01:00:00+00:00",
+        "note": "지역별 완료값 158.38~158.52; 대표값 158.49"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.67,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-06",
+        "retrievedAt": "2026-11-07T01:00:00+00:00",
+        "note": "Trading Economics2.64 차이 기록"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.21,
+        "source": "WSJ Tokyo morning",
+        "sessionDate": "2026-11-09",
+        "retrievedAt": "2026-11-09T01:00:09+00:00",
+        "note": "금요일 도쿄 종가157.92 대비; 당일 저가·고가 미확정"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.806,
+        "source": "Tokyo Brief",
+        "sessionDate": "2026-11-09",
+        "retrievedAt": "2026-11-09T01:00:09+00:00",
+        "note": "장중 -4.9bp 표시. 기존 Investing 11/6 완료값2.670과 계열/시점 차이로 파생값에는 미혼합"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 157.92,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-09",
+        "retrievedAt": "2026-11-10T01:03:00+00:00",
+        "note": "고가158.39·저가157.67; Yahoo 157.923/158.531/157.663과 표시 차이 기록"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.665,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-09",
+        "retrievedAt": "2026-11-10T01:03:00+00:00",
+        "note": "11/9 2.665%; 전일 저장 장중2.806과 시점 차이 보존"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 4.864,
+        "source": "market completed close",
+        "sessionDate": "2026-11-09",
+        "retrievedAt": "2026-11-10T01:03:00+00:00",
+        "note": "Treasury 공식 일일4.88과 차이 기록"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.256,
+        "source": "market completed close",
+        "sessionDate": "2026-11-09",
+        "retrievedAt": "2026-11-10T01:03:00+00:00",
+        "note": "Treasury 공식 일일5.26과 차이 기록"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.78,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-10",
+        "retrievedAt": "2026-11-11T01:04:00+00:00",
+        "note": "고가158.85·저가157.87"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.671,
+        "source": "Investing completed table",
+        "sessionDate": "2026-11-10",
+        "retrievedAt": "2026-11-11T01:04:00+00:00",
+        "note": "고가2.778·저가2.659"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 4.983,
+        "source": "market completed close",
+        "sessionDate": "2026-11-10",
+        "retrievedAt": "2026-11-11T01:04:00+00:00",
+        "note": "장중 5% 상향 돌파; Treasury 공식 일일4.98과 차이 기록"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.35,
+        "source": "market completed close",
+        "sessionDate": "2026-11-10",
+        "retrievedAt": "2026-11-11T01:04:00+00:00",
+        "note": "Treasury 공식 일일5.35와 일치"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.841,
+        "source": "BOJ/ChartExchange completed session",
+        "sessionDate": "2026-11-11",
+        "retrievedAt": "2026-11-12T01:02:48+00:00",
+        "note": "고가158.954·저가158.659"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.779,
+        "source": "Japan bond market completed close",
+        "sessionDate": "2026-11-11",
+        "retrievedAt": "2026-11-12T01:02:48+00:00",
+        "note": "고가2.809·저가2.745; 20Y 3.651%·30Y 3.940% 교차검증"
+      },
+      {
+        "metric": "UST10Y",
+        "value": null,
+        "source": "SIFMA/AP holiday schedule",
+        "sessionDate": "2026-11-11",
+        "retrievedAt": "2026-11-12T01:02:48+00:00",
+        "note": "Veterans Day 현물시장 휴장; 4.998 등 화면 표시값을 완료 종가·RSI에 혼합하지 않음"
+      },
+      {
+        "metric": "SPX",
+        "value": 7619.38,
+        "source": "US completed close",
+        "sessionDate": "2026-11-11",
+        "retrievedAt": "2026-11-12T01:02:48+00:00",
+        "note": "미국 주식시장은 개장"
+      },
+      {
+        "metric": "NASDAQ",
+        "value": 25466.19,
+        "source": "US completed close",
+        "sessionDate": "2026-11-11",
+        "retrievedAt": "2026-11-12T01:02:48+00:00",
+        "note": "AI·반도체 반등, 1회 higher close"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.72,
+        "source": "GoldPriceZ live",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-12T00:06:43+00:00",
+        "note": "09:06 JST 장중; 세션 저가 미확정"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.85,
+        "source": "Investing completed session",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "고가160.05·저가159.32"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.805,
+        "source": "Investing completed session",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "고가2.868·저가2.758"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 5.102,
+        "source": "WSJ market close",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "공식 일일 5.10%; Investing Flow계열 5.137%와 분리"
+      },
+      {
+        "metric": "UST20Y",
+        "value": 5.48,
+        "source": "US Treasury daily par yield",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "long-end 교차검증"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.433,
+        "source": "WSJ market close",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "공식 일일 5.43%"
+      },
+      {
+        "metric": "SPX",
+        "value": 7592.4,
+        "source": "AP/WSJ completed close",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "-0.4%"
+      },
+      {
+        "metric": "NASDAQ",
+        "value": 25366.09,
+        "source": "AP/WSJ completed close",
+        "sessionDate": "2026-11-12",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "-0.4%"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.84,
+        "source": "WSJ live",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-13T00:13:00+00:00",
+        "note": "09:13 KST/JST경 장중; 당일 저가 미확정"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.837,
+        "source": "Yenkinri 15분 갱신 페이지",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-13T01:01:12+00:00",
+        "note": "명시적 세션일·시각 없음; 장중 참고만"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.864,
+        "source": "Investing completed session",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "고가159.941·저가159.798; 대체 공개표 고가160.19·저가159.64 차이 기록"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.86,
+        "source": "Investing completed session",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "고가2.873·저가2.853; Yenkinri 곡선10Y2.8378%와 분리"
+      },
+      {
+        "metric": "JGB20Y",
+        "value": 3.7066,
+        "source": "Yenkinri curve cross-check",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "long-end 교차검증"
+      },
+      {
+        "metric": "JGB30Y",
+        "value": 3.9701,
+        "source": "Yenkinri curve cross-check",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "long-end 교차검증"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 5.15,
+        "source": "Trading Economics/FT market close",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "시장 표시5.15%; Investing Flow계열5.141%와 분리·공식표 1세션 지연"
+      },
+      {
+        "metric": "UST20Y",
+        "value": 5.52,
+        "source": "Trading Economics market close",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "long-end 교차검증"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.473,
+        "source": "Investing market close",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "Trading Economics5.47~5.48%와 교차확인"
+      },
+      {
+        "metric": "SPX",
+        "value": 7561.67,
+        "source": "AP completed close",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "-0.4%"
+      },
+      {
+        "metric": "NASDAQ",
+        "value": 25136.27,
+        "source": "AP completed close",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-14T00:59:53+00:00",
+        "note": "-0.9%"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.69,
+        "source": "Investing public daily table recheck",
+        "sessionDate": "2026-11-13",
+        "retrievedAt": "2026-11-15T00:55:41+00:00",
+        "note": "11/14 저장값159.864·고가159.941·저가159.798을 덮어쓰지 않고 재조회 차이만 기록"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.75,
+        "source": "Investing 11/16 public intraday table",
+        "sessionDate": "2026-11-16",
+        "retrievedAt": "2026-11-16T01:06:54+00:00",
+        "note": "10시대 장중·고가159.82·저가159.73; 미완료라 종가·RV3·이탈 누적에 미혼합"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": null,
+        "source": "public live-source cross-check",
+        "sessionDate": "2026-11-16",
+        "retrievedAt": "2026-11-16T01:06:54+00:00",
+        "note": "10시대 일관된 장중 호가 독립검증 미완료; 11/13 완료 2.865%를 계산계열에 유지"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 4.92,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-20",
+        "retrievedAt": "2026-11-21T01:01:36+00:00"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "value": 4.941,
+        "source": "Investing completed daily",
+        "sessionDate": "2026-11-20",
+        "retrievedAt": "2026-11-21T01:01:36+00:00"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.322,
+        "source": "PoundSterlingLive daily table",
+        "sessionDate": "2026-11-20",
+        "retrievedAt": "2026-11-21T01:01:36+00:00"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.79,
+        "source": "Reuters market close report",
+        "sessionDate": "2026-11-20",
+        "retrievedAt": "2026-11-21T01:01:36+00:00"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-20",
+        "previousPrimary": 159.322,
+        "publicRecheck": {
+          "makklerClose": 159.71,
+          "makklerLow": 158.54,
+          "exchangeRatesClose": 158.5434,
+          "exchangeRatesLow": 158.4311
+        },
+        "collectedAt": "2026-11-22T01:03:54+00:00",
+        "reason": "공개 출처별 완료값 차이·원인 미추정·기존 스냅샷 보존"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-20",
+        "previousPrimary": 2.79,
+        "publicRecheck": {
+          "investingClose": 2.751,
+          "wsjClose": 2.785
+        },
+        "collectedAt": "2026-11-22T01:03:54+00:00",
+        "reason": "공개 출처별 완료값 차이·원인 미추정·기존 스냅샷 보존"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.98,
+        "source": "WSJ/LSEG",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-23T00:56:48+00:00",
+        "note": "09:24 KST 장중; Reuters 08:43 KST 158.63과 시점 차이; 당일 저가 미확정"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": null,
+        "source": "Reuters global markets",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-23T00:56:48+00:00",
+        "note": "일본 공휴일 휴장; 11/20 완료값 유지"
+      },
+      {
+        "metric": "KOSPI",
+        "value": null,
+        "source": "Reuters global markets",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-23T00:56:48+00:00",
+        "note": "개장 직후 3% 이상 하락; 정확한 10시 지수값 미확정"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.928,
+        "source": "Yahoo Finance completed daily",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-24T01:00:00+00:00",
+        "note": "저가158.474; BotHub158.8689와 종가 차이 기록·Yahoo 동일계열 계산"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 4.92,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-24T01:00:00+00:00",
+        "note": "시장 일중고가4.977·저가4.902"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.29,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-24T01:00:00+00:00"
+      },
+      {
+        "metric": "SPX",
+        "value": 7237.17,
+        "source": "AP/Yahoo completed close",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-24T01:00:00+00:00"
+      },
+      {
+        "metric": "NASDAQ",
+        "value": 24089.56,
+        "source": "AP/Yahoo completed close",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-24T01:00:00+00:00"
+      },
+      {
+        "metric": "SOX",
+        "value": 9588.05,
+        "source": "Kabutowire/YCharts completed close",
+        "sessionDate": "2026-11-23",
+        "retrievedAt": "2026-11-24T01:00:00+00:00"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.785,
+        "source": "Jiji/Investing live",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-24T01:00:00+00:00",
+        "note": "장중·완료 파생계열 미혼합"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 158.92,
+        "source": "Investing live",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-24T01:00:00+00:00",
+        "note": "10시 전후 장중·당일저가158.52"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.009,
+        "source": "Yahoo Finance completed daily",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00",
+        "note": "저가158.763; Investing 종가159.25~159.29 차이 기록·Yahoo 연속계열 계산"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.72,
+        "source": "Japan Bond Trading completed reference",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00",
+        "note": "Yenkinri2.8366 차이 기록·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 4.91,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "value": 4.917,
+        "source": "Investing completed daily",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.3,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00"
+      },
+      {
+        "metric": "SPX",
+        "value": 7201.09,
+        "source": "AP/Yahoo completed close",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00"
+      },
+      {
+        "metric": "NASDAQ",
+        "value": 23733.54,
+        "source": "AP completed close",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00"
+      },
+      {
+        "metric": "SOX",
+        "value": 8832.5,
+        "source": "CloseLook completed close",
+        "sessionDate": "2026-11-24",
+        "retrievedAt": "2026-11-25T01:00:00+00:00"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.19,
+        "source": "Investing live",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-25T01:00:00+00:00",
+        "note": "10시 전후 장중·당일저가158.75"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.143,
+        "source": "Yahoo Finance completed daily",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "저가159.077; 동일 Yahoo 공개 페이지 재조회 159.222/159.248 차이 기록·159.143 연속계열 계산"
+      },
+      {
+        "metric": "JGB10Y",
+        "value": 2.62,
+        "source": "Japan Bond Trading completed reference",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "20Y3.580·30Y3.950; Yenkinri10Y2.7774 차이 기록·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "value": 4.85,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "value": 4.857,
+        "source": "Investing completed daily",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "11/24 공개값4.917→4.902 재조회 수정"
+      },
+      {
+        "metric": "UST30Y",
+        "value": 5.24,
+        "source": "U.S. Treasury official daily",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00"
+      },
+      {
+        "metric": "SPX",
+        "value": 7182.78,
+        "source": "AP/Reuters completed close",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "-0.25%"
+      },
+      {
+        "metric": "NASDAQ",
+        "value": 23585.8,
+        "source": "AP completed close",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "-0.62%"
+      },
+      {
+        "metric": "SOX",
+        "value": 8592.34,
+        "source": "Nasdaq official index",
+        "sessionDate": "2026-11-25",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "-2.72%"
+      },
+      {
+        "metric": "USDJPY",
+        "value": 159.22,
+        "source": "Investing live",
+        "sessionDate": "2026-11-26",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "10시 전후 장중·당일저가158.66"
+      },
+      {
+        "metric": "KOSPI",
+        "value": null,
+        "source": "FT Asia live",
+        "sessionDate": "2026-11-26",
+        "retrievedAt": "2026-11-26T01:00:00+00:00",
+        "note": "장초 +1.4%; SK하이닉스+4.2%·삼성전자+1.6% 장중"
+      }
+    ],
+    "calculationInputs": {
+      "fx": {
+        "source": "Yahoo Finance USDJPY continuous daily series",
+        "dates": [
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25"
+        ],
+        "closes": [
+          159.504,
+          159.381,
+          159.707,
+          158.931,
+          159.009,
+          159.143
+        ]
+      },
+      "jgb10": {
+        "source": "Japan Bond Trading completed reference series",
+        "dates": [
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-24",
+          "2026-11-25"
+        ],
+        "closes": [
+          2.87,
+          2.82,
+          2.785,
+          2.72,
+          2.62
+        ]
+      },
+      "ust10Official": {
+        "dates": [
+          "2026-11-20",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25"
+        ],
+        "closes": [
+          5.04,
+          4.92,
+          4.91,
+          4.85
+        ]
+      },
+      "ust30Official": {
+        "dates": [
+          "2026-11-20",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25"
+        ],
+        "closes": [
+          5.4,
+          5.31,
+          5.3,
+          5.24
+        ]
+      }
+    },
+    "yieldRsi14": 38.5739759641559,
+    "yieldRsiSessionDate": "2026-11-25",
+    "yieldRsiSourceClose": 4.857,
+    "yieldRsiCollectedAt": "2026-11-26T01:00:00+00:00",
+    "yieldRsiEasingSessions": 2,
+    "flowUpdatedAt": "2026-11-26T01:00:00+00:00",
+    "flowTurnState": "조짐 발생",
+    "flowRiskWeight": 0,
+    "flowObservationOnly": true,
+    "flowAffectsADD": false,
+    "flowFirstCandidateDate": "2026-10-05",
+    "flowElapsedSessions": 35,
+    "flowRsiDayChange": -2.8540336753510545,
+    "flowCftcAsOf": "2026-11-17",
+    "spxClose": 7182.78,
+    "nasdaqClose": 23585.8,
+    "equityCloseDate": "2026-11-25",
+    "dataNotes": [
+      "FX: Yahoo 동일계열 11/25 종가159.143·저가159.077로 계산. 같은 공개페이지 재조회값159.222/159.248 차이는 기록하고 원인 미추정. 11/26 장중159.22·저가158.66은 현재값에만 반영.",
+      "JGB: Japan Bond Trading 11/25 완료 10Y2.620%, 20Y3.580%, 30Y3.950%. 3D -7.09%, RV3 4.528%, 가속률 +43.03%. Yenkinri10Y2.7774와 차이 기록.",
+      "UST: 미 재무부 11/25 공식 10Y4.85%, 20Y5.28%, 30Y5.24%. 공식 3D 10Y -19bp·30Y -16bp. Flow Investing 4.857, Wilder RSI38.57.",
+      "POLICY: 12/2 10~20Y 최대 $6B buyback 예정. 11/25 금리 하락은 위험회피가 동반돼 정책 완충 성공으로 단정하지 않음.",
+      "EQUITY: 11/25 S&P500 7,182.78(-0.25%), Nasdaq 23,585.80(-0.62%), SOX8,592.34(-2.72%). 11/26 한국 반도체 장중 반등은 1회로 TECH ADD OFF."
+    ],
+    "jgb20": 3.58,
+    "jgb30": 3.95,
+    "ust20": 5.28,
+    "longEndCrossChecks": {
+      "jgb20": 3.58,
+      "jgb30": 3.95,
+      "ust20": 5.28,
+      "ust30": 5.24,
+      "note": "JGB 20Y·30Y와 UST 20Y·30Y는 long-end 교차검증용. JGB10Y·UST10Y/30Y가 핵심 본값."
+    },
+    "ust30Close": 5.24,
+    "ust30CloseDate": "2026-11-25",
+    "crossChecks": {
+      "jgb20": 3.625,
+      "jgb30": 3.935,
+      "ust2": 4.63,
+      "ust20": 5.33,
+      "sessionDate": "2026-11-24",
+      "source": "Treasury·Japan Bond Trading",
+      "collectedAt": "2026-11-25T01:00:00+00:00",
+      "note": "10Y 핵심, 20/30Y 교차검증. Yenkinri 10Y2.8366과 JBT2.720 차이는 원인 미추정·JBT 연속계열을 본값으로 사용."
+    },
+    "sourceRevisions": [
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-10-29",
+        "old": 4.911,
+        "new": 4.989,
+        "collectedAt": "2026-10-31T00:58:09+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "bond-flow-history.json:2026-10-30"
+      },
+      {
+        "metric": "UST30Y",
+        "sessionDate": "2026-10-29",
+        "old": 5.324,
+        "new": 5.329,
+        "collectedAt": "2026-10-31T00:58:09+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "bond-flow-history.json:2026-10-30"
+      },
+      {
+        "metric": "JGB20Y",
+        "sessionDate": "2026-10-29",
+        "old": 3.669,
+        "new": 3.674,
+        "collectedAt": "2026-10-31T00:58:09+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-30"
+      },
+      {
+        "metric": "JGB30Y",
+        "sessionDate": "2026-10-29",
+        "old": 3.896,
+        "new": 3.903,
+        "collectedAt": "2026-10-31T00:58:09+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-30"
+      },
+      {
+        "metric": "UST20Y",
+        "sessionDate": "2026-10-29",
+        "old": 5.334,
+        "new": 5.366,
+        "collectedAt": "2026-10-31T00:58:09+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-30"
+      },
+      {
+        "metric": "UST30Y",
+        "sessionDate": "2026-10-30",
+        "directTable": 5.308,
+        "alternateRegionalTable": 5.292,
+        "collectedAt": "2026-10-31T00:58:09+00:00",
+        "reason": "지역별 공개표 값 차이 기록·영문 기본표 완료행 사용·원인 미추정"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-10-30",
+        "oldClose": 157.58,
+        "newClose": 157.55,
+        "oldLow": 156.96,
+        "newLow": 156.95,
+        "collectedAt": "2026-11-01T01:04:26+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-31; bond-flow-history.json:2026-10-31"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-10-30",
+        "oldClose": 2.76,
+        "newClose": 2.776,
+        "oldLow": 2.76,
+        "newLow": 2.77,
+        "collectedAt": "2026-11-02T00:58:15+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-31,2026-11-01; bond-flow-history.json:2026-10-31,2026-11-01"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-10-30",
+        "oldClose": 4.921,
+        "newClose": 4.929,
+        "oldOpen": 4.934,
+        "newOpen": 4.937,
+        "oldHigh": 4.951,
+        "newHigh": 4.958,
+        "oldLow": 4.881,
+        "newLow": 4.892,
+        "collectedAt": "2026-11-02T00:58:15+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-31,2026-11-01; bond-flow-history.json:2026-10-31,2026-11-01"
+      },
+      {
+        "metric": "UST30Y",
+        "sessionDate": "2026-10-30",
+        "oldClose": 5.308,
+        "newClose": 5.309,
+        "oldHigh": 5.325,
+        "newHigh": 5.329,
+        "oldLow": 5.262,
+        "newLow": 5.258,
+        "collectedAt": "2026-11-02T00:58:15+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미확정",
+        "preservedSnapshot": "history.json:2026-10-31,2026-11-01; bond-flow-history.json:2026-10-31,2026-11-01"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-02",
+        "directEnglish": 2.787,
+        "canadaTable": 2.767,
+        "collectedAt": "2026-11-03T01:01:15+00:00",
+        "reason": "지역별 공개표 값 차이 기록·영문 기본표 완료행 사용·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-02",
+        "directEnglish": 4.903,
+        "regionalTable": 4.888,
+        "worldGovernmentBonds": 4.891,
+        "collectedAt": "2026-11-03T01:01:15+00:00",
+        "reason": "출처별 완료값 차이 기록·동일 Investing 영문 완료계열 사용·원인 미추정"
+      },
+      {
+        "metric": "SPX",
+        "sessionDate": "2026-11-02",
+        "investingTable": 7631.63,
+        "reutersClose": 7541.4,
+        "collectedAt": "2026-11-03T01:01:15+00:00",
+        "reason": "출처별 종가 차이 기록·기존 Investing 완료계열 사용·원인 미추정"
+      },
+      {
+        "metric": "NASDAQ",
+        "sessionDate": "2026-11-02",
+        "investingTable": 25698.05,
+        "reutersClose": 25164.32,
+        "collectedAt": "2026-11-03T01:01:15+00:00",
+        "reason": "출처별 종가 차이 기록·기존 Investing 완료계열 사용·원인 미추정"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-02",
+        "previousSnapshot": 157.84,
+        "publicRecheck": 157.95,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-02",
+        "previousSnapshot": 2.787,
+        "publicRecheck": 2.775,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-02",
+        "previousSnapshot": 4.903,
+        "publicRecheck": 4.894,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+      },
+      {
+        "metric": "UST30Y",
+        "sessionDate": "2026-11-02",
+        "previousSnapshot": 5.298,
+        "publicRecheck": 5.287,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+      },
+      {
+        "metric": "SPX",
+        "sessionDate": "2026-11-02",
+        "previousSnapshot": 7631.63,
+        "publicRecheck": 7541.4,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+      },
+      {
+        "metric": "NASDAQ",
+        "sessionDate": "2026-11-02",
+        "previousSnapshot": 25698.05,
+        "publicRecheck": 25164.31,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/3 당시 스냅샷 보존·원인 미추정"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-04",
+        "englishLive": 158.48,
+        "koreanLocalizedQuote": 158.08,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "지역별 실시간 표시 차이 기록·원인 미추정"
+      },
+      {
+        "metric": "SPX",
+        "sessionDate": "2026-11-03",
+        "apClose": 7568.92,
+        "investingRegional": 7586.06,
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "출처별 종가 차이 기록·AP 완료값 사용·원인 미추정"
+      },
+      {
+        "metric": "NASDAQ",
+        "sessionDate": "2026-11-03",
+        "apClose": 25372.01,
+        "investingRegionalValues": [
+          25351.1,
+          25434.1
+        ],
+        "collectedAt": "2026-11-04T01:00:00+00:00",
+        "reason": "지역별 공개값 차이 기록·AP 완료값 사용·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-04",
+        "investingRegionalClose": 4.928,
+        "investingCanadaClose": 4.924,
+        "tradewebClose": 4.891,
+        "collectedAt": "2026-11-05T00:55:52+00:00",
+        "reason": "공개 완료값 출처 차이 기록·동일 Investing 계열 4.928을 계산 본값으로 사용·원인 미추정"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-04",
+        "yahooClose": 158.392,
+        "fxGloryClose": 158.669,
+        "collectedAt": "2026-11-05T00:55:52+00:00",
+        "reason": "공개 일별표 종가 차이 기록·Yahoo 동일계열을 계산 본값으로 사용·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-04",
+        "previousSnapshot": 4.928,
+        "correctedClose": 4.891,
+        "source": "WSJ/LSEG-Tradeweb",
+        "reason": "market close below 4.9%, Investing alternate 4.928 retained",
+        "preservedHistory": "2026-11-04 and earlier"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-04",
+        "previousSnapshot": 2.773,
+        "publicRecheck": 2.813,
+        "collectedAt": "2026-11-06T01:03:23+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/5 당시 관측 보존·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-05; bond-flow-history.json:2026-11-05"
+      },
+      {
+        "metric": "JGB20Y",
+        "sessionDate": "2026-11-04",
+        "previousSnapshot": 3.63,
+        "publicRecheck": 3.669,
+        "collectedAt": "2026-11-06T01:03:23+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/5 당시 관측 보존·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-05"
+      },
+      {
+        "metric": "JGB30Y",
+        "sessionDate": "2026-11-04",
+        "previousSnapshot": 3.88,
+        "publicRecheck": 3.929,
+        "collectedAt": "2026-11-06T01:03:23+00:00",
+        "reason": "공개 일별표 재조회값 변경 기록·11/5 당시 관측 보존·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-05"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-05",
+        "investingRegionalClose": 157.49,
+        "investingEarlierTable": 157.71,
+        "twelveDataClose": 157.8274,
+        "collectedAt": "2026-11-06T01:03:23+00:00",
+        "reason": "출처·수집시점별 완료값 차이 기록·최신 Investing 지역표를 동일계열 계산값으로 사용·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-05",
+        "investingClose": 4.83,
+        "treasuryOfficialDaily": 4.84,
+        "collectedAt": "2026-11-06T01:03:23+00:00",
+        "reason": "출처별 완료값 차이 기록·Investing 완료계열을 RSI 계산값으로 사용·원인 미추정"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-06",
+        "investingPrimaryClose": 158.49,
+        "regionalValues": [
+          158.38,
+          158.47,
+          158.5,
+          158.52
+        ],
+        "collectedAt": "2026-11-07T01:00:00+00:00",
+        "reason": "지역별 공개 일별표의 완료값 차이 기록·기존 Investing 동일계열 대표값 158.49 사용·원인 미추정"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-06",
+        "investingClose": 4.855,
+        "investingRegionalClose": 4.864,
+        "reutersMarketObservation": 4.878,
+        "treasuryOfficialDaily": 4.86,
+        "collectedAt": "2026-11-07T01:00:00+00:00",
+        "reason": "출처·시점별 완료값 차이 기록·RSI/3D에는 기존 Investing 동일계열 4.855 사용·원인 미추정"
+      },
+      {
+        "metric": "UST30Y",
+        "sessionDate": "2026-11-06",
+        "investingClose": 5.256,
+        "reutersMarketObservation": 5.277,
+        "treasuryOfficialDaily": 5.26,
+        "collectedAt": "2026-11-07T01:00:00+00:00",
+        "reason": "출처·시점별 완료값 차이 기록·본 계산에는 Investing 동일계열 5.256 사용·원인 미추정"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-06",
+        "investingClose": 2.67,
+        "tradingEconomicsClose": 2.64,
+        "collectedAt": "2026-11-07T01:00:00+00:00",
+        "reason": "출처별 완료값 차이 기록·기존 Investing 동일계열 2.670 사용·원인 미추정"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-09",
+        "previousIntradaySnapshot": 2.806,
+        "completedPublicRecheck": 2.665,
+        "collectedAt": "2026-11-10T01:03:00+00:00",
+        "reason": "전일 오전 장중 관측과 완료 일별표 차이 기록·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-09"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-06",
+        "previousSnapshot": 158.49,
+        "publicRecheck": 158.48,
+        "collectedAt": "2026-11-10T01:03:00+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-07~2026-11-09"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-09",
+        "previousSnapshot": 157.92,
+        "publicRecheck": 157.91,
+        "collectedAt": "2026-11-11T01:04:00+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-10"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-09",
+        "previousSnapshot": 2.665,
+        "publicRecheck": 2.668,
+        "collectedAt": "2026-11-11T01:04:00+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-10"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-10",
+        "previousSnapshot": 158.78,
+        "publicRecheck": 158.705,
+        "collectedAt": "2026-11-12T01:02:48+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-11"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-10",
+        "previousSnapshot": 2.671,
+        "publicRecheck": 2.694,
+        "collectedAt": "2026-11-12T01:02:48+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-11"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-11",
+        "previousSnapshot": 158.841,
+        "publicRecheck": 159.78,
+        "collectedAt": "2026-11-13T01:01:12+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-12"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-11",
+        "previousSnapshot": 2.779,
+        "publicRecheck": 2.793,
+        "otherSources": [
+          2.803,
+          2.84
+        ],
+        "collectedAt": "2026-11-13T01:01:12+00:00",
+        "reason": "공개 출처별 값 차이·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-12"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-12",
+        "marketClose": 5.102,
+        "flowSeriesClose": 5.137,
+        "collectedAt": "2026-11-13T01:01:12+00:00",
+        "reason": "출처·산식 시점 차이로 분리 저장·원인 미추정",
+        "preservedSnapshot": "주계열과 Flow계열 각각 보존"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "sessionDate": "2026-11-12",
+        "previousSnapshot": 5.137,
+        "publicRecheck": 5.103,
+        "collectedAt": "2026-11-14T00:59:53+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-13; bond-flow-history.json:2026-11-13"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-13",
+        "primaryClose": 159.864,
+        "primaryHigh": 159.941,
+        "primaryLow": 159.798,
+        "alternateClose": 159.87,
+        "alternateHigh": 160.19,
+        "alternateLow": 159.64,
+        "reutersOvernightPeak": 160.3,
+        "collectedAt": "2026-11-14T00:59:53+00:00",
+        "reason": "공개 출처별 완료값 차이·원인 미추정",
+        "preservedSnapshot": "주계열 대표값과 출처차이 모두 오늘 기록"
+      },
+      {
+        "metric": "JGB10Y",
+        "sessionDate": "2026-11-13",
+        "primaryClose": 2.86,
+        "curveCrossCheck": 2.8378,
+        "collectedAt": "2026-11-14T00:59:53+00:00",
+        "reason": "공개 출처별 완료값 차이·원인 미추정",
+        "preservedSnapshot": "핵심계열과 곡선 교차값 분리"
+      },
+      {
+        "metric": "UST10Y",
+        "sessionDate": "2026-11-13",
+        "marketClose": 5.15,
+        "flowSeriesClose": 5.141,
+        "collectedAt": "2026-11-14T00:59:53+00:00",
+        "reason": "시장 표시 반올림/출처차이로 분리 저장·원인 미추정",
+        "preservedSnapshot": "주계열과 Flow계열 각각 보존"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-13",
+        "previousSnapshot": {
+          "close": 159.864,
+          "high": 159.941,
+          "low": 159.798
+        },
+        "publicRecheck": {
+          "close": 159.69,
+          "high": 160.2,
+          "low": 159.51
+        },
+        "collectedAt": "2026-11-15T00:55:41+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-14; bond-flow-history.json:2026-11-14"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "sessionDate": "2026-11-12",
+        "old": 5.137,
+        "new": 5.103,
+        "collectedAt": "2026-11-21T01:01:36+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "bond-flow-history.json:2026-11-13..2026-11-16"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "sessionDate": "2026-11-13",
+        "old": 5.141,
+        "new": 5.153,
+        "collectedAt": "2026-11-21T01:01:36+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "bond-flow-history.json:2026-11-14..2026-11-16"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-20",
+        "primaryClose": 159.322,
+        "alternateClose": 158.79,
+        "collectedAt": "2026-11-21T01:01:36+00:00",
+        "reason": "출처별 완료값 차이·원인 미추정"
+      },
+      {
+        "metric": "USDJPY",
+        "sessionDate": "2026-11-20",
+        "previousSnapshot": 159.322,
+        "publicRecheck": 158.54,
+        "collectedAt": "2026-11-24T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-21~2026-11-23"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "sessionDate": "2026-11-20",
+        "previousSnapshot": 4.941,
+        "publicRecheck": 4.912,
+        "collectedAt": "2026-11-25T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "bond-flow-history.json:2026-11-20~2026-11-24"
+      },
+      {
+        "metric": "UST10Y_FLOW",
+        "sessionDate": "2026-11-24",
+        "previousSnapshot": 4.917,
+        "publicRecheck": 4.902,
+        "collectedAt": "2026-11-26T01:00:00+00:00",
+        "reason": "공개 일별표 재조회값 변경·원인 미추정",
+        "preservedSnapshot": "history.json:2026-11-25; bond-flow-history.json:2026-11-25"
+      }
+    ],
+    "newCompletedSessions": [
+      "2026-11-25"
+    ],
+    "cumulativeCountsIncremented": false,
+    "newCompletedSessionsByMarket": {
+      "ust": [
+        "2026-11-25"
+      ],
+      "jgb": [
+        "2026-11-25"
+      ],
+      "fx": [
+        "2026-11-25"
+      ],
+      "equity": [
+        "2026-11-25"
+      ]
+    },
+    "equityStabilizationDetail": {
+      "higherCloseSessions": 0,
+      "spxHigherCloseSessions": 0,
+      "nasdaqHigherCloseSessions": 0,
+      "latestSessionNewLow": true,
+      "spxLatestSessionNewLow": true,
+      "nasdaqLatestSessionNewLow": true,
+      "postBondLowDate": "2026-11-25",
+      "assessment": "미확정/불충족"
+    },
+    "fxLastSessionLow": 159.077,
+    "fxLastSessionDate": "2026-11-25",
+    "curveStressNote": "UST10Y 3D -19bp, UST30Y 3D -16bp로 가속 스트레스 완화. 30Y도 5.24%로 내려왔으나 안전수요 동반 하락이어서 ADD 신뢰도를 낮춰 해석.",
+    "policyAssessment": {
+      "confirmedFailureCount": 2,
+      "newFailureAssessment": "미추가",
+      "note": "11/25 금리 하락은 AI·관세 위험회피와 강한 성장·높은 인플레가 함께 작용. 12/2 10~20Y 최대 $6B buyback 예정. 기존 확정 실패 2회 유지, 신규 실패 미추가."
+    },
+    "intradayObservation": true,
+    "completedSeriesAsOf": "2026-11-25",
+    "fxLow": 158.66,
+    "fxIntradayHigh": 159.5,
+    "fxObservationAt": "2026-11-26T01:00:00+00:00",
+    "fxObservationStatus": "11/26 10시 전후 Investing 159.22·당일저가158.66; 장중 미완료",
+    "jgbObservationAt": "2026-11-26T01:00:00+00:00",
+    "jgbObservationStatus": "11/26 일관 장중값 독립검증 미완료; 11/25 JBT 완료 10Y2.620% 사용",
+    "jgbChangeFromPriorCompletedBp": -10,
+    "techAdd": {
+      "stage": "OFF",
+      "status": "[C] 장중 반등 1회·[P] 추세 미확인",
+      "soxClose": 8592.34,
+      "soxAsOf": "2026-11-25",
+      "soxDayPct": -2.72,
+      "soxChangeFromNov13Pct": -15.315700667828336,
+      "nasdaq100Close": 26046.9,
+      "nasdaq100DayPct": -0.64,
+      "skHynixClose": 1030000,
+      "skHynixDayPct": -11.05,
+      "skHynixAsOf": "2026-11-25",
+      "samsungClose": 170700,
+      "samsungDayPct": -9.87,
+      "samsungAsOf": "2026-11-25",
+      "rsiStatus": "SOX·NASDAQ100·한국 반도체 RSI 정식 연속계열 검증 전",
+      "reason": "11/25 미국 기술주는 장중 급락 뒤 낙폭을 줄였지만 SOX -2.72%·NASDAQ100 -0.64%로 마감. 11/26 한국 반도체의 1회 장중 반등만으로 2회 연속 안정화·상대강도·EPS·RSI 확인이 충족되지 않아 기술주 신규매수 OFF.",
+      "sourceSOX": "https://indexes.nasdaq.com/index/overview/sox",
+      "sourceKorea": "https://www.ft.com/content/6e217409-9fbb-456c-b405-2eb15bb69679",
+      "liveContext": {
+        "asof": "2026-11-26 10:00 KST 전후",
+        "kospi": "+1.4% [C]·장중",
+        "skHynix": "+4.2% [C]·장중",
+        "samsung": "+1.6% [C]·장중",
+        "jgb10": "11/26 일관 장중값 미확정",
+        "usdJpy": "159.22·당일저가158.66"
+      }
+    }
   }
 }
